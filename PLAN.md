@@ -53,7 +53,7 @@ pnpm dlx shadcn@latest add button input textarea checkbox radio-group select \
 
 ---
 
-## Phase 2 — App shell: sidebar, mobile top bar, bottom nav
+## Phase 2 — App shell: sidebar, mobile top bar, bottom nav ✅
 
 **Goal:** Collapsible left sidebar (desktop) / top bar + bottom tab bar (mobile) wrapping `/appointments` and `/charting`. No global top navbar.
 
@@ -68,7 +68,7 @@ Nav items: Dashboard (`/`), Appointments (`/appointments`), Patients (stub), Enc
 
 ---
 
-## Phase 3 — Appointments list page (dummy data, static table)
+## Phase 3 — Appointments list page (dummy data, static table) ✅
 
 **Goal:** `/appointments` table matching source styling (sticky first two columns, zebra rows, status pills, toolbar, pagination) from static dummy data. Row click → `/charting`, no id in URL.
 
@@ -81,7 +81,7 @@ Nav items: Dashboard (`/`), Appointments (`/appointments`), Patients (stub), Enc
 
 ---
 
-## Phase 4 — Charting V2 shell: layout, nav rail, header, Overview (dummy)
+## Phase 4 — Charting V2 shell: layout, nav rail, header, Overview (dummy) ✅
 
 **Goal:** `/charting` renders header + left nav + Overview (vitals, allergies, medications, problems — **no weight/BP chart**) + "Start Charting" button.
 
@@ -96,7 +96,7 @@ Nav items: Dashboard (`/`), Appointments (`/appointments`), Patients (stub), Enc
 
 ---
 
-## Phase 5 — Start Charting dialog + encounter-sheet-driven SOAP dummy data
+## Phase 5 — Start Charting dialog + encounter-sheet-driven SOAP dummy data ✅
 
 **Goal:** Dialog with 5 hardcoded-option fields; submit stores selections in state and loads SOAP dataset matching chosen Encounter Sheet.
 
@@ -111,7 +111,7 @@ Each encounter sheet dataset must include: `itmTemplate` token syntax, UOM-dicti
 
 ---
 
-## Phase 6 — SOAP rendering (accordion cards) + Preview Note logic
+## Phase 6 — SOAP rendering (accordion cards) + Preview Note logic ✅
 
 **Goal:** 4 SOAP tabs as nested accordion cards; Preview Note view reproducing token/UOM substitution.
 
@@ -125,7 +125,7 @@ Each encounter sheet dataset must include: `itmTemplate` token syntax, UOM-dicti
 
 ---
 
-## Phase 7 — Chart Details sidebar + polish
+## Phase 7 — Chart Details sidebar + polish ✅
 
 **Goal:** Right-side Chart Details panel (desktop fixed column / mobile Sheet), static non-functional sections, final polish pass.
 
@@ -144,3 +144,36 @@ Each encounter sheet dataset must include: `itmTemplate` token syntax, UOM-dicti
 - `features/charting/components/ChartingV2View.tsx` — central state owner
 - `features/charting/lib/note-utils.ts` — UOM/token substitution logic
 - `features/charting/data/encounter-sheets/index.ts` — encounter-sheet → SOAP dataset mapping
+
+---
+
+## Phase 8 — UI fidelity pass: SOAP card restyle, Add Options drawer, Preview Note modal ✅
+
+**Goal:** Match the real EHR's charting UI pixel-for-pixel where it matters: SOAP card visuals (icon badges, Add Options button, chevron, left-rail nesting), a working "Add Options" drawer per component (item catalog with unique `itmCode`s and dependent/nested items), and Preview Note as a modal instead of an inline view-swap.
+
+**What changed:**
+- `app/globals.css` — `--primary`/`--primary-foreground` now teal (`#00b0ca`/white) to match the EHR brand color across every shadcn primitive; added `--color-icon-badge` (`#F0FDFA`).
+- `features/charting/components/soap/SoapSectionCard.tsx` + `ItemCard.tsx` — restyled to match source measurements exactly (rounded-xl card, icon badge, Add Options button, rotating chevron, `pl-3 border-l-2` nested indentation).
+- `features/charting/types.ts` — added `ItemCatalogEntry`/`CatalogFieldType`.
+- `features/charting/data/item-catalog.ts` (new) — per-component addable-item catalogs keyed by `compntCode`, covering all 4 field types (checkbox+values, text, number, richtext) and dependent items with their own unique `itmCode`s.
+- `features/charting/components/soap/AddOptionsDrawer.tsx` (new) — right-floating Sheet, item catalog list with search, checkbox rows showing each item's `itmCode`, dependent items indented and revealed when their parent is checked, Cancel/Add footer.
+- `features/charting/components/preview/PreviewNoteDialog.tsx` (new) — Preview Note is now a `Dialog` modal (`sm:max-w-4xl h-[90vh]`) with a teal icon badge header and Close/Print footer; SOAP accordion no longer gets replaced by the preview.
+- `features/charting/components/ChartingV2View.tsx` — `soapGroups` lifted to mutable state (deep-cloned per chart session), wired to the Add Options drawer so added items render immediately.
+
+**Verify:** `pnpm exec tsc --noEmit` and `pnpm lint` clean. All 11 `compntCode`s used across the three encounter-sheet datasets have matching catalog entries in `item-catalog.ts` (verified via grep diff). Manual click-through: Start Charting → open a SOAP tab → confirm restyled cards → "Add Options" opens the drawer with item codes visible and dependent items revealing on check → Add merges items into the card → "Preview Note" opens as a modal, not an inline swap.
+
+---
+
+## Phase 9 — Data-fidelity correction: match real EHR response shapes ✅
+
+**Goal:** Correct the Add Options catalog data model to match the real EHR's `ComponentItemWrapper`/`ComponentItem`/`ComponentItemValue` shape (verified against actual EHR TypeScript source) instead of an invented shape, while keeping item codes as simple readable mnemonics (`HEIGHT`, `WEIGHT`, `BP_SYSTOLIC`, etc. — not literal LOINC codes, per explicit steer).
+
+**What changed:**
+- `features/charting/types.ts` — added missing FK/UK fields to `VisitSheetItem`/`VisitSheetComponent`; replaced the invented `ItemCatalogEntry` with real-shaped `ComponentItemWrapper`/`ComponentItem`/`ComponentItemValue` (`attribute1` = narrative template, `attribute11` = raw field-type string, `emrCompntItmValues` = value list, `dependentItems` kept as an explicit prototype-only augmentation).
+- `features/charting/lib/item-type-utils.ts` (new) — ported the real `getItemFieldType()`/`isExParaOrRichText()`/`isOptionListField()` derivation logic (attribute11 → alias matching → itmCode fallback → `attribute1`-based EX-PARAGRAPH heuristic → default TEXT-AREA).
+- `features/charting/data/item-catalog.ts` — rebuilt on the real wrapper shape; Blood Pressure split into separate Systolic/Diastolic entries (diastolic's template omits `#@UOM#@`, matching real EHR behavior) with simple mnemonic `itmCode`s.
+- `features/charting/components/soap/AddOptionsDrawer.tsx` — now derives each row's widget from `getItemFieldType()`, pre-checks already-charted items on open (matched by `itmCode`), and copies the real `attribute1` template onto newly added items. Refactored into an outer `Sheet` wrapper + a `key`-remounted inner body component with lazy `useState` initializers, avoiding a `setState`-in-`useEffect` lint violation.
+- `features/charting/lib/note-utils.ts` — `UOM_DICTIONARY` keys updated to match the (simple) codes now used.
+- `features/charting/data/encounter-sheets/*.ts` — VITALS components updated to split Blood Pressure into two items with matching codes.
+
+**Verify:** `pnpm exec tsc --noEmit` and `pnpm lint` both clean, dev server renders `/charting` without errors.

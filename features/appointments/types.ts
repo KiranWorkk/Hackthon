@@ -1,0 +1,28 @@
+export type AppointmentStatus =
+  | "Confirmed"
+  | "Checked In"
+  | "Cancelled"
+  | "No Show"
+  | "Completed"
+  | "Pending";
+
+export type ChartingStatus = "Not Started" | "In Progress" | "Signed";
+
+export interface Appointment {
+  id: string;
+  patientFirstName: string;
+  patientLastName: string;
+  age: number;
+  timeStart: string;
+  durationMinutes: number;
+  reason: string;
+  status: AppointmentStatus;
+  type: string;
+  checkedIn: string | null;
+  examRoom: string | null;
+  caseName: string;
+  legalEntityProvider: string;
+  renderingProvider: string;
+  hasSuperBill: boolean;
+  chartingStatus: ChartingStatus;
+}

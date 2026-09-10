@@ -1,0 +1,171 @@
+import type { VisitSheetSoapGroup } from "@/features/charting/types";
+
+export const followUpVisitSoapGroups: VisitSheetSoapGroup[] = [
+  {
+    soap: "SUBJECTIVE",
+    components: [
+      {
+        emrCompntsPkey: 501,
+        compntName: "Interval History",
+        compntDescription: null,
+        listOrder: 1,
+        compntCode: "INTERVAL",
+        soap: "SUBJECTIVE",
+        items: [
+          {
+            emrPatConCompntItmsPkey: 5001,
+            itmName: "Interval History",
+            itmCode: null,
+            generatedText:
+              "This #@age#@-year-old #@Gender#@ returns for follow-up of hypertension. #@He_She#@ denies chest pain, shortness of breath, or dizziness.",
+            itmTemplate: "#@GeneratedText#@",
+            itmBeginText: null,
+            itmEndText: null,
+            attribute1: "Y",
+          },
+          {
+            emrPatConCompntItmsPkey: 5002,
+            itmName: "Medication Adherence",
+            itmCode: null,
+            generatedText: "Reports taking medications as prescribed.",
+            itmTemplate: null,
+            itmBeginText: null,
+            itmEndText: null,
+            attribute1: "Y",
+          },
+        ],
+        children: [],
+      },
+    ],
+  },
+  {
+    soap: "OBJECTIVE",
+    components: [
+      {
+        emrCompntsPkey: 601,
+        compntName: "Vitals",
+        compntDescription: null,
+        listOrder: 1,
+        compntCode: "VITALS",
+        soap: "OBJECTIVE",
+        items: [
+          {
+            emrPatConCompntItmsPkey: 6001,
+            itmName: "Blood Pressure Systolic",
+            itmCode: "BP_SYSTOLIC",
+            generatedText: "124",
+            itmTemplate: "#@ItemName#@: #@GeneratedText#@ #@UOM#@",
+            itmBeginText: null,
+            itmEndText: null,
+            attribute1: "Y",
+          },
+          {
+            emrPatConCompntItmsPkey: 6004,
+            itmName: "Blood Pressure Diastolic",
+            itmCode: "BP_DIASTOLIC",
+            generatedText: "80",
+            itmTemplate: "#@ItemName#@ #@GeneratedText#@",
+            itmBeginText: null,
+            itmEndText: null,
+            attribute1: "Y",
+          },
+          {
+            emrPatConCompntItmsPkey: 6002,
+            itmName: "Weight",
+            itmCode: "WEIGHT",
+            generatedText: "140",
+            itmTemplate: "#@ItemName#@: #@GeneratedText#@ #@UOM#@",
+            itmBeginText: null,
+            itmEndText: null,
+            attribute1: "Y",
+          },
+        ],
+        children: [
+          {
+            emrCompntsPkey: 602,
+            compntName: "Cardiac Exam",
+            compntDescription: null,
+            listOrder: 1,
+            compntCode: "CARDIAC",
+            soap: "OBJECTIVE",
+            items: [
+              {
+                emrPatConCompntItmsPkey: 6003,
+                itmName: "Heart Sounds",
+                itmCode: null,
+                generatedText: "Regular rate and rhythm, no murmurs.",
+                itmTemplate: "#@ItemName#@ - #@GeneratedText#@",
+                itmBeginText: null,
+                itmEndText: null,
+                attribute1: "Y",
+              },
+            ],
+            children: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    soap: "ASSESSMENT",
+    components: [
+      {
+        emrCompntsPkey: 701,
+        compntName: "Assessment",
+        compntDescription: null,
+        listOrder: 1,
+        compntCode: "ASSESS",
+        soap: "ASSESSMENT",
+        items: [
+          {
+            emrPatConCompntItmsPkey: 7001,
+            itmName: "Essential Hypertension (I10)",
+            itmCode: "I10",
+            generatedText: "Improved control, blood pressure at goal today.",
+            itmTemplate: "#@ItemName#@ - #@GeneratedText#@",
+            itmBeginText: null,
+            itmEndText: null,
+            attribute1: "Y",
+          },
+        ],
+        children: [],
+      },
+    ],
+  },
+  {
+    soap: "PLAN",
+    components: [
+      {
+        emrCompntsPkey: 801,
+        compntName: "Plan",
+        compntDescription: null,
+        listOrder: 1,
+        compntCode: "PLAN",
+        soap: "PLAN",
+        items: [
+          {
+            emrPatConCompntItmsPkey: 8001,
+            itmName: "Medication Adjustment",
+            itmCode: null,
+            generatedText: "Continue Lisinopril 10mg daily, no changes.",
+            itmTemplate: "#@ItemName#@: #@GeneratedText#@",
+            itmBeginText: null,
+            itmEndText: null,
+            attribute1: "Y",
+          },
+          {
+            emrPatConCompntItmsPkey: 8002,
+            itmName: "Follow-Up",
+            itmCode: null,
+            generatedText: "Recheck blood pressure in 3 months.",
+            itmTemplate: "#@ItemName#@: #@GeneratedText#@",
+            itmBeginText: null,
+            itmEndText: null,
+            attribute1: "Y",
+          },
+        ],
+        children: [],
+      },
+    ],
+  },
+];
