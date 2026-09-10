@@ -14,7 +14,7 @@ export function ChartingV2SoapSection({
 }) {
   return (
     <div className="p-4">
-      <h2 className="mb-4 px-1 text-base font-semibold text-[#0A0A0A]">
+      <h2 className="mb-4 px-1 text-section-title text-slate-900">
         {title}
       </h2>
       {components.length === 0 ? (

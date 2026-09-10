@@ -1,8 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, FileText, Plus } from "lucide-react";
-import { cn } from "cn";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  ArrowDown01Icon,
+  File02Icon,
+  PlusSignIcon,
+} from "@hugeicons/core-free-icons";
+import { cn } from "@/lib/utils";
 import type { VisitSheetComponent, VisitSheetItem } from "@/features/charting/types";
 import { ItemCard } from "@/features/charting/components/soap/ItemCard";
 
@@ -25,7 +30,9 @@ export function SoapSectionCard({
   return (
     <div
       className={cn(
-        !isNested && "overflow-hidden rounded-xl border border-slate-200 bg-white"
+        !isNested &&
+          "overflow-hidden rounded-xl border border-slate-200 bg-white transition-shadow",
+        !isNested && !isOpen && "hover:shadow-sm"
       )}
     >
       <div
@@ -41,7 +48,7 @@ export function SoapSectionCard({
               isNested ? "h-6 w-6" : "h-8 w-8"
             )}
           >
-            <FileText className={isNested ? "h-3 w-3" : "h-3.5 w-3.5"} />
+            <HugeiconsIcon icon={File02Icon} size={isNested ? 12 : 14} />
           </div>
           <span
             className={cn(
@@ -57,23 +64,25 @@ export function SoapSectionCard({
             type="button"
             onClick={() => onAddOptions(component)}
             className={cn(
-              "inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white font-semibold text-slate-700 transition-colors hover:bg-slate-50",
+              "inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40",
               isNested ? "h-6 px-2 text-[10px]" : "h-7 px-2.5 text-[11px]"
             )}
           >
-            <Plus className={isNested ? "h-2.5 w-2.5" : "h-2.5 w-2.5"} />
+            <HugeiconsIcon icon={PlusSignIcon} size={10} />
             Add Options
           </button>
           {hasExpandableContent && (
             <button
               type="button"
               onClick={() => setIsOpen((v) => !v)}
-              className="text-slate-400 transition-colors hover:text-slate-600"
+              className="rounded text-slate-400 transition-colors hover:text-slate-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
               aria-label={isOpen ? "Collapse" : "Expand"}
             >
-              <ChevronDown
+              <HugeiconsIcon
+                icon={ArrowDown01Icon}
+                size={16}
                 className={cn(
-                  "h-4 w-4 transition-transform duration-200",
+                  "transition-transform duration-200 ease-out",
                   isOpen && "rotate-180"
                 )}
               />

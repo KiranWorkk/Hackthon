@@ -5,6 +5,13 @@ export const mockPatient = {
   age: 34,
   sex: "F" as const,
   initials: "MA",
+  dob: "04/12/1992",
+};
+
+export const mockAppointment = {
+  start: "9:00 AM",
+  end: "9:20 AM",
+  visitType: "Follow-up",
 };
 
 export const mockVitals = {

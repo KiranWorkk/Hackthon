@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Eye, PanelRight } from "lucide-react";
+import { PanelRight } from "lucide-react";
 import type {
   ChartingV2Section,
   ChartSession,
@@ -74,11 +74,12 @@ export function ChartingV2View() {
   const isSoapTab = activeSection !== "overview";
 
   return (
-    <div className="flex h-full min-h-0 flex-col">
+    <div className="flex h-full min-h-0 flex-col bg-white">
       <ChartingV2Header
         hasChart={hasChart}
         chartSession={chartSession}
         onStartCharting={() => setIsDialogOpen(true)}
+        onPreviewNote={() => setIsPreviewDialogOpen(true)}
       />
       <div className="flex min-h-0 flex-1">
         <ChartingV2Nav
@@ -88,27 +89,18 @@ export function ChartingV2View() {
         />
         <div className="flex min-h-0 flex-1 flex-col">
           {isSoapTab && (
-            <div className="flex justify-end gap-2 border-b border-slate-200 bg-white px-6 py-2">
+            <div className="flex justify-end gap-2 border-b border-slate-200 bg-white px-6 py-2 lg:hidden">
               <Button
                 variant="outline"
                 size="sm"
-                className="lg:hidden"
                 onClick={() => setIsChartDetailsSheetOpen(true)}
               >
                 <PanelRight className="h-4 w-4" />
                 Chart Details
               </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setIsPreviewDialogOpen(true)}
-              >
-                <Eye className="h-4 w-4" />
-                Preview Note
-              </Button>
             </div>
           )}
-          <div className="min-h-0 flex-1 overflow-y-auto">
+          <div className="min-h-0 flex-1 overflow-y-auto bg-white">
             {activeSection === "overview" ? (
               <ChartingV2FaceSheet />
             ) : (

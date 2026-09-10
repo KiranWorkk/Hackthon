@@ -16,7 +16,7 @@ export function ItemCard({
   return (
     <div
       onClick={onClick}
-      className="cursor-pointer rounded-lg border border-slate-200 px-4 py-3.5 transition-colors hover:border-slate-300"
+      className="cursor-pointer rounded-lg border border-slate-200 px-4 py-3.5 transition-colors hover:border-slate-300 hover:bg-slate-50/60"
     >
       {rendered ? (
         <p

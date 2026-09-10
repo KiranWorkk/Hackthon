@@ -1,7 +1,14 @@
 "use client";
 
-import { Plus } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  ArrowDown01Icon,
+  ArrowUp01Icon,
+  File02Icon,
+  PlusSignIcon,
+  Upload04Icon,
+} from "@hugeicons/core-free-icons";
 import {
   Sheet,
   SheetContent,
@@ -17,30 +24,91 @@ import type { ChartDetailSection } from "@/features/charting/data/chart-details"
 const SECTIONS = [...CHART_DETAILS_DATA, ANATOMY_IMAGES_SECTION];
 
 function ChartDetailsSectionCard({ section }: { section: ChartDetailSection }) {
+  const [isOpen, setIsOpen] = useState(false);
   const Icon = section.icon;
+  const count = section.items.length;
+
   return (
-    <div className="rounded-lg border border-slate-200 p-3">
-      <div className="mb-2 flex items-center justify-between">
-        <span className="flex items-center gap-2 text-sm font-semibold text-slate-900">
-          <Icon className="h-4 w-4 text-brand-teal-dark" />
-          {section.title}
-        </span>
-        <Button variant="ghost" size="sm" disabled className="h-7 gap-1 px-2">
-          <Plus className="h-3.5 w-3.5" />
-          {section.actionLabel}
-        </Button>
-      </div>
-      {section.items.length > 0 ? (
-        <ul className="space-y-1.5">
-          {section.items.map((item) => (
-            <li key={item.label} className="text-xs">
-              <p className="font-medium text-slate-800">{item.label}</p>
-              <p className="text-slate-500">{item.meta}</p>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p className="text-xs text-slate-400">{section.emptyMessage}</p>
+    <div className="overflow-hidden rounded-xl border border-[#E5E5E5] bg-white">
+      <button
+        type="button"
+        onClick={() => setIsOpen((v) => !v)}
+        className="flex w-full items-center justify-between px-3 py-2.5"
+      >
+        <div className="flex items-center gap-2">
+          <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#e0f5f8]">
+            <Icon className="h-3.5 w-3.5 text-primary" />
+          </div>
+          <span className="text-base font-medium text-[#0A0A0A]">
+            {section.title}
+          </span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          {count > 0 && (
+            <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1.5 text-[11px] font-semibold text-white">
+              {count}
+            </span>
+          )}
+          <HugeiconsIcon
+            icon={isOpen ? ArrowUp01Icon : ArrowDown01Icon}
+            size={16}
+            className="text-[#0A0A0A]"
+          />
+        </div>
+      </button>
+
+      {isOpen && (
+        <>
+          <div className="flex min-h-6 items-center justify-between px-3 pb-2.5">
+            <span className="text-[10px] text-slate-500">
+              Showing {count} of {count}
+            </span>
+            <button
+              type="button"
+              disabled
+              className="ml-auto flex items-center gap-1 rounded-md bg-[#F5F5F5] px-2 py-0.5 text-xs font-medium text-[#171717] transition-colors hover:bg-slate-200 disabled:cursor-not-allowed disabled:opacity-70"
+            >
+              <HugeiconsIcon
+                icon={section.actionLabel === "Upload" ? Upload04Icon : PlusSignIcon}
+                size={10}
+                className="text-[#171717]"
+              />
+              {section.actionLabel}
+            </button>
+          </div>
+
+          <div className="min-h-24 border-t border-[#E5E5E5]">
+            {count === 0 ? (
+              <div className="flex items-center justify-center px-3 py-4">
+                <span className="text-center text-[11px] text-slate-400">
+                  {section.emptyMessage}
+                </span>
+              </div>
+            ) : (
+              section.items.map((item, i) => (
+                <div
+                  key={`${item.label}-${i}`}
+                  className={
+                    i < section.items.length - 1
+                      ? "flex items-center justify-between border-b border-[#E5E5E5] px-3 py-2"
+                      : "flex items-center justify-between px-3 py-2"
+                  }
+                >
+                  <div className="flex min-w-0 items-center gap-2">
+                    <HugeiconsIcon
+                      icon={File02Icon}
+                      size={13}
+                      className="shrink-0 text-[#0A0A0A]"
+                    />
+                    <span className="truncate text-xs leading-tight font-medium text-[#0A0A0A]">
+                      {item.label}
+                    </span>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </>
       )}
     </div>
   );

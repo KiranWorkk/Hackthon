@@ -297,7 +297,7 @@ function AddOptionsDrawerBody({
       <div className="flex h-full flex-col">
         <div className="flex shrink-0 items-center justify-between border-b border-slate-200 px-6 py-4">
           <div>
-            <h2 className="text-base font-semibold text-[#0A0A0A]">
+            <h2 className="text-section-title text-slate-900">
               {component.compntName}
             </h2>
             <p className="mt-0.5 text-xs text-slate-400">

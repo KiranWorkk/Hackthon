@@ -23,7 +23,7 @@ export function PreviewNoteDialog({
           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-icon-badge">
             <Printer className="h-[18px] w-[18px] text-primary" />
           </div>
-          <DialogTitle className="text-base font-semibold text-slate-900">
+          <DialogTitle className="text-section-title text-slate-900">
             Note Preview
           </DialogTitle>
         </DialogHeader>
