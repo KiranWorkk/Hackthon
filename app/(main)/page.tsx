@@ -8,7 +8,7 @@ export default function DashboardPage() {
         title="Dashboard"
         description="Prototype overview — placeholder widgets, no live data."
       />
-      <div className="grid gap-4 px-6 pb-6 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-4 p-3 sm:grid-cols-2 md:p-6 xl:grid-cols-3">
         <Card>
           <CardHeader>
             <CardTitle className="text-sm font-medium text-slate-500">

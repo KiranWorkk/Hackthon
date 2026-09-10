@@ -6,9 +6,9 @@ export default function AppointmentsPage() {
     <div className="flex h-full min-h-0 flex-col bg-white">
       <Header
         title="Appointments"
-        description="Prototype view — dummy data, click a row to open Charting V2."
+        description="Manage and track all scheduled patient appointments."
       />
-      <div className="min-h-0 flex-1">
+      <div className="min-h-0 flex-1 overflow-hidden p-3 md:p-6">
         <AppointmentsTable />
       </div>
     </div>

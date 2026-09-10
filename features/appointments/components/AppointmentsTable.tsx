@@ -33,25 +33,27 @@ export function AppointmentsTable() {
         status={status}
         onStatusChange={setStatus}
       />
-      <div className="flex-1 overflow-auto border-t border-slate-200">
-        <table className="w-full border-collapse">
-          <thead>
-            <AppointmentsTableHeaderRow />
-          </thead>
-          <tbody>
-            {visible.map((appointment) => (
-              <AppointmentTableRow
-                key={appointment.id}
-                appointment={appointment}
-              />
-            ))}
-          </tbody>
-        </table>
-        {visible.length === 0 && (
-          <p className="px-6 py-10 text-center text-sm text-slate-500">
-            No appointments match your filters.
-          </p>
-        )}
+      <div className="mt-4 flex min-h-0 flex-1 flex-col overflow-hidden rounded-xl border border-slate-200 bg-white">
+        <div className="flex-1 overflow-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <AppointmentsTableHeaderRow />
+            </thead>
+            <tbody>
+              {visible.map((appointment) => (
+                <AppointmentTableRow
+                  key={appointment.id}
+                  appointment={appointment}
+                />
+              ))}
+            </tbody>
+          </table>
+          {visible.length === 0 && (
+            <p className="px-6 py-10 text-center text-sm text-slate-500">
+              No appointments match your filters.
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );
