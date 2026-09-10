@@ -3,7 +3,7 @@ import { AppointmentsTable } from "@/features/appointments/components/Appointmen
 
 export default function AppointmentsPage() {
   return (
-    <div className="flex h-full min-h-0 flex-col">
+    <div className="flex h-full min-h-0 flex-col bg-white">
       <Header
         title="Appointments"
         description="Prototype view — dummy data, click a row to open Charting V2."

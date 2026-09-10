@@ -1,6 +1,8 @@
 "use client";
 
-import { PanelLeftClose, Stethoscope } from "lucide-react";
+import Image from "next/image";
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Menu01Icon } from "@hugeicons/core-free-icons";
 import { useSidebar } from "@/components/providers/sidebar-provider";
 
 export function SidebarLogo() {
@@ -8,34 +10,41 @@ export function SidebarLogo() {
 
   if (isCollapsed) {
     return (
-      <div className="flex h-14 items-center justify-center border-b border-slate-200">
+      <div className="flex h-14 items-center justify-center">
         <button
           type="button"
           onClick={() => setIsCollapsed(false)}
-          className="flex h-8 w-8 items-center justify-center rounded-md text-brand-teal-dark hover:bg-slate-50"
+          className="flex h-8 w-8 items-center justify-center rounded-md hover:bg-slate-50"
           aria-label="Expand sidebar"
         >
-          <Stethoscope className="h-5 w-5" />
+          <Image
+            src="/logoPS.svg"
+            alt="Practice Suite Logo Icon"
+            width={32}
+            height={32}
+            className="h-8 w-auto"
+          />
         </button>
       </div>
     );
   }
 
   return (
-    <div className="flex h-14 items-center justify-between border-b border-slate-200 px-4">
-      <div className="flex items-center gap-2">
-        <Stethoscope className="h-5 w-5 text-brand-teal-dark" />
-        <span className="text-sm font-semibold text-slate-900">
-          EHR Proto
-        </span>
-      </div>
+    <div className="flex h-14 items-center justify-between px-4">
+      <Image
+        src="/practicesuite logo.svg"
+        alt="practicesuite logo"
+        width={130}
+        height={28}
+        className="h-7 w-auto"
+      />
       <button
         type="button"
         onClick={() => setIsCollapsed(true)}
-        className="flex h-7 w-7 items-center justify-center rounded-md text-slate-500 hover:bg-slate-50 hover:text-slate-900"
+        className="flex h-7 w-7 items-center justify-center rounded-md text-slate-400 hover:bg-slate-50 hover:text-slate-600"
         aria-label="Collapse sidebar"
       >
-        <PanelLeftClose className="h-4 w-4" />
+        <HugeiconsIcon icon={Menu01Icon} size={20} />
       </button>
     </div>
   );

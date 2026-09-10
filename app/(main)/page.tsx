@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function DashboardPage() {
   return (
-    <>
+    <div className="flex h-full min-h-0 flex-col bg-white">
       <Header
         title="Dashboard"
         description="Prototype overview — placeholder widgets, no live data."
@@ -40,6 +40,6 @@ export default function DashboardPage() {
           </CardContent>
         </Card>
       </div>
-    </>
+    </div>
   );
 }

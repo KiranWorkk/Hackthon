@@ -1,26 +1,26 @@
+import type { IconSvgElement } from "@hugeicons/react";
 import {
-  LayoutDashboard,
-  BookUser,
-  Users,
-  FileText,
-  ClipboardList,
-  Share2,
-  type LucideIcon,
-} from "lucide-react";
+  DashboardSquare01Icon,
+  ContactBookIcon,
+  UserGroupIcon,
+  File01Icon,
+  ClipboardIcon,
+  Share01Icon,
+} from "@hugeicons/core-free-icons";
 
 export interface NavItem {
   name: string;
   href: string;
-  icon: LucideIcon;
+  icon: IconSvgElement;
 }
 
 export const navItems: NavItem[] = [
-  { name: "Dashboard", href: "/", icon: LayoutDashboard },
-  { name: "Appointments", href: "/appointments", icon: BookUser },
-  { name: "Patients", href: "/patients", icon: Users },
-  { name: "Encounter Sheets", href: "/templates", icon: FileText },
-  { name: "Review Center", href: "/review-center", icon: ClipboardList },
-  { name: "Referral List", href: "/referrals", icon: Share2 },
+  { name: "Dashboard", href: "/", icon: DashboardSquare01Icon },
+  { name: "Appointments", href: "/appointments", icon: ContactBookIcon },
+  { name: "Patients", href: "/patients", icon: UserGroupIcon },
+  { name: "Encounter Sheets", href: "/templates", icon: File01Icon },
+  { name: "Review Center", href: "/review-center", icon: ClipboardIcon },
+  { name: "Referral List", href: "/referrals", icon: Share01Icon },
 ];
 
 export const mockUser = {

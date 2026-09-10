@@ -6,12 +6,10 @@ import { ITEMS_PER_PAGE } from "@/features/appointments/constants";
 import { AppointmentsTableHeaderRow } from "@/features/appointments/components/AppointmentsTableHeaderRow";
 import { AppointmentTableRow } from "@/features/appointments/components/AppointmentTableRow";
 import { Toolbar } from "@/features/appointments/components/Toolbar";
-import { Pagination } from "@/features/appointments/components/Pagination";
 
 export function AppointmentsTable() {
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("");
-  const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
     return mockAppointments.filter((appt) => {
@@ -25,26 +23,15 @@ export function AppointmentsTable() {
     });
   }, [search, status]);
 
-  const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
-  const currentPage = Math.min(page, totalPages);
-  const visible = filtered.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
-  );
+  const visible = filtered.slice(0, ITEMS_PER_PAGE);
 
   return (
     <div className="flex h-full min-h-0 flex-col">
       <Toolbar
         search={search}
-        onSearchChange={(value) => {
-          setSearch(value);
-          setPage(1);
-        }}
+        onSearchChange={setSearch}
         status={status}
-        onStatusChange={(value) => {
-          setStatus(value);
-          setPage(1);
-        }}
+        onStatusChange={setStatus}
       />
       <div className="flex-1 overflow-auto border-t border-slate-200">
         <table className="w-full border-collapse">
@@ -66,11 +53,6 @@ export function AppointmentsTable() {
           </p>
         )}
       </div>
-      <Pagination
-        page={currentPage}
-        totalPages={totalPages}
-        onPageChange={setPage}
-      />
     </div>
   );
 }

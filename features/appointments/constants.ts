@@ -31,4 +31,4 @@ export const APPOINTMENTS_TABLE_HEADERS: AppointmentsColumn[] = [
   { key: "chartingStatus", label: "Charting" },
 ];
 
-export const ITEMS_PER_PAGE = 8;
+export const ITEMS_PER_PAGE = 10;
