@@ -21,8 +21,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { StatusBadge } from "@/components/ui/status-badge";
-import { mockPatient, mockAppointment } from "@/features/charting/data/mock-face-sheet";
 import { ENCOUNTER_SHEET_OPTIONS } from "@/features/charting/data/dropdown-options";
+import { useSelectedPatient } from "@/features/charting/lib/selected-patient";
+import { addMinutesToTimeLabel } from "@/features/charting/lib/time";
 import type { ChartSession } from "@/features/charting/types";
 
 const SAVE_AS_OPTIONS = [
@@ -46,6 +47,8 @@ export function ChartingV2Header({
 }) {
   const router = useRouter();
   const [status, setStatus] = useState("Pending");
+  const patient = useSelectedPatient();
+  const apptEnd = addMinutesToTimeLabel(patient.timeStart, patient.durationMinutes);
 
   const sheetName = chartSession
     ? ENCOUNTER_SHEET_OPTIONS.find((o) => o.id === chartSession.encounterSheetId)
@@ -65,12 +68,12 @@ export function ChartingV2Header({
             <HugeiconsIcon icon={ArrowLeft02Icon} size={17} strokeWidth={2} />
           </button>
           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#F0FDFA] text-sm font-semibold text-primary">
-            {mockPatient.initials}
+            {patient.initials}
           </div>
           <div className="min-w-0">
             <div className="mb-1.5 flex min-w-0 items-center gap-2">
               <h1 className="min-w-0 shrink truncate text-sm font-semibold text-[#0A0A0A] leading-none">
-                {mockPatient.lastName}, {mockPatient.firstName}
+                {patient.lastName}, {patient.firstName}
               </h1>
               {sheetName && (
                 <span
@@ -83,11 +86,11 @@ export function ChartingV2Header({
               )}
             </div>
             <div className="flex items-center gap-2 text-xs text-slate-500">
-              <span>{mockAppointment.start}</span>
+              <span>{patient.timeStart}</span>
               <HugeiconsIcon icon={ArrowRight02Icon} size={12} />
-              <span>{mockAppointment.end}</span>
+              <span>{apptEnd}</span>
               <span className="mx-0.5">·</span>
-              <StatusBadge label={mockAppointment.visitType} variant="neutral" />
+              <StatusBadge label={patient.visitType} variant="neutral" />
             </div>
           </div>
         </div>

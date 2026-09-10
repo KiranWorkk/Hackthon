@@ -1,7 +1,9 @@
-import { buildPatientNoteFacts } from "@/features/charting/lib/note-utils";
-import { mockPatient } from "@/features/charting/data/mock-face-sheet";
+"use client";
 
-export const MOCK_PATIENT_FACTS = buildPatientNoteFacts(
-  mockPatient.age,
-  mockPatient.sex
-);
+import { buildPatientNoteFacts } from "@/features/charting/lib/note-utils";
+import { useSelectedPatient } from "@/features/charting/lib/selected-patient";
+
+export function useMockPatientFacts() {
+  const patient = useSelectedPatient();
+  return buildPatientNoteFacts(patient.age, patient.sex);
+}

@@ -13,6 +13,9 @@ export interface Appointment {
   patientFirstName: string;
   patientLastName: string;
   age: number;
+  sex: "M" | "F";
+  mrn: string;
+  dob: string;
   timeStart: string;
   durationMinutes: number;
   reason: string;

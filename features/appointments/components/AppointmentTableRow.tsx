@@ -5,6 +5,7 @@ import { cn } from "cn";
 import { FileCheck } from "lucide-react";
 import type { Appointment } from "@/features/appointments/types";
 import { StatusBadge, type StatusBadgeVariant } from "@/components/ui/status-badge";
+import { setSelectedPatient } from "@/features/charting/lib/selected-patient";
 
 const CHARTING_VARIANT: Record<Appointment["chartingStatus"], StatusBadgeVariant> = {
   "Not Started": "default",
@@ -19,7 +20,21 @@ export function AppointmentTableRow({
 }) {
   const router = useRouter();
 
-  const navigate = () => router.push("/charting");
+  const navigate = () => {
+    setSelectedPatient({
+      firstName: appointment.patientFirstName,
+      lastName: appointment.patientLastName,
+      initials: `${appointment.patientFirstName[0]}${appointment.patientLastName[0]}`.toUpperCase(),
+      age: appointment.age,
+      sex: appointment.sex,
+      mrn: appointment.mrn,
+      dob: appointment.dob,
+      timeStart: appointment.timeStart,
+      durationMinutes: appointment.durationMinutes,
+      visitType: appointment.type,
+    });
+    router.push("/charting");
+  };
 
   return (
     <tr

@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "
 import { Button } from "@/components/ui/button";
 import { NotePreviewContent } from "@/features/charting/components/preview/NotePreviewContent";
 import type { VisitSheetSoapGroup } from "@/features/charting/types";
-import { MOCK_PATIENT_FACTS } from "@/features/charting/data/mock-patient-facts";
+import { useMockPatientFacts } from "@/features/charting/data/mock-patient-facts";
 
 export function PreviewNoteDialog({
   open,
@@ -16,6 +16,8 @@ export function PreviewNoteDialog({
   onOpenChange: (open: boolean) => void;
   soapGroups: VisitSheetSoapGroup[];
 }) {
+  const facts = useMockPatientFacts();
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="flex h-[90vh] flex-col gap-0 p-0 sm:max-w-4xl">
@@ -28,7 +30,7 @@ export function PreviewNoteDialog({
           </DialogTitle>
         </DialogHeader>
         <div className="flex-1 overflow-y-auto bg-white">
-          <NotePreviewContent soapGroups={soapGroups} facts={MOCK_PATIENT_FACTS} />
+          <NotePreviewContent soapGroups={soapGroups} facts={facts} />
         </div>
         <DialogFooter className="shrink-0 border-t border-slate-100 px-6 py-4">
           <Button variant="outline" onClick={() => onOpenChange(false)}>

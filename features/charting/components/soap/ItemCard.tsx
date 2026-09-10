@@ -1,6 +1,8 @@
+"use client";
+
 import type { VisitSheetItem } from "@/features/charting/types";
 import { buildItemHtml } from "@/features/charting/lib/note-utils";
-import { MOCK_PATIENT_FACTS } from "@/features/charting/data/mock-patient-facts";
+import { useMockPatientFacts } from "@/features/charting/data/mock-patient-facts";
 
 export function ItemCard({
   item,
@@ -9,8 +11,9 @@ export function ItemCard({
   item: VisitSheetItem;
   onClick?: () => void;
 }) {
+  const facts = useMockPatientFacts();
   const rendered = item.itmTemplate
-    ? buildItemHtml(item, MOCK_PATIENT_FACTS)
+    ? buildItemHtml(item, facts)
     : null;
 
   return (
