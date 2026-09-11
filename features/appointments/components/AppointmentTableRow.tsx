@@ -22,6 +22,7 @@ export function AppointmentTableRow({
 
   const navigate = () => {
     setSelectedPatient({
+      patientId: appointment.patientId,
       firstName: appointment.patientFirstName,
       lastName: appointment.patientLastName,
       initials: `${appointment.patientFirstName[0]}${appointment.patientLastName[0]}`.toUpperCase(),

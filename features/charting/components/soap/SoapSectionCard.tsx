@@ -16,11 +16,13 @@ export function SoapSectionCard({
   depth = 0,
   onAddOptions,
   onEditItem,
+  highlightedPkeys,
 }: {
   component: VisitSheetComponent;
   depth?: number;
   onAddOptions: (component: VisitSheetComponent) => void;
   onEditItem: (component: VisitSheetComponent, item: VisitSheetItem) => void;
+  highlightedPkeys?: Set<number>;
 }) {
   const [isOpen, setIsOpen] = useState(true);
   const isNested = depth > 0;
@@ -103,6 +105,7 @@ export function SoapSectionCard({
               key={item.emrPatConCompntItmsPkey}
               item={item}
               onClick={() => onEditItem(component, item)}
+              justUpdated={highlightedPkeys?.has(item.emrPatConCompntItmsPkey) ?? false}
             />
           ))}
 
@@ -115,6 +118,7 @@ export function SoapSectionCard({
                   depth={depth + 1}
                   onAddOptions={onAddOptions}
                   onEditItem={onEditItem}
+                  highlightedPkeys={highlightedPkeys}
                 />
               ))}
             </div>

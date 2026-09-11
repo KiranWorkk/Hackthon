@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
@@ -24,7 +24,9 @@ import { StatusBadge } from "@/components/ui/status-badge";
 import { ENCOUNTER_SHEET_OPTIONS } from "@/features/charting/data/dropdown-options";
 import { useSelectedPatient } from "@/features/charting/lib/selected-patient";
 import { addMinutesToTimeLabel } from "@/features/charting/lib/time";
+import { ListenButton } from "@/features/charting/components/ListenButton";
 import type { ChartSession } from "@/features/charting/types";
+import type { ListenStatus } from "@/features/charting/lib/corti/types";
 
 const SAVE_AS_OPTIONS = [
   { label: "Complete", icon: CheckmarkCircle01Icon },
@@ -39,11 +41,19 @@ export function ChartingV2Header({
   chartSession,
   onStartCharting,
   onPreviewNote,
+  listenStatus,
+  onStartListening,
+  onStopListening,
+  aiSyncIndicator,
 }: {
   hasChart: boolean;
   chartSession: ChartSession | null;
   onStartCharting: () => void;
   onPreviewNote: () => void;
+  listenStatus: ListenStatus;
+  onStartListening: () => void;
+  onStopListening: () => void;
+  aiSyncIndicator?: ReactNode;
 }) {
   const router = useRouter();
   const [status, setStatus] = useState("Pending");
@@ -106,6 +116,12 @@ export function ChartingV2Header({
             </button>
           ) : (
             <>
+              {aiSyncIndicator}
+              <ListenButton
+                status={listenStatus}
+                onStart={onStartListening}
+                onStop={onStopListening}
+              />
               <button
                 type="button"
                 onClick={onPreviewNote}

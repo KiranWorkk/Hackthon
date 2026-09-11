@@ -5,7 +5,7 @@ import {
   componentHasContent,
   type PatientNoteFacts,
 } from "@/features/charting/lib/note-utils";
-import { mockPatient } from "@/features/charting/data/mock-face-sheet";
+import type { Patient } from "@/features/patients/types";
 
 const SOAP_ORDER: VisitSheetSoapGroup["soap"][] = [
   "SUBJECTIVE",
@@ -83,9 +83,11 @@ function SoapSection({
 export function NotePreviewContent({
   soapGroups,
   facts,
+  patient,
 }: {
   soapGroups: VisitSheetSoapGroup[];
   facts: PatientNoteFacts;
+  patient: Patient;
 }) {
   const orderedGroups = SOAP_ORDER.map((soap) =>
     soapGroups.find((group) => group.soap === soap)
@@ -95,10 +97,10 @@ export function NotePreviewContent({
     <div className="mx-auto max-w-2xl bg-white p-6">
       <header className="mb-6 border-b border-slate-200 pb-4">
         <p className="text-sm font-semibold text-slate-900">
-          {mockPatient.lastName}, {mockPatient.firstName}
+          {patient.extLastName}, {patient.extFirstName}
         </p>
         <p className="text-xs text-slate-500">
-          {mockPatient.mrn} · Age {facts.age} · {facts.gender || "—"}
+          {patient.medicalRecordNum} · Age {facts.age} · {facts.gender || "—"}
         </p>
       </header>
       {orderedGroups.length === 0 ? (

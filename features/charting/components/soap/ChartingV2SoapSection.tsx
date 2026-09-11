@@ -6,11 +6,13 @@ export function ChartingV2SoapSection({
   components,
   onAddOptions,
   onEditItem,
+  highlightedPkeys,
 }: {
   title: string;
   components: VisitSheetComponent[];
   onAddOptions: (component: VisitSheetComponent) => void;
   onEditItem: (component: VisitSheetComponent, item: VisitSheetItem) => void;
+  highlightedPkeys?: Set<number>;
 }) {
   return (
     <div className="p-4">
@@ -29,6 +31,7 @@ export function ChartingV2SoapSection({
               component={component}
               onAddOptions={onAddOptions}
               onEditItem={onEditItem}
+              highlightedPkeys={highlightedPkeys}
             />
           ))}
         </div>

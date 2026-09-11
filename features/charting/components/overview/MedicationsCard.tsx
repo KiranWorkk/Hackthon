@@ -1,16 +1,19 @@
+"use client";
+
 import { PillIcon } from "@hugeicons/core-free-icons";
 import { OverviewCard } from "@/features/charting/components/overview/OverviewCard";
 import { OverviewEmptyState } from "@/features/charting/components/overview/OverviewEmptyState";
-import { mockMedications } from "@/features/charting/data/mock-face-sheet";
+import { useSelectedPatientRecord } from "@/features/charting/lib/use-selected-patient-record";
 
 export function MedicationsCard() {
+  const { faceSheet } = useSelectedPatientRecord();
   return (
     <OverviewCard icon={PillIcon} title="Medications">
-      {mockMedications.length === 0 ? (
+      {faceSheet.medications.length === 0 ? (
         <OverviewEmptyState message="No medications recorded." />
       ) : (
         <div className="flex flex-col gap-1.5">
-          {mockMedications.map((med) => (
+          {faceSheet.medications.map((med) => (
             <p
               key={med.name}
               className="rounded-lg bg-slate-50 px-3 py-2.5 text-xs leading-relaxed text-slate-600"

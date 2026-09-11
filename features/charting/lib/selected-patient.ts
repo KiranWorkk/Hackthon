@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { mockPatient, mockAppointment } from "@/features/charting/data/mock-face-sheet";
+import { useState } from "react";
+import { patients } from "@/features/patients/data/patients";
+import { calculateAge } from "@/lib/age";
 
 const STORAGE_KEY = "charting:selected-patient";
 
 export interface SelectedPatientIdentity {
+  patientId: string;
   firstName: string;
   lastName: string;
   initials: string;
@@ -18,17 +20,25 @@ export interface SelectedPatientIdentity {
   visitType: string;
 }
 
+function formatDob(isoDate: string): string {
+  const [year, month, day] = isoDate.split("-");
+  return `${month}/${day}/${year}`;
+}
+
+const fallbackPatient = patients[0];
+
 export const DEFAULT_PATIENT: SelectedPatientIdentity = {
-  firstName: mockPatient.firstName,
-  lastName: mockPatient.lastName,
-  initials: mockPatient.initials,
-  age: mockPatient.age,
-  sex: mockPatient.sex,
-  mrn: mockPatient.mrn,
-  dob: mockPatient.dob,
-  timeStart: mockAppointment.start,
+  patientId: fallbackPatient.patientPkey,
+  firstName: fallbackPatient.extFirstName,
+  lastName: fallbackPatient.extLastName,
+  initials: `${fallbackPatient.extFirstName[0]}${fallbackPatient.extLastName[0]}`.toUpperCase(),
+  age: calculateAge(fallbackPatient.extDateOfBirth) ?? 0,
+  sex: fallbackPatient.extSex,
+  mrn: fallbackPatient.medicalRecordNum,
+  dob: formatDob(fallbackPatient.extDateOfBirth),
+  timeStart: "9:00 AM",
   durationMinutes: 20,
-  visitType: mockAppointment.visitType,
+  visitType: "Follow-Up Visit",
 };
 
 export function setSelectedPatient(identity: SelectedPatientIdentity) {
@@ -51,12 +61,9 @@ export function getSelectedPatient(): SelectedPatientIdentity | null {
 }
 
 export function useSelectedPatient(): SelectedPatientIdentity {
-  const [identity, setIdentity] = useState<SelectedPatientIdentity>(DEFAULT_PATIENT);
-
-  useEffect(() => {
-    const stored = getSelectedPatient();
-    if (stored) setIdentity(stored);
-  }, []);
+  const [identity] = useState<SelectedPatientIdentity>(
+    () => getSelectedPatient() ?? DEFAULT_PATIENT
+  );
 
   return identity;
 }

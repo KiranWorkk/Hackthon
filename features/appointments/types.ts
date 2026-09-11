@@ -10,6 +10,9 @@ export type ChartingStatus = "Not Started" | "In Progress" | "Signed";
 
 export interface Appointment {
   id: string;
+  patientId: string;
+  /** Matches an id in ENCOUNTER_SHEET_OPTIONS — pre-selects the Start Charting dialog. */
+  encounterSheetId: string;
   patientFirstName: string;
   patientLastName: string;
   age: number;

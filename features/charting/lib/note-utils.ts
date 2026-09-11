@@ -138,7 +138,7 @@ export function collectChildValues(
 
 export function componentHasContent(component: VisitSheetComponent): boolean {
   const hasItems = component.items.some(
-    (item) => isItemActive(item) && (item.generatedText || item.itmTemplate)
+    (item) => isItemActive(item) && item.generatedText
   );
   if (hasItems) return true;
   return component.children.some(componentHasContent);
