@@ -35,3 +35,35 @@ export interface ClinicalFact {
   isDiscarded: boolean;
   source: string;
 }
+
+/** Coding systems supported by Corti's /v2/tools/coding/ endpoint. */
+export type CodingSystem =
+  | "icd10cm-outpatient"
+  | "icd10cm-inpatient"
+  | "icd10pcs"
+  | "cpt";
+
+/** A span of the input context text that supports a predicted code. */
+export interface CodeEvidence {
+  contextIndex: number;
+  text: string;
+  start: number;
+  end: number;
+}
+
+/** A lower-ranked code Corti considered for the same evidence. */
+export interface CodeAlternative {
+  code: string;
+  display: string;
+}
+
+/** One predicted (or candidate) medical code returned by Corti's coding tool. */
+export interface PredictedCode {
+  system: string;
+  code: string;
+  display: string;
+  evidences: CodeEvidence[];
+  alternatives: CodeAlternative[];
+}
+
+export type MedicalCodingStatus = "idle" | "loading" | "success" | "error";

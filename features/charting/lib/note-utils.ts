@@ -1,4 +1,4 @@
-import type { VisitSheetComponent, VisitSheetItem } from "@/features/charting/types";
+import type { VisitSheetComponent, VisitSheetItem, VisitSheetSoapGroup } from "@/features/charting/types";
 
 export const UOM_DICTIONARY: Record<string, string> = {
   O2_SAT: "%",
@@ -142,4 +142,52 @@ export function componentHasContent(component: VisitSheetComponent): boolean {
   );
   if (hasItems) return true;
   return component.children.some(componentHasContent);
+}
+
+const SOAP_ORDER: VisitSheetSoapGroup["soap"][] = [
+  "SUBJECTIVE",
+  "OBJECTIVE",
+  "ASSESSMENT",
+  "PLAN",
+];
+
+const SOAP_LABEL: Record<VisitSheetSoapGroup["soap"], string> = {
+  SUBJECTIVE: "Subjective",
+  OBJECTIVE: "Objective",
+  ASSESSMENT: "Assessment",
+  PLAN: "Plan",
+};
+
+/**
+ * Flattens the chart's SOAP groups into a plain-text note — the same
+ * content NotePreviewContent renders as HTML, just as text — so it can be
+ * sent as clinical context to an external tool (e.g. Corti's medical
+ * coding API), which only accepts raw text.
+ */
+export function buildChartNoteText(
+  soapGroups: VisitSheetSoapGroup[],
+  facts: PatientNoteFacts
+): string {
+  const sections: string[] = [];
+
+  for (const soap of SOAP_ORDER) {
+    const group = soapGroups.find((g) => g.soap === soap);
+    if (!group) continue;
+
+    const visibleComponents = group.components.filter(componentHasContent);
+    if (visibleComponents.length === 0) continue;
+
+    const paragraphs = visibleComponents.map((component) => {
+      const itemLines = component.items
+        .filter(isItemActive)
+        .map((item) => buildItemHtml(item, facts))
+        .filter(Boolean);
+      const childLines = collectChildValues(component.children, facts);
+      return [`${component.compntName}: ${itemLines.join(" ")}`, ...childLines].join("\n");
+    });
+
+    sections.push(`${SOAP_LABEL[soap]}\n${paragraphs.join("\n")}`);
+  }
+
+  return sections.join("\n\n");
 }

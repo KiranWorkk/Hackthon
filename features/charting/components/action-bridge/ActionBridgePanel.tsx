@@ -10,10 +10,13 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { TranscriptPanel } from "@/features/charting/components/TranscriptPanel";
 import { ListeningWaveform } from "@/features/charting/components/action-bridge/ListeningWaveform";
+import { MedicalCodesPanel } from "@/features/charting/components/action-bridge/MedicalCodesPanel";
 import { useElapsedTimer } from "@/features/charting/lib/use-elapsed-timer";
 import type {
   ClinicalFact,
   ListenStatus,
+  MedicalCodingStatus,
+  PredictedCode,
   SpeakerInfo,
   TranscriptSegment,
 } from "@/features/charting/lib/corti/types";
@@ -29,6 +32,14 @@ interface ActionBridgeTranscriptProps {
   onRenameSpeaker: (speakerId: string, label: string) => void;
 }
 
+interface MedicalCodingProps {
+  status: MedicalCodingStatus;
+  codes: PredictedCode[];
+  candidates: PredictedCode[];
+  error: string | null;
+  onRetry: () => void;
+}
+
 interface ActionBridgeContentProps {
   status: ListenStatus;
   recorder: MediaRecorder | null;
@@ -37,6 +48,7 @@ interface ActionBridgeContentProps {
   onStop: () => void;
   onClose: () => void;
   transcriptProps: ActionBridgeTranscriptProps;
+  codingProps: MedicalCodingProps;
 }
 
 function statusLabel(status: ListenStatus): string {
@@ -64,6 +76,7 @@ function ActionBridgePanelContent({
   onStop,
   onClose,
   transcriptProps,
+  codingProps,
 }: ActionBridgeContentProps) {
   const elapsed = useElapsedTimer(status);
   const isListening = status === "listening";
@@ -146,25 +159,26 @@ function ActionBridgePanelContent({
         </div>
       </div>
 
-      <Tabs defaultValue="detected" className="flex min-h-0 flex-1 flex-col gap-0">
+      <Tabs defaultValue="codes" className="flex min-h-0 flex-1 flex-col gap-0">
         <TabsList
           variant="line"
           className="w-full shrink-0 justify-start gap-4 rounded-none border-b border-slate-200 bg-transparent px-4"
         >
-          <TabsTrigger value="detected">Detected Actions</TabsTrigger>
+          <TabsTrigger value="codes" className="gap-1.5">
+            Medical Codes
+            {codingProps.status === "success" && codingProps.codes.length > 0 && (
+              <Badge
+                variant="outline"
+                className="h-4 min-w-4 rounded-full border-0 bg-[#F0FDFA] px-1 text-[10px] font-bold text-primary"
+              >
+                {codingProps.codes.length}
+              </Badge>
+            )}
+          </TabsTrigger>
           <TabsTrigger value="transcript">Transcript</TabsTrigger>
         </TabsList>
-        <TabsContent value="detected" className="min-h-0 flex-1 overflow-y-auto">
-          <div className="flex flex-col items-center justify-center gap-2 px-6 py-16 text-center">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#F0FDFA]">
-              <HugeiconsIcon icon={SparklesIcon} size={18} strokeWidth={2} className="text-primary" />
-            </div>
-            <p className="text-sm font-semibold text-slate-700">Coming soon</p>
-            <p className="max-w-[240px] text-xs text-slate-500">
-              AI-detected medication orders, lab orders, and care gaps will appear here as
-              the visit is transcribed.
-            </p>
-          </div>
+        <TabsContent value="codes" className="min-h-0 flex-1 overflow-y-auto">
+          <MedicalCodesPanel {...codingProps} />
         </TabsContent>
         <TabsContent value="transcript" className="min-h-0 flex-1 overflow-y-auto">
           <TranscriptPanel {...transcriptProps} compact />

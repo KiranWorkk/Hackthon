@@ -29,8 +29,11 @@ import {
 import { Button } from "@/components/ui/button";
 import { ENCOUNTER_SHEET_DATA } from "@/features/charting/data/encounter-sheets";
 import { useCortiListen } from "@/features/charting/lib/corti/use-corti-listen";
+import { useMedicalCoding } from "@/features/charting/lib/corti/use-medical-coding";
 import { useSoapOrchestrator } from "@/features/charting/lib/ai/use-soap-orchestrator";
 import { applySoapUpdates, type SoapKey, type SoapSlot, type SoapUpdate } from "@/features/charting/lib/ai/soap-slots";
+import { buildChartNoteText } from "@/features/charting/lib/note-utils";
+import { useMockPatientFacts } from "@/features/charting/data/mock-patient-facts";
 
 const HIGHLIGHT_DURATION_MS = 4000;
 
@@ -238,10 +241,36 @@ export function ChartingV2View() {
     renameSpeaker,
   } = useCortiListen();
 
+  const patientNoteFacts = useMockPatientFacts();
+  const {
+    status: codingStatus,
+    codes: medicalCodes,
+    candidates: medicalCodeCandidates,
+    error: codingError,
+    predict: predictMedicalCodes,
+    reset: resetMedicalCoding,
+  } = useMedicalCoding();
+
+  const runMedicalCoding = useCallback(() => {
+    const noteText = buildChartNoteText(soapGroupsRef.current, patientNoteFacts);
+    predictMedicalCodes(noteText);
+  }, [patientNoteFacts, predictMedicalCodes]);
+
+  /** Predict codes only once a listening session has actually finished (stopping -> idle), never on the initial idle state. */
+  const prevListenStatusRef = useRef(listenStatus);
+  useEffect(() => {
+    const prev = prevListenStatusRef.current;
+    prevListenStatusRef.current = listenStatus;
+    if (prev === "stopping" && listenStatus === "idle") {
+      runMedicalCoding();
+    }
+  }, [listenStatus, runMedicalCoding]);
+
   const handleStartListening = useCallback(() => {
+    resetMedicalCoding();
     startListening();
     setIsActionBridgeOpen(true);
-  }, [startListening]);
+  }, [resetMedicalCoding, startListening]);
 
   const handleReopenListening = useCallback(() => {
     setIsActionBridgeOpen(true);
@@ -434,6 +463,13 @@ export function ChartingV2View() {
                   error: listenError,
                   onRenameSpeaker: renameSpeaker,
                 }}
+                codingProps={{
+                  status: codingStatus,
+                  codes: medicalCodes,
+                  candidates: medicalCodeCandidates,
+                  error: codingError,
+                  onRetry: runMedicalCoding,
+                }}
               />
             )
           ) : (
@@ -453,6 +489,7 @@ export function ChartingV2View() {
           setHasChart(true);
           setIsDialogOpen(false);
           setActiveSection("subjective");
+          resetMedicalCoding();
         }}
       />
       <AddOptionsDrawer
@@ -518,6 +555,13 @@ export function ChartingV2View() {
           facts: transcriptFacts,
           error: listenError,
           onRenameSpeaker: renameSpeaker,
+        }}
+        codingProps={{
+          status: codingStatus,
+          codes: medicalCodes,
+          candidates: medicalCodeCandidates,
+          error: codingError,
+          onRetry: runMedicalCoding,
         }}
       />
     </div>
