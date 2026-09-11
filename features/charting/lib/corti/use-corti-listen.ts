@@ -73,6 +73,7 @@ export function useCortiListen() {
   const [speakerLabels, setSpeakerLabels] = useState<Record<string, string>>({});
   const [facts, setFacts] = useState<ClinicalFact[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [recorder, setRecorder] = useState<MediaRecorder | null>(null);
 
   const wsRef = useRef<WebSocket | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
@@ -81,6 +82,7 @@ export function useCortiListen() {
   const teardownMedia = useCallback(() => {
     recorderRef.current?.stop();
     recorderRef.current = null;
+    setRecorder(null);
     mediaStreamRef.current?.getTracks().forEach((track) => track.stop());
     mediaStreamRef.current = null;
   }, []);
@@ -102,6 +104,20 @@ export function useCortiListen() {
 
   const renameSpeaker = useCallback((speakerId: string, label: string) => {
     setSpeakerLabels((prev) => ({ ...prev, [speakerId]: label }));
+  }, []);
+
+  const pause = useCallback(() => {
+    if (recorderRef.current?.state === "recording") {
+      recorderRef.current.pause();
+      setStatus("paused");
+    }
+  }, []);
+
+  const resume = useCallback(() => {
+    if (recorderRef.current?.state === "paused") {
+      recorderRef.current.resume();
+      setStatus("listening");
+    }
   }, []);
 
   const start = useCallback(async () => {
@@ -194,15 +210,16 @@ export function useCortiListen() {
 
         if (msg.type === "CONFIG_ACCEPTED") {
           setStatus("listening");
-          const recorder = new MediaRecorder(stream, { mimeType });
-          recorderRef.current = recorder;
-          recorder.ondataavailable = (chunk) => {
+          const newRecorder = new MediaRecorder(stream, { mimeType });
+          recorderRef.current = newRecorder;
+          setRecorder(newRecorder);
+          newRecorder.ondataavailable = (chunk) => {
             if (chunk.data.size === 0 || ws.readyState !== WebSocket.OPEN) return;
             chunk.data.arrayBuffer().then((buffer) => {
               if (ws.readyState === WebSocket.OPEN) ws.send(buffer);
             });
           };
-          recorder.start(300);
+          newRecorder.start(300);
           return;
         }
 
@@ -323,5 +340,17 @@ export function useCortiListen() {
     [speakerOrder, speakerLabels]
   );
 
-  return { status, segments, speakers, facts, error, start, stop, renameSpeaker };
+  return {
+    status,
+    segments,
+    speakers,
+    facts,
+    error,
+    recorder,
+    start,
+    stop,
+    pause,
+    resume,
+    renameSpeaker,
+  };
 }

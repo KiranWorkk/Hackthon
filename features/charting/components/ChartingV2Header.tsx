@@ -43,7 +43,7 @@ export function ChartingV2Header({
   onPreviewNote,
   listenStatus,
   onStartListening,
-  onStopListening,
+  onReopenListening,
   aiSyncIndicator,
 }: {
   hasChart: boolean;
@@ -52,7 +52,7 @@ export function ChartingV2Header({
   onPreviewNote: () => void;
   listenStatus: ListenStatus;
   onStartListening: () => void;
-  onStopListening: () => void;
+  onReopenListening: () => void;
   aiSyncIndicator?: ReactNode;
 }) {
   const router = useRouter();
@@ -120,7 +120,7 @@ export function ChartingV2Header({
               <ListenButton
                 status={listenStatus}
                 onStart={onStartListening}
-                onStop={onStopListening}
+                onReopen={onReopenListening}
               />
               <button
                 type="button"

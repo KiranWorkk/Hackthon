@@ -48,6 +48,7 @@ export function TranscriptPanel({
   facts,
   error,
   onRenameSpeaker,
+  compact = false,
 }: {
   status: ListenStatus;
   segments: TranscriptSegment[];
@@ -55,18 +56,24 @@ export function TranscriptPanel({
   facts: ClinicalFact[];
   error: string | null;
   onRenameSpeaker: (speakerId: string, label: string) => void;
+  /** Renders full-width with tighter spacing and no heading, for embedding in a narrow panel (e.g. ActionBridge). */
+  compact?: boolean;
 }) {
   const hasText = segments.length > 0;
   const speakerByIdMap = new Map(speakers.map((speaker) => [speaker.speakerId, speaker]));
   const factGroups = groupFacts(facts);
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-6">
-      <h2 className="mb-1 text-base font-semibold text-slate-900">Transcript</h2>
-      <p className="mb-5 text-sm text-slate-500">
-        Live speech-to-text from the Listen button, captured via Corti with speaker
-        separation. Click a speaker&rsquo;s name to label who they are (Doctor / Patient).
-      </p>
+    <div className={compact ? "px-4 py-4" : "mx-auto max-w-3xl px-6 py-6"}>
+      {!compact && (
+        <>
+          <h2 className="mb-1 text-base font-semibold text-slate-900">Transcript</h2>
+          <p className="mb-5 text-sm text-slate-500">
+            Live speech-to-text from the Listen button, captured via Corti with speaker
+            separation. Click a speaker&rsquo;s name to label who they are (Doctor / Patient).
+          </p>
+        </>
+      )}
 
       {error && (
         <div className="mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
@@ -106,9 +113,11 @@ export function TranscriptPanel({
             <p className="text-sm">
               {status === "listening"
                 ? "Listening… start speaking."
-                : status === "connecting"
-                  ? "Connecting to Corti…"
-                  : "Press Listen in the header to start capturing the conversation."}
+                : status === "paused"
+                  ? "Paused — click Resume to continue."
+                  : status === "connecting"
+                    ? "Connecting to Corti…"
+                    : "Press Listen in the header to start capturing the conversation."}
             </p>
           </div>
         ) : (

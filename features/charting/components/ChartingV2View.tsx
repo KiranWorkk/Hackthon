@@ -16,12 +16,15 @@ import { StartChartingDialog } from "@/features/charting/components/StartChartin
 import { ChartingV2SoapSection } from "@/features/charting/components/soap/ChartingV2SoapSection";
 import { AddOptionsDrawer } from "@/features/charting/components/soap/AddOptionsDrawer";
 import { PreviewNoteDialog } from "@/features/charting/components/preview/PreviewNoteDialog";
-import { TranscriptPanel } from "@/features/charting/components/TranscriptPanel";
 import { AiSyncIndicator } from "@/features/charting/components/AiSyncIndicator";
 import {
   ChartDetailsSidebar,
   ChartDetailsSheet,
 } from "@/features/charting/components/ChartDetailsSidebar";
+import {
+  ActionBridgeAside,
+  ActionBridgeSheet,
+} from "@/features/charting/components/action-bridge/ActionBridgePanel";
 import { Button } from "@/components/ui/button";
 import { ENCOUNTER_SHEET_DATA } from "@/features/charting/data/encounter-sheets";
 import { useCortiListen } from "@/features/charting/lib/corti/use-corti-listen";
@@ -46,7 +49,7 @@ function blankSoapGroups(groups: VisitSheetSoapGroup[]): VisitSheetSoapGroup[] {
   }));
 }
 
-type SoapSection = Exclude<ChartingV2Section, "overview" | "transcript">;
+type SoapSection = Exclude<ChartingV2Section, "overview">;
 
 const SECTION_TO_SOAP: Record<
   SoapSection,
@@ -97,6 +100,8 @@ export function ChartingV2View() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isPreviewDialogOpen, setIsPreviewDialogOpen] = useState(false);
   const [isChartDetailsSheetOpen, setIsChartDetailsSheetOpen] = useState(false);
+  const [isActionBridgeOpen, setIsActionBridgeOpen] = useState(false);
+  const [isMobileViewport, setIsMobileViewport] = useState(false);
   const [addDrawerTarget, setAddDrawerTarget] =
     useState<VisitSheetComponent | null>(null);
   const [highlightedPkeys, setHighlightedPkeys] = useState<Set<number>>(new Set());
@@ -106,16 +111,44 @@ export function ChartingV2View() {
     soapGroupsRef.current = soapGroups;
   }, [soapGroups]);
 
+  useEffect(() => {
+    const mql = window.matchMedia("(max-width: 1023.98px)");
+    const update = () => setIsMobileViewport(mql.matches);
+    update();
+    mql.addEventListener("change", update);
+    return () => mql.removeEventListener("change", update);
+  }, []);
+
   const {
     status: listenStatus,
     segments: transcriptSegments,
     speakers: transcriptSpeakers,
     facts: transcriptFacts,
     error: listenError,
+    recorder: listenRecorder,
     start: startListening,
     stop: stopListening,
+    pause: pauseListening,
+    resume: resumeListening,
     renameSpeaker,
   } = useCortiListen();
+
+  const handleStartListening = useCallback(() => {
+    startListening();
+    setIsActionBridgeOpen(true);
+  }, [startListening]);
+
+  const handleReopenListening = useCallback(() => {
+    setIsActionBridgeOpen(true);
+  }, []);
+
+  const handleStopListening = useCallback(() => {
+    stopListening();
+  }, [stopListening]);
+
+  const handleCloseActionBridge = useCallback(() => {
+    setIsActionBridgeOpen(false);
+  }, []);
 
   const handleAiUpdates = useCallback((updates: SoapUpdate[], slots: SoapSlot[]) => {
     const { groups, touched } = applySoapUpdates(soapGroupsRef.current, updates, slots);
@@ -167,8 +200,8 @@ export function ChartingV2View() {
         onStartCharting={() => setIsDialogOpen(true)}
         onPreviewNote={() => setIsPreviewDialogOpen(true)}
         listenStatus={listenStatus}
-        onStartListening={startListening}
-        onStopListening={stopListening}
+        onStartListening={handleStartListening}
+        onReopenListening={handleReopenListening}
         aiSyncIndicator={<AiSyncIndicator status={syncStatus} />}
       />
       <div className="flex min-h-0 flex-1">
@@ -194,15 +227,6 @@ export function ChartingV2View() {
           <div className="min-h-0 flex-1 overflow-y-auto bg-white">
             {activeSection === "overview" ? (
               <ChartingV2FaceSheet />
-            ) : activeSection === "transcript" ? (
-              <TranscriptPanel
-                status={listenStatus}
-                segments={transcriptSegments}
-                speakers={transcriptSpeakers}
-                facts={transcriptFacts}
-                error={listenError}
-                onRenameSpeaker={renameSpeaker}
-              />
             ) : (
               <ChartingV2SoapSection
                 title={SECTION_LABEL[activeSection]}
@@ -218,7 +242,30 @@ export function ChartingV2View() {
             )}
           </div>
         </div>
-        {isSoapTab && <ChartDetailsSidebar />}
+        {isSoapTab &&
+          (isActionBridgeOpen ? (
+            !isMobileViewport && (
+              <ActionBridgeAside
+                open={isActionBridgeOpen}
+                status={listenStatus}
+                recorder={listenRecorder}
+                onPause={pauseListening}
+                onResume={resumeListening}
+                onStop={handleStopListening}
+                onClose={handleCloseActionBridge}
+                transcriptProps={{
+                  status: listenStatus,
+                  segments: transcriptSegments,
+                  speakers: transcriptSpeakers,
+                  facts: transcriptFacts,
+                  error: listenError,
+                  onRenameSpeaker: renameSpeaker,
+                }}
+              />
+            )
+          ) : (
+            <ChartDetailsSidebar />
+          ))}
       </div>
       <StartChartingDialog
         open={isDialogOpen}
@@ -254,6 +301,24 @@ export function ChartingV2View() {
       <ChartDetailsSheet
         open={isChartDetailsSheetOpen}
         onOpenChange={setIsChartDetailsSheetOpen}
+      />
+      <ActionBridgeSheet
+        open={isActionBridgeOpen && isMobileViewport}
+        onOpenChange={(open) => !open && setIsActionBridgeOpen(false)}
+        status={listenStatus}
+        recorder={listenRecorder}
+        onPause={pauseListening}
+        onResume={resumeListening}
+        onStop={handleStopListening}
+        onClose={handleCloseActionBridge}
+        transcriptProps={{
+          status: listenStatus,
+          segments: transcriptSegments,
+          speakers: transcriptSpeakers,
+          facts: transcriptFacts,
+          error: listenError,
+          onRenameSpeaker: renameSpeaker,
+        }}
       />
     </div>
   );

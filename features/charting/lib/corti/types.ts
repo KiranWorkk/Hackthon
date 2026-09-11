@@ -2,6 +2,7 @@ export type ListenStatus =
   | "idle"
   | "connecting"
   | "listening"
+  | "paused"
   | "stopping"
   | "error";
 
