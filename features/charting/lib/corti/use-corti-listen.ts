@@ -219,7 +219,12 @@ export function useCortiListen() {
               if (ws.readyState === WebSocket.OPEN) ws.send(buffer);
             });
           };
-          newRecorder.start(300);
+          // Smaller timeslice = audio reaches Corti sooner (each chunk only
+          // fires ondataavailable once it closes) — 300ms added a fixed
+          // floor on top of Corti's own network/STT latency for every
+          // utterance; 120ms trims that without meaningfully raising chunk
+          // overhead.
+          newRecorder.start(120);
           return;
         }
 

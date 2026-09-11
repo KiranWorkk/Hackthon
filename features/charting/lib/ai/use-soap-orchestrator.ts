@@ -8,6 +8,13 @@ import { buildSoapSlots, type SoapSlot, type SoapUpdate } from "@/features/chart
 export type SyncStatus = "idle" | "syncing" | "synced" | "error";
 
 const SYNC_INTERVAL_MS = 18000;
+// Cap how long a single sync waits on the server. Without this, a slow
+// provider response holds inFlightRef locked indefinitely, silently eating
+// every 18s tick in between and making the chart mapping look frozen. Set
+// just above the API route's own worst case (2 attempts x 20s + a short
+// retry gap, see app/api/soap-parser/route.ts) so a request that's actually
+// about to succeed isn't aborted client-side out from under it.
+const SYNC_TIMEOUT_MS = 45000;
 
 /**
  * Periodically (while Corti is listening) sends the accumulated transcript +
@@ -73,10 +80,14 @@ export function useSoapOrchestrator({
     setSyncStatus("syncing");
     setSyncError(null);
 
+    const abortController = new AbortController();
+    const timeoutId = setTimeout(() => abortController.abort(), SYNC_TIMEOUT_MS);
+
     try {
       const res = await fetch("/api/soap-parser", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        signal: abortController.signal,
         body: JSON.stringify({
           transcript,
           facts: currentFacts.map((fact) => ({ text: fact.text, group: fact.group })),
@@ -100,9 +111,17 @@ export function useSoapOrchestrator({
       setSyncStatus("synced");
       setLastSyncedAt(Date.now());
     } catch (err) {
-      setSyncError(err instanceof Error ? err.message : "AI chart sync failed.");
+      const isTimeout = err instanceof DOMException && err.name === "AbortError";
+      setSyncError(
+        isTimeout
+          ? "AI chart sync timed out — will retry on the next pass."
+          : err instanceof Error
+            ? err.message
+            : "AI chart sync failed."
+      );
       setSyncStatus("error");
     } finally {
+      clearTimeout(timeoutId);
       inFlightRef.current = false;
       if (pendingRerunRef.current) {
         pendingRerunRef.current = false;

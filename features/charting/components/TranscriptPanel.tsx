@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Mic01Icon, SparklesIcon } from "@hugeicons/core-free-icons";
 import { cn } from "@/lib/utils";
@@ -63,6 +64,15 @@ export function TranscriptPanel({
   const speakerByIdMap = new Map(speakers.map((speaker) => [speaker.speakerId, speaker]));
   const factGroups = groupFacts(facts);
 
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const wasNearBottomRef = useRef(true);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el || !wasNearBottomRef.current) return;
+    el.scrollTop = el.scrollHeight;
+  }, [segments]);
+
   return (
     <div className={compact ? "px-4 py-4" : "mx-auto max-w-3xl px-6 py-6"}>
       {!compact && (
@@ -106,7 +116,15 @@ export function TranscriptPanel({
         </div>
       )}
 
-      <div className="min-h-[240px] rounded-xl border border-slate-200 bg-white p-4">
+      <div
+        ref={scrollRef}
+        onScroll={(e) => {
+          const el = e.currentTarget;
+          wasNearBottomRef.current =
+            el.scrollHeight - el.scrollTop - el.clientHeight < 80;
+        }}
+        className="max-h-[420px] min-h-[240px] overflow-y-auto rounded-xl border border-slate-200 bg-white p-4"
+      >
         {!hasText ? (
           <div className="flex flex-col items-center justify-center gap-2 py-16 text-center text-slate-400">
             <HugeiconsIcon icon={Mic01Icon} size={22} strokeWidth={1.5} />

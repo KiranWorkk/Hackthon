@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useSyncExternalStore } from "react";
 import { patients } from "@/features/patients/data/patients";
 import { calculateAge } from "@/lib/age";
 
@@ -60,10 +60,31 @@ export function getSelectedPatient(): SelectedPatientIdentity | null {
   }
 }
 
-export function useSelectedPatient(): SelectedPatientIdentity {
-  const [identity] = useState<SelectedPatientIdentity>(
-    () => getSelectedPatient() ?? DEFAULT_PATIENT
-  );
+// sessionStorage never changes from outside this tab while a charting page is
+// mounted (it's written once, before navigating in), so there's nothing to
+// subscribe to — but useSyncExternalStore still gives us a snapshot that's
+// read lazily on the client and can differ from getServerSnapshot without
+// triggering a hydration mismatch, unlike reading it in a useState initializer.
+function subscribe() {
+  return () => {};
+}
 
-  return identity;
+// getSnapshot must return a referentially stable value between calls (React
+// compares with Object.is), so the sessionStorage read/parse — which would
+// otherwise produce a new object every call — is cached once per module load.
+let cachedSnapshot: SelectedPatientIdentity | undefined;
+
+function getSnapshot(): SelectedPatientIdentity {
+  if (cachedSnapshot === undefined) {
+    cachedSnapshot = getSelectedPatient() ?? DEFAULT_PATIENT;
+  }
+  return cachedSnapshot;
+}
+
+function getServerSnapshot(): SelectedPatientIdentity {
+  return DEFAULT_PATIENT;
+}
+
+export function useSelectedPatient(): SelectedPatientIdentity {
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }

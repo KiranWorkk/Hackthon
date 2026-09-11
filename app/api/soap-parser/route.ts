@@ -86,41 +86,125 @@ export async function POST(request: Request) {
     slots,
   });
 
-  const requestBody = JSON.stringify({
-    model,
-    temperature: 0.1,
-    // Generous ceiling so a chart with many pending updates (a big encounter
-    // sheet, early in a visit) can't get its JSON cut off mid-object — a
-    // truncated response fails to parse below and drops the whole tick's
-    // updates, not just the last one.
-    max_tokens: 8000,
-    response_format: { type: "json_object" },
-    messages: [
-      { role: "system", content: SYSTEM_PROMPT },
-      { role: "user", content: userPrompt },
-    ],
-  });
+  // Starting ceiling — kept well under providers' practical per-request
+  // limit (8000 was routinely hit in full, finish_reason "length",
+  // truncating the JSON mid-object). Lowered further on the fly below if
+  // OpenRouter reports the account can't currently afford this many.
+  const DEFAULT_MAX_TOKENS = 4096;
+  // Below this, a chart-sync response can't fit enough of a useful answer
+  // (a couple of slot updates' worth of JSON) — not worth attempting.
+  const MIN_MAX_TOKENS = 512;
 
-  function extractUpdates(content: string): { updates?: { slotId?: string; generatedText?: string }[] } {
-    const cleaned = content.replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/i, "");
-    return JSON.parse(cleaned);
+  function buildRequestBody(maxTokens: number): string {
+    return JSON.stringify({
+      model,
+      temperature: 0.1,
+      max_tokens: maxTokens,
+      response_format: { type: "json_object" },
+      // OpenRouter can route "z-ai/glm-5.3" to several backing providers with
+      // wildly different speed (observed: 3.8 tok/s / ~90s time-to-first-token
+      // on one vs 300+ tok/s / <1s on another for the identical request) — the
+      // model isn't slow, the provider picked for a given request can be.
+      // Sorting by throughput steers away from the slow ones instead of
+      // eating their latency on every sync tick.
+      provider: { sort: "throughput" },
+      messages: [
+        { role: "system", content: SYSTEM_PROMPT },
+        { role: "user", content: userPrompt },
+      ],
+    });
   }
 
-  const MAX_ATTEMPTS = 3;
+  // OpenRouter's 402 for "requires more credits, or fewer max_tokens" names
+  // exactly how many tokens the account can currently afford — e.g. "You
+  // requested up to 4096 tokens, but can only afford 2948". Parsed out so a
+  // low balance can be worked around by asking for less, instead of the
+  // whole sync failing outright every time credits run a little low.
+  function affordableMaxTokens(detail: string): number | null {
+    const match = detail.match(/can only afford (\d+) tokens/i);
+    if (!match) return null;
+    return Number(match[1]);
+  }
+
+  function stripFences(content: string): string {
+    return content.replace(/^```(?:json)?\s*/i, "").replace(/```\s*$/i, "");
+  }
+
+  /**
+   * A response cut off mid-JSON (finish_reason "length", or any other
+   * truncation) fails a plain JSON.parse and used to drop the whole tick's
+   * updates. Instead, scan the "updates" array by brace-balance and keep
+   * every complete {"slotId":...,"generatedText":...} object that appeared
+   * before the cutoff — a partial sync beats none.
+   */
+  function salvageTruncatedUpdates(
+    content: string
+  ): { updates: { slotId?: string; generatedText?: string }[] } | null {
+    const arrayStart = content.indexOf('"updates"');
+    if (arrayStart === -1) return null;
+    const bracketStart = content.indexOf("[", arrayStart);
+    if (bracketStart === -1) return null;
+
+    const updates: { slotId?: string; generatedText?: string }[] = [];
+    let depth = 0;
+    let objStart = -1;
+    for (let i = bracketStart + 1; i < content.length; i++) {
+      const ch = content[i];
+      if (ch === "{") {
+        if (depth === 0) objStart = i;
+        depth++;
+      } else if (ch === "}") {
+        depth--;
+        if (depth === 0 && objStart !== -1) {
+          try {
+            updates.push(JSON.parse(content.slice(objStart, i + 1)));
+          } catch {
+            // Malformed individual object — skip it, keep scanning.
+          }
+          objStart = -1;
+        }
+      } else if (ch === "]" && depth === 0) {
+        break;
+      }
+    }
+    return updates.length > 0 ? { updates } : null;
+  }
+
+  function extractUpdates(
+    content: string
+  ): { updates?: { slotId?: string; generatedText?: string }[] } {
+    const cleaned = stripFences(content);
+    try {
+      return JSON.parse(cleaned);
+    } catch (err) {
+      const salvaged = salvageTruncatedUpdates(cleaned);
+      if (salvaged) return salvaged;
+      throw err;
+    }
+  }
+
+  const MAX_ATTEMPTS = 2;
   const RETRY_DELAY_MS = 500;
+  // Bounds how long a single attempt can hang on a slow provider. Without
+  // this, a provider with a 90s time-to-first-token (seen in production —
+  // see comment on `provider` above) blocks the whole sync tick for that
+  // long per attempt, which is the "freeze" users were hitting.
+  const ATTEMPT_TIMEOUT_MS = 20000;
   const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
   let parsed: { updates?: { slotId?: string; generatedText?: string }[] } | null = null;
   let lastError = "Unknown error.";
+  let maxTokens = DEFAULT_MAX_TOKENS;
 
-  // OpenRouter (and whatever model/provider it routes to) intermittently
-  // 502s or returns a malformed/truncated body — a real, recurring failure
-  // mode with this much payload, not just a theoretical one. A single bad
-  // tick used to silently drop that whole batch of chart updates with no
-  // retry at all for the "OpenRouter responded with an error" case (only
-  // the "response wasn't valid JSON" case retried) — this covers all three
-  // failure modes (network error, non-2xx response, invalid JSON) uniformly.
+  // OpenRouter (and whatever provider it routes to) intermittently 502s,
+  // times out, or returns a malformed/truncated body — a real, recurring
+  // failure mode with this much payload, not just a theoretical one. This
+  // covers all failure modes (network error, timeout, non-2xx response,
+  // invalid JSON) with one retry loop.
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+    const abortController = new AbortController();
+    const timeoutId = setTimeout(() => abortController.abort(), ATTEMPT_TIMEOUT_MS);
+
     let completionRes: Response;
     try {
       completionRes = await fetch("https://openrouter.ai/api/v1/chat/completions", {
@@ -129,41 +213,73 @@ export async function POST(request: Request) {
           Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json",
         },
-        body: requestBody,
+        body: buildRequestBody(maxTokens),
         cache: "no-store",
+        signal: abortController.signal,
       });
     } catch (err) {
-      lastError = "Could not reach OpenRouter.";
+      const isTimeout = err instanceof DOMException && err.name === "AbortError";
+      lastError = isTimeout
+        ? `OpenRouter timed out after ${ATTEMPT_TIMEOUT_MS / 1000}s.`
+        : "Could not reach OpenRouter.";
       console.error(`[soap-parser] attempt ${attempt}/${MAX_ATTEMPTS}: fetch failed —`, err);
       if (attempt < MAX_ATTEMPTS) await sleep(RETRY_DELAY_MS);
       continue;
+    } finally {
+      clearTimeout(timeoutId);
     }
 
     if (!completionRes.ok) {
       const detail = await completionRes.text().catch(() => "");
       lastError = `OpenRouter request failed (${completionRes.status}). ${detail}`.trim();
+
+      if (completionRes.status === 402) {
+        const affordable = affordableMaxTokens(detail);
+        if (affordable !== null && affordable >= MIN_MAX_TOKENS) {
+          // Not a hard stop — the account just can't cover the ceiling we
+          // asked for right now. Retry immediately at what it says it can
+          // afford (with a small safety margin) rather than burning this
+          // whole tick over a number we control.
+          maxTokens = Math.max(MIN_MAX_TOKENS, affordable - 64);
+          console.warn(
+            `[soap-parser] attempt ${attempt}/${MAX_ATTEMPTS}: 402 — low balance, retrying with max_tokens=${maxTokens}`
+          );
+          if (attempt < MAX_ATTEMPTS) continue;
+        }
+        console.error(
+          `[soap-parser] attempt ${attempt}/${MAX_ATTEMPTS}: OpenRouter returned 402 (insufficient credits) —`,
+          detail.slice(0, 500)
+        );
+        break;
+      }
+
       console.error(
         `[soap-parser] attempt ${attempt}/${MAX_ATTEMPTS}: OpenRouter returned ${completionRes.status} —`,
         detail.slice(0, 500)
       );
-      // 429 (rate limit) and 402 (e.g. OpenRouter's "in-flight budget
-      // exhausted" — too many concurrent/still-settling requests for the
-      // account's credit balance) are the account telling us to back off,
-      // not a transient blip. Retrying within the same 500ms-spaced loop
-      // just burns attempts against a still-closed door and risks the retry
+      // 429 (rate limit) is the account telling us to back off, not a
+      // transient blip. Retrying within the same 500ms-spaced loop just
+      // burns attempts against a still-closed door and risks the retry
       // colliding with the *next* scheduled 18s sync tick, compounding the
       // very "too many in-flight requests" problem that caused this. Fail
       // this tick immediately instead — the orchestrator's own next
       // scheduled tick is the real retry here.
-      if (completionRes.status === 429 || completionRes.status === 402) break;
+      if (completionRes.status === 429) break;
       if (attempt < MAX_ATTEMPTS) await sleep(RETRY_DELAY_MS);
       continue;
     }
 
     const completion = (await completionRes.json()) as {
-      choices?: { message?: { content?: string } }[];
+      choices?: { message?: { content?: string }; finish_reason?: string }[];
     };
-    const raw = completion.choices?.[0]?.message?.content ?? "";
+    const choice = completion.choices?.[0];
+    const raw = choice?.message?.content ?? "";
+
+    if (choice?.finish_reason === "length") {
+      console.warn(
+        `[soap-parser] attempt ${attempt}/${MAX_ATTEMPTS}: response truncated at max_tokens — salvaging complete objects.`
+      );
+    }
 
     try {
       parsed = extractUpdates(raw);
