@@ -29,6 +29,19 @@ type StateMap = Record<string, EntryState>;
 
 const EMPTY_STATE: EntryState = { checked: false, selectedValues: [], text: "" };
 
+/** Every itmCode this catalog governs (including dependents) — used so unchecking a
+ * previously-added item can be recognized as "remove this", not just "don't add it". */
+function collectItmCodes(entries: ComponentItemWrapper[]): Set<string> {
+  const codes = new Set<string>();
+  function visit(entry: ComponentItemWrapper) {
+    const item = entry.emrCompntItms;
+    if (item.itmCode) codes.add(item.itmCode);
+    item.dependentItems?.forEach(visit);
+  }
+  entries.forEach(visit);
+  return codes;
+}
+
 function matchesSearch(entry: ComponentItemWrapper, query: string): boolean {
   if (!query) return true;
   const q = query.toLowerCase();
@@ -243,7 +256,7 @@ function AddOptionsDrawerBody({
   component: VisitSheetComponent;
   entries: ComponentItemWrapper[];
   onClose: () => void;
-  onAddItems: (items: VisitSheetItem[]) => void;
+  onAddItems: (items: VisitSheetItem[], catalogItemCodes: Set<string>) => void;
 }) {
   const [search, setSearch] = useState("");
   const [state, setState] = useState<StateMap>(() =>
@@ -286,8 +299,11 @@ function AddOptionsDrawerBody({
   };
 
   const handleAdd = () => {
+    // Always resync (even when nothing is checked) so unchecking a previously-added
+    // item — or unchecking everything — actually removes it from the chart instead
+    // of just skipping the (re-)add.
     const items = flattenChecked(entries, state);
-    if (items.length > 0) onAddItems(items);
+    onAddItems(items, collectItmCodes(entries));
     onClose();
   };
 
@@ -365,7 +381,7 @@ export function AddOptionsDrawer({
   open: boolean;
   onOpenChange: (open: boolean) => void;
   component: VisitSheetComponent | null;
-  onAddItems: (items: VisitSheetItem[]) => void;
+  onAddItems: (items: VisitSheetItem[], catalogItemCodes: Set<string>) => void;
 }) {
   const entries = component?.compntCode
     ? (ITEM_CATALOG[component.compntCode] ?? [])

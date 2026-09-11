@@ -1,0 +1,375 @@
+[
+  {
+    "emrConShtCompntItmsPkey": 7125,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7031,
+      "itmName": "Marital Status",
+      "itmCode": "SH_MARITAL_STATUS",
+      "attribute1": "#@ItemName#@ - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105088,
+          "valueName": "Divorced",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105089,
+          "valueName": "Married",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105090,
+          "valueName": "Single",
+          "itmValueSortOrder": 0
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7126,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7032,
+      "itmName": "Recreation",
+      "itmCode": "SH_RECREATION",
+      "attribute1": "<br>#@ItemName#@</br>\r\n #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105091,
+          "valueName": "Level of activity -",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 105093,
+          "valueName": "Sessions per week -",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 105092,
+          "valueName": "Additional Information :",
+          "itmValueSortOrder": 5
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7127,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7033,
+      "itmName": "Tobacco",
+      "itmCode": "SH_TOBACCO",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105094,
+          "valueName": "current smoker",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105095,
+          "valueName": "daily",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105096,
+          "valueName": "former smoker",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105097,
+          "valueName": "frequently",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105098,
+          "valueName": "never smoked",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105099,
+          "valueName": "none",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105100,
+          "valueName": "weekly",
+          "itmValueSortOrder": 0
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7128,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7034,
+      "itmName": "Living situation",
+      "itmCode": "SH_LIVING_SITUATION",
+      "attribute1": "<br>#@ItemName#@</br>\r\n #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105102,
+          "valueName": "Dependents -",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 105104,
+          "valueName": "Home duties -",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 105103,
+          "valueName": "Activities of daily living -",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 105105,
+          "valueName": "Stairs -",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 105101,
+          "valueName": "Additional Information -",
+          "itmValueSortOrder": 9
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7129,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7035,
+      "itmName": "Abuse",
+      "itmCode": "SH_ABUSE",
+      "attribute1": "#@ItemName#@ - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105106,
+          "valueName": "Physically",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105107,
+          "valueName": "Sexually",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105108,
+          "valueName": "Emotionally",
+          "itmValueSortOrder": 0
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7130,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7036,
+      "itmName": "Education Level",
+      "itmCode": "SH_EDUCATION_LEVEL",
+      "attribute1": "#@ItemName#@ -  #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105109,
+          "valueName": "Undergraduate",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105110,
+          "valueName": "Graduate",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105111,
+          "valueName": "Middle school",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105112,
+          "valueName": "Elementary school",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105113,
+          "valueName": "High school",
+          "itmValueSortOrder": 0
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7131,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7037,
+      "itmName": "Substance Use",
+      "itmCode": "SH_SUBSTANCE_USE",
+      "attribute1": "#@ItemName#@ - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105114,
+          "valueName": "Illicit drugs",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 105116,
+          "valueName": "Caffeine",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 105115,
+          "valueName": "Additional Information:",
+          "itmValueSortOrder": 7
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7132,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7038,
+      "itmName": "Economic Condition",
+      "itmCode": "SH_ECONOMIC_CONDITION",
+      "attribute1": "#@ItemName#@ - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105117,
+          "valueName": "Poor",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105118,
+          "valueName": "Wealthy",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105119,
+          "valueName": "Middle income",
+          "itmValueSortOrder": 0
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7133,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7039,
+      "itmName": "Employment",
+      "itmCode": "SH_EMPLOYMENT",
+      "attribute1": "<br>#@ItemName#@</br>\r\n #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105120,
+          "valueName": "Occupation -",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105121,
+          "valueName": "Nature of work -",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 105122,
+          "valueName": "Hours per week -",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 105124,
+          "valueName": "Effect of injury on work status -",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 105123,
+          "valueName": "Retired",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 105126,
+          "valueName": "Unemployed",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 105125,
+          "valueName": "Homemaker",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 105127,
+          "valueName": "Additional Information",
+          "itmValueSortOrder": 13
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7134,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7040,
+      "itmName": "Notes:",
+      "itmCode": "SH_NOTES",
+      "attribute1": "#@GeneratedText#@",
+      "attribute11": "RICH-TEXT",
+      "emrCompntItmValues": []
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7135,
+    "emrConShtCompntsFkey": 439,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7041,
+      "itmName": "Alcohol",
+      "itmCode": "SH_ALCOHOL",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 105128,
+          "valueName": "none",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105129,
+          "valueName": "weekly",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105130,
+          "valueName": "daily",
+          "itmValueSortOrder": 0
+        },
+        {
+          "emrCompntItmValuesPkey": 105131,
+          "valueName": "frequently",
+          "itmValueSortOrder": 0
+        }
+      ]
+    }
+  }
+]

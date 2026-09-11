@@ -72,14 +72,40 @@ function isSoapSection(section: ChartingV2Section): section is SoapSection {
   return section in SECTION_TO_SOAP;
 }
 
-function addItemsToComponent(
+/**
+ * Reconciles one component's items against the Add Options drawer's current
+ * checked state: items outside the catalog's scope (e.g. a free-text
+ * narrative item with no itmCode) are left untouched; catalog-governed items
+ * are kept (with updated text) only while still checked, and removed the
+ * moment they're unchecked — the drawer's "Add" is really "sync", not just
+ * "append".
+ */
+function syncComponentItems(
   groups: VisitSheetSoapGroup[],
   targetPkey: number,
-  newItems: VisitSheetItem[]
+  desiredItems: VisitSheetItem[],
+  catalogItemCodes: Set<string>
 ): VisitSheetSoapGroup[] {
   function updateComponent(component: VisitSheetComponent): VisitSheetComponent {
     if (component.emrCompntsPkey === targetPkey) {
-      return { ...component, items: [...component.items, ...newItems] };
+      const desiredByCode = new Map(
+        desiredItems.filter((item) => item.itmCode).map((item) => [item.itmCode as string, item])
+      );
+
+      const retained = component.items
+        .filter(
+          (item) =>
+            !item.itmCode || !catalogItemCodes.has(item.itmCode) || desiredByCode.has(item.itmCode)
+        )
+        .map((item) => {
+          if (!item.itmCode) return item;
+          const desired = desiredByCode.get(item.itmCode);
+          if (!desired) return item;
+          desiredByCode.delete(item.itmCode); // handled — anything left over is a new addition
+          return { ...item, generatedText: desired.generatedText };
+        });
+
+      return { ...component, items: [...retained, ...desiredByCode.values()] };
     }
     if (component.children.length === 0) return component;
     return { ...component, children: component.children.map(updateComponent) };
@@ -286,10 +312,10 @@ export function ChartingV2View() {
         open={addDrawerTarget !== null}
         onOpenChange={(open) => !open && setAddDrawerTarget(null)}
         component={addDrawerTarget}
-        onAddItems={(items) => {
+        onAddItems={(items, catalogItemCodes) => {
           if (!addDrawerTarget) return;
           setSoapGroups((prev) =>
-            addItemsToComponent(prev, addDrawerTarget.emrCompntsPkey, items)
+            syncComponentItems(prev, addDrawerTarget.emrCompntsPkey, items, catalogItemCodes)
           );
         }}
       />

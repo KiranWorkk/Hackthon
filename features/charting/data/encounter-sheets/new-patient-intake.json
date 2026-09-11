@@ -9,39 +9,67 @@
         "listOrder": 1,
         "compntCode": "CC",
         "soap": "SUBJECTIVE",
-        "items": [
-          {
-            "emrPatConCompntItmsPkey": 9001,
-            "itmName": "Chief Complaint",
-            "itmCode": null,
-            "generatedText": "This #@age#@-year-old #@Gender#@ presents as a new patient establishing care. #@He_She#@ has no specific complaints today.",
-            "itmTemplate": "#@GeneratedText#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          }
-        ],
+        "items": [],
         "children": []
       },
       {
-        "emrCompntsPkey": 902,
+        "emrCompntsPkey": 2170,
         "compntName": "Past Medical History",
-        "compntDescription": null,
+        "compntDescription": "Past Medical History",
         "listOrder": 2,
-        "compntCode": "PMH",
+        "compntCode": "MEDICAL_HISTORY",
         "soap": "SUBJECTIVE",
-        "items": [
-          {
-            "emrPatConCompntItmsPkey": 9002,
-            "itmName": "Past Medical History",
-            "itmCode": null,
-            "generatedText": "No significant past medical history reported.",
-            "itmTemplate": null,
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          }
-        ],
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 2172,
+        "compntName": "Past Surgical History",
+        "compntDescription": "Past Surgical History",
+        "listOrder": 3,
+        "compntCode": "SURGERY_PROC",
+        "soap": "SUBJECTIVE",
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 2194,
+        "compntName": "Social History",
+        "compntDescription": "Social History",
+        "listOrder": 4,
+        "compntCode": "SOCIAL_HISTORY",
+        "soap": "SUBJECTIVE",
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 2190,
+        "compntName": "Family History",
+        "compntDescription": "Family History",
+        "listOrder": 5,
+        "compntCode": "FAMILY_HISTORY",
+        "soap": "SUBJECTIVE",
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 2162,
+        "compntName": "Allergies",
+        "compntDescription": "Allergies",
+        "listOrder": 6,
+        "compntCode": "ALLERGY",
+        "soap": "SUBJECTIVE",
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 2171,
+        "compntName": "Current Medications",
+        "compntDescription": "Current Medications",
+        "listOrder": 7,
+        "compntCode": "CURRENT_MEDI",
+        "soap": "SUBJECTIVE",
+        "items": [],
         "children": []
       }
     ]
@@ -56,48 +84,7 @@
         "listOrder": 1,
         "compntCode": "VITALS",
         "soap": "OBJECTIVE",
-        "items": [
-          {
-            "emrPatConCompntItmsPkey": 10001,
-            "itmName": "Height",
-            "itmCode": "HEIGHT",
-            "generatedText": "64",
-            "itmTemplate": "#@ItemName#@: #@GeneratedText#@ #@UOM#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          },
-          {
-            "emrPatConCompntItmsPkey": 10002,
-            "itmName": "Weight",
-            "itmCode": "WEIGHT",
-            "generatedText": "128",
-            "itmTemplate": "#@ItemName#@: #@GeneratedText#@ #@UOM#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          },
-          {
-            "emrPatConCompntItmsPkey": 10003,
-            "itmName": "Blood Pressure Systolic",
-            "itmCode": "BP_SYSTOLIC",
-            "generatedText": "110",
-            "itmTemplate": "#@ItemName#@: #@GeneratedText#@ #@UOM#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          },
-          {
-            "emrPatConCompntItmsPkey": 10004,
-            "itmName": "Blood Pressure Diastolic",
-            "itmCode": "BP_DIASTOLIC",
-            "generatedText": "70",
-            "itmTemplate": "#@ItemName#@ #@GeneratedText#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          }
-        ],
+        "items": [],
         "children": []
       },
       {
@@ -107,18 +94,47 @@
         "listOrder": 2,
         "compntCode": "PE",
         "soap": "OBJECTIVE",
-        "items": [
-          {
-            "emrPatConCompntItmsPkey": 10010,
-            "itmName": "General Appearance",
-            "itmCode": null,
-            "generatedText": "Alert, well-appearing, no acute distress.",
-            "itmTemplate": "#@ItemName#@ - #@GeneratedText#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          }
-        ],
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 1020,
+        "compntName": "Laboratory Results",
+        "compntDescription": "Laboratory Results",
+        "listOrder": 3,
+        "compntCode": "LAB_RESULTS",
+        "soap": "OBJECTIVE",
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 1030,
+        "compntName": "Diagnostic Imaging",
+        "compntDescription": "Diagnostic Imaging",
+        "listOrder": 4,
+        "compntCode": "IMAGING",
+        "soap": "OBJECTIVE",
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 1040,
+        "compntName": "Point-of-Care Testing",
+        "compntDescription": "Point-of-Care Testing",
+        "listOrder": 5,
+        "compntCode": "POC_TESTING",
+        "soap": "OBJECTIVE",
+        "items": [],
+        "children": []
+      },
+      {
+        "emrCompntsPkey": 1050,
+        "compntName": "Immunizations Administered",
+        "compntDescription": "Immunizations Administered",
+        "listOrder": 6,
+        "compntCode": "IMMUNIZATION_GIVEN",
+        "soap": "OBJECTIVE",
+        "items": [],
         "children": []
       }
     ]
@@ -133,18 +149,7 @@
         "listOrder": 1,
         "compntCode": "ASSESS",
         "soap": "ASSESSMENT",
-        "items": [
-          {
-            "emrPatConCompntItmsPkey": 11001,
-            "itmName": "General Health Exam (Z00.00)",
-            "itmCode": "Z00.00",
-            "generatedText": "No abnormal findings, establishing baseline.",
-            "itmTemplate": "#@ItemName#@ - #@GeneratedText#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          }
-        ],
+        "items": [],
         "children": []
       }
     ]
@@ -159,28 +164,7 @@
         "listOrder": 1,
         "compntCode": "PLAN",
         "soap": "PLAN",
-        "items": [
-          {
-            "emrPatConCompntItmsPkey": 12001,
-            "itmName": "Labs Ordered",
-            "itmCode": null,
-            "generatedText": "CBC, CMP, lipid panel, TSH.",
-            "itmTemplate": "#@ItemName#@: #@GeneratedText#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          },
-          {
-            "emrPatConCompntItmsPkey": 12002,
-            "itmName": "Follow-Up",
-            "itmCode": null,
-            "generatedText": "Return in 2 weeks to review labs.",
-            "itmTemplate": "#@ItemName#@: #@GeneratedText#@",
-            "itmBeginText": null,
-            "itmEndText": null,
-            "attribute1": "Y"
-          }
-        ],
+        "items": [],
         "children": []
       }
     ]

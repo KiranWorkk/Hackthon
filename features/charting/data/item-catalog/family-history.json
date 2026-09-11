@@ -1,0 +1,3514 @@
+[
+  {
+    "emrConShtCompntItmsPkey": 6998,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6904,
+      "itmName": "Maternal Grandfather",
+      "itmCode": "FH_MATERNAL_GRANDFATHER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103558,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103524,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103535,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103532,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103536,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103537,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103538,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103545,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103549,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103550,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103539,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103546,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103540,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103525,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103526,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103551,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103552,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103527,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103528,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103541,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103521,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103553,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103542,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103560,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103543,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103554,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103533,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103522,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103561,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103555,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103529,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103547,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103530,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103556,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103557,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103548,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103562,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103559,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103534,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103523,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103544,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 103531,
+          "valueName": "TB",
+          "itmValueSortOrder": 43
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6999,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6905,
+      "itmName": "Maternal Grandmother",
+      "itmCode": "FH_MATERNAL_GRANDMOTHER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103591,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103563,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103575,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103567,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103576,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103577,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103578,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103581,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103592,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103593,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103582,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103588,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103583,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103568,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103569,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103594,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103595,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103570,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103571,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103584,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103564,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103596,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103585,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103602,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103586,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103597,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103579,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103565,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103603,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103598,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103572,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103589,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103573,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103599,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103600,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103590,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103604,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103601,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103580,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103566,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103587,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 103574,
+          "valueName": "TB",
+          "itmValueSortOrder": 43
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7000,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6906,
+      "itmName": "Patient adopted- family history unknown",
+      "itmCode": "FH_PATIENT_ADOPTED_FAMILY_HISTORY_UNKNOWN",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "TEXT-AREA",
+      "emrCompntItmValues": []
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7001,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6907,
+      "itmName": "Uncle",
+      "itmCode": "FH_UNCLE",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103632,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103605,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103617,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103611,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103618,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103619,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103620,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103622,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103633,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103634,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103623,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103630,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103624,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103612,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103613,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103635,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103636,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103614,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103615,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103625,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103606,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103637,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103626,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103644,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103627,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103638,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103621,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103607,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103645,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103639,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103616,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103631,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103608,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 103628,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103609,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103646,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103610,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103629,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103642,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103643,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103640,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103641,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7002,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6908,
+      "itmName": "Brother",
+      "itmCode": "FH_BROTHER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103674,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103647,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103659,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103651,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103660,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103661,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103662,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103665,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103675,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103676,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103666,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103671,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103667,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103652,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103653,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103677,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103678,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103654,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103655,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103668,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103648,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103679,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103669,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103686,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103670,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103680,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103663,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103649,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103687,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103681,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103656,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103672,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103657,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103682,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103683,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103673,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103685,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103664,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103650,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103684,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103658,
+          "valueName": "TB",
+          "itmValueSortOrder": 43
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7003,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6909,
+      "itmName": "Cousin",
+      "itmCode": "FH_COUSIN",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103722,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103693,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103701,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103699,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103702,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103703,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103704,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103711,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103723,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103724,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103712,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103714,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103705,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103694,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103695,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103715,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103716,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103696,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103697,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103706,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103688,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103717,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103707,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103727,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103708,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103718,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103700,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103689,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103728,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103719,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103698,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103713,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103690,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 103709,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103691,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103729,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103692,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103710,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103725,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103726,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103720,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103721,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7004,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6910,
+      "itmName": "Paternal Grandfather",
+      "itmCode": "FH_PATERNAL_GRANDFATHER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103760,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103730,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103744,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103736,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103745,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103746,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103747,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103750,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103761,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103762,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103751,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103758,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103752,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103737,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103738,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103763,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103764,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103739,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103740,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103753,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103731,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103765,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103754,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103769,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103755,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103766,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103748,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103732,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103770,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103767,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103741,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103759,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103742,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103733,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103768,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103771,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103734,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103756,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103749,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103735,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103757,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 103743,
+          "valueName": "TB",
+          "itmValueSortOrder": 43
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7005,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6911,
+      "itmName": "Paternal Grandmother",
+      "itmCode": "FH_PATERNAL_GRANDMOTHER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103800,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103772,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103784,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103776,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103785,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103786,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103787,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103790,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103801,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103802,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103791,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103797,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103792,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103777,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103778,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103803,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103804,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103779,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103780,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103793,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103773,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103805,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103794,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103811,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103795,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103806,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103788,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103774,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103812,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103807,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103781,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103798,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103782,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103808,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103809,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103799,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103813,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103810,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103789,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103775,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103796,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 103783,
+          "valueName": "TB",
+          "itmValueSortOrder": 43
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7006,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6912,
+      "itmName": "Sister",
+      "itmCode": "FH_SISTER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103841,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103814,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103825,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103818,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103826,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103827,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103828,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103831,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103842,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103843,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103832,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103838,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103833,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103819,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103820,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103844,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103845,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103821,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103822,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103834,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103815,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103846,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103835,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103853,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103836,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103847,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103829,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103816,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103854,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103848,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103823,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103839,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103824,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103849,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103850,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103840,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103855,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103852,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103830,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103817,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103837,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 103851,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7007,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6913,
+      "itmName": "Aunt",
+      "itmCode": "FH_AUNT",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103883,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103856,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103868,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103862,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103869,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103870,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103871,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103873,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103884,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103885,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103874,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103881,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103875,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103863,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103864,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103886,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103887,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103865,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103866,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103876,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103857,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103888,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103877,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103895,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103878,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103889,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103872,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103858,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103896,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103890,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103867,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103882,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103859,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 103879,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103860,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103897,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103861,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103880,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103893,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103894,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103891,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103892,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7008,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6914,
+      "itmName": "Daughter",
+      "itmCode": "FH_DAUGHTER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103934,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103903,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103911,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103909,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103912,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103913,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103914,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103922,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103925,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103926,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103915,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103923,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103916,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103904,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103905,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103927,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103928,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103906,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103907,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103917,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103898,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103929,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103918,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103937,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103919,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103930,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103910,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103899,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103938,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103931,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103908,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103924,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103900,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 103920,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103901,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103939,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103902,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103921,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103935,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103936,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103932,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103933,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7009,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6915,
+      "itmName": "Denies family history of major diseases",
+      "itmCode": "FH_DENIES_FAMILY_HISTORY_OF_MAJOR_DISEASES",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103942,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103941,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103940,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103943,
+          "valueName": "VOID",
+          "itmValueSortOrder": 4
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7010,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6916,
+      "itmName": "Father",
+      "itmCode": "FH_FATHER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103970,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103944,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103955,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103948,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 103956,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 103957,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 103958,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 103960,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 103971,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 103972,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 103961,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 103967,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 103962,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103949,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103950,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 103973,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 103974,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 103951,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 103952,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 103963,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103945,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 103975,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 103964,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 103984,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 103965,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 103976,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 103959,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103946,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 103985,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 103977,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103953,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 103968,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103954,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 103978,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 103979,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 103947,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103969,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 103966,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 103982,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 103983,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103980,
+          "valueName": "Eye Pain",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 103981,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7011,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6917,
+      "itmName": "No change reported since last exam.",
+      "itmCode": "FH_NO_CHANGE_REPORTED_SINCE_LAST_EXAM",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 103988,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103987,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 103986,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103989,
+          "valueName": "VOID",
+          "itmValueSortOrder": 4
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7012,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6918,
+      "itmName": "Mother",
+      "itmCode": "FH_MOTHER",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 104021,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 103992,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 104003,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 103997,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 104004,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 104005,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 104006,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 104009,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 104022,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 104023,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 104010,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 104017,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 104011,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 103998,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 103999,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 104024,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 104025,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 104000,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 104001,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 104012,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 103993,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 104026,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 104013,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 104031,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 104014,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 104027,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 104007,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 103990,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 104029,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 104018,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 103994,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 104015,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 103995,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 104019,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 104020,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 104016,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 104030,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 104028,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 104002,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 103991,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 104008,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 103996,
+          "valueName": "TB",
+          "itmValueSortOrder": 43
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7013,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6919,
+      "itmName": "Son",
+      "itmCode": "FH_SON",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 104059,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 104032,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 104043,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 104036,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 104044,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 104045,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 104046,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 104049,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 104060,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 104061,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 104050,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 104056,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 104051,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 104037,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 104038,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 104062,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 104063,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 104039,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 104040,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 104052,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 104033,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 104064,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 104053,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 104071,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 104054,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 104065,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 104047,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 104034,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 104072,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 104066,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 104041,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 104057,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 104042,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 104067,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 104068,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 104058,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 104073,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 104070,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 104048,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 104035,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 104055,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 104069,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7014,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6920,
+      "itmName": "Husband",
+      "itmCode": "FH_HUSBAND",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 104118,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 104089,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 104097,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 104093,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 104098,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 104099,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 104100,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 104106,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 104119,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 104120,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 104107,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 104110,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 104108,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 104094,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 104095,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 104111,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 104112,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 104090,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 104091,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 104101,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 104084,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 104113,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 104102,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 104123,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 104103,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 104114,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 104096,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 104085,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 104124,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 104115,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 104092,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 104081,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 104109,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 104074,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 104086,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 104075,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 104104,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 104076,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 104087,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 104082,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 104125,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 104079,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 104088,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 104078,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 104105,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 104083,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 104121,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 104080,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 104122,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 104116,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 104077,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 104117,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7015,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6921,
+      "itmName": "Wife",
+      "itmCode": "FH_WIFE",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 104153,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 104126,
+          "valueName": "Diabetes Mellitus",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 104138,
+          "valueName": "Thyroid Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 104132,
+          "valueName": "Alive and well at age",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 104139,
+          "valueName": "Deceased age",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 104140,
+          "valueName": "Arthritis",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 104141,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 104143,
+          "valueName": "Cardiovascular Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 104154,
+          "valueName": "Endocrine Diseases",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 104155,
+          "valueName": "ENT Problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 104144,
+          "valueName": "EYE Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 104151,
+          "valueName": "GI Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 104145,
+          "valueName": "Gynecologic Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 104133,
+          "valueName": "Hematologic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 104134,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 104156,
+          "valueName": "Infections",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 104157,
+          "valueName": "High cholesterol",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 104135,
+          "valueName": "Neurologic Disorders",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 104136,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 104146,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 104127,
+          "valueName": "Respiratory Disease",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 104158,
+          "valueName": "Skin Problem",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 104147,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 104165,
+          "valueName": "Thyroid Disorder",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 104148,
+          "valueName": "Trauma and Miscellaneous Problems",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 104159,
+          "valueName": "Urologic Problem",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 104142,
+          "valueName": "Asthma",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 104128,
+          "valueName": "COPD",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 104166,
+          "valueName": "Cerebral Vascular Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 104160,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 104137,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 104152,
+          "valueName": "Hepatic Dysfunction",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 104129,
+          "valueName": "Malignancy",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 104149,
+          "valueName": "Neuromuscular Disease",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 104130,
+          "valueName": "Pancreatitis",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 104167,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 104131,
+          "valueName": "Renal Dysfunction",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 104150,
+          "valueName": "Seizure Disorder",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 104163,
+          "valueName": "Thrombotic Disorder",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 104164,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 104161,
+          "valueName": "EYE PAIN",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 104162,
+          "valueName": "TB",
+          "itmValueSortOrder": 42
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7016,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6922,
+      "itmName": "None Reported",
+      "itmCode": "FH_NONE_REPORTED",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "TEXT-AREA",
+      "emrCompntItmValues": []
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7616,
+    "emrConShtCompntsFkey": 435,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7525,
+      "itmName": "Family History",
+      "itmCode": "FH_FAMILY_HISTORY",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "TEXT-AREA",
+      "emrCompntItmValues": []
+    }
+  }
+]

@@ -1,0 +1,3224 @@
+[
+  {
+    "emrConShtCompntItmsPkey": 6402,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6308,
+      "itmName": "No Known Drug Allergies",
+      "itmCode": "ALLERGY_NO_KNOWN_DRUG_ALLERGIES",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 95694,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95695,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95699,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95708,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95703,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95709,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95712,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95715,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95710,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95713,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95718,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95704,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95705,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95719,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95706,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95716,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95720,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95711,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 95717,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 95714,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 95721,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 95696,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 95700,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 95697,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 95701,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 95722,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 95723,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 95702,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 95724,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 95698,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 95725,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 95726,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 95707,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6404,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6310,
+      "itmName": "Penicillins",
+      "itmCode": "ALLERGY_PENICILLINS",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 95767,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95773,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95781,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95785,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95768,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95774,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95775,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95782,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95760,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95761,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95786,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95762,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95769,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95783,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95770,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95776,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95778,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95763,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 95771,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 95772,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 95784,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 95764,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 95787,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 95765,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 95788,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 95779,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 95789,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 95790,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 95791,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 95777,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 95780,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 95766,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 95792,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6406,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6312,
+      "itmName": "Shellfish",
+      "itmCode": "ALLERGY_SHELLFISH",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 95827,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95839,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95847,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95848,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 95832,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95833,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95844,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95856,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 95828,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95837,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95840,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 95829,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95845,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95846,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 95834,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95849,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95857,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 95850,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 95851,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 95841,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 95853,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 95852,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 95858,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 95830,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 95831,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 95826,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 95854,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 95835,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 95838,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 95842,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 95843,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 95836,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 95855,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6414,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6320,
+      "itmName": "Latex",
+      "itmCode": "ALLERGY_LATEX",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 96090,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96103,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96104,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96108,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96096,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96097,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96109,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96114,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96091,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96105,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96115,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96098,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96110,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96111,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96112,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96116,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96117,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96100,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96113,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96106,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96119,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96092,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96101,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96118,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96120,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96099,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96102,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96093,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96095,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96121,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 96094,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 96122,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 96107,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6416,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6322,
+      "itmName": "Adhesive Tape",
+      "itmCode": "ALLERGY_ADHESIVE_TAPE",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 96161,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96162,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96165,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96166,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96163,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96167,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96168,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96188,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96173,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96181,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96182,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96158,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96174,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96186,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96159,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96175,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96176,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96177,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96178,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96169,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96183,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96160,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96170,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96171,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96184,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96164,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96172,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96156,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96185,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96187,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 96157,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 96179,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 96180,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6426,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6332,
+      "itmName": "Aspirin",
+      "itmCode": "ALLERGY_ASPIRIN",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 96486,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96497,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96502,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96510,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96487,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96503,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96511,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96514,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96488,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96491,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96492,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96489,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96504,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96515,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96495,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96505,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96516,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96498,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96512,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96490,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96493,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96496,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96506,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96494,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96507,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96499,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96513,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96517,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96518,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96500,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 96508,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 96509,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 96501,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6430,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6336,
+      "itmName": "Codeine",
+      "itmCode": "ALLERGY_CODEINE",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 96622,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96628,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96639,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96640,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96629,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96641,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96642,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96646,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96618,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96623,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96630,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96626,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96631,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96635,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96627,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96636,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96647,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96619,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96632,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96643,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96648,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96637,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96638,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96624,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96644,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96620,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96645,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96621,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96633,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96634,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 96649,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 96650,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 96625,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6436,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6342,
+      "itmName": "Nickel",
+      "itmCode": "ALLERGY_NICKEL",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 96835,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96842,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96846,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96847,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 96817,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96831,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96836,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96843,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 96818,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96821,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96822,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 96832,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96837,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96848,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 96819,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96823,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96828,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 96820,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96833,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 96829,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96838,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 96816,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96824,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 96825,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96839,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 96834,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96840,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 96826,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96830,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 96827,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 96841,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 96844,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 96845,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6453,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6359,
+      "itmName": "Egg",
+      "itmCode": "ALLERGY_EGG",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 97377,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 97378,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 97384,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 97392,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 97379,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 97385,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 97396,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 97397,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 97380,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 97381,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 97386,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 97382,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 97393,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 97398,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 97399,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 97403,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 97408,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 97404,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 97409,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 97387,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 97405,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 97388,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 97400,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 97389,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 97407,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 97390,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 97391,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 97394,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 97406,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 97383,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 97395,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 97401,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 97402,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6475,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6381,
+      "itmName": "Ibuprofen",
+      "itmCode": "ALLERGY_IBUPROFEN",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 98108,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98117,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98120,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98126,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98103,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98104,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98127,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98132,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98121,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98122,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98130,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98109,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98110,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98111,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98118,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98123,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98133,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98113,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 98128,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 98105,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 98124,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 98112,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 98134,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 98106,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 98129,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 98114,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 98119,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 98131,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 98135,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 98125,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 98107,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 98115,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 98116,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6476,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6382,
+      "itmName": "Iodine",
+      "itmCode": "ALLERGY_IODINE",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 98140,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98145,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98163,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98164,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98136,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98149,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98150,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98165,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98155,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98158,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98166,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98137,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98146,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98156,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98138,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98147,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98159,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98148,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 98160,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 98141,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 98161,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 98151,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 98167,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 98142,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 98162,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 98139,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 98152,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 98143,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 98157,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 98153,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 98144,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 98168,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 98154,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6500,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6406,
+      "itmName": "Morphine",
+      "itmCode": "ALLERGY_MORPHINE",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 98917,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98918,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98931,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98932,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 98911,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98912,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98919,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98923,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 98906,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98913,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98920,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 98921,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98926,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98938,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 98927,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98933,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98934,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 98922,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 98935,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 98924,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 98936,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 98907,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 98937,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 98914,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 98928,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 98909,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 98915,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 98908,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 98929,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 98925,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 98910,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 98916,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 98930,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6515,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6421,
+      "itmName": "Sulfa (Sulfonamides)",
+      "itmCode": "ALLERGY_SULFA_SULFONAMIDES",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 99401,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99402,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99403,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99420,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99408,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99414,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99421,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99423,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99404,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99424,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99429,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99405,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99409,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99415,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99406,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99410,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99430,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99416,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 99425,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 99417,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 99433,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 99431,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 99432,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 99418,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 99426,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 99411,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 99428,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 99407,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 99412,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 99413,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 99419,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 99427,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 99422,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6519,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6425,
+      "itmName": "Bee Pollens",
+      "itmCode": "ALLERGY_BEE_POLLENS",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 99539,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99543,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99556,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99562,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99533,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99546,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99552,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99563,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99547,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99557,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99558,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99540,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99544,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99559,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99534,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99545,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99548,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99549,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 99550,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 99535,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 99536,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 99537,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 99551,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 99560,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 99564,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 99538,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 99541,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 99553,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 99561,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 99554,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 99555,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 99542,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 99565,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6527,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6433,
+      "itmName": "Amoxicillin",
+      "itmCode": "ALLERGY_AMOXICILLIN",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 99775,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99779,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99798,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99807,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 99776,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99785,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99786,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99787,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 99789,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99794,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99801,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 99780,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99788,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99802,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 99777,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99781,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99795,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 99790,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 99799,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 99782,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 99783,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 99784,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 99791,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 99792,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 99800,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 99796,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 99803,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 99778,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 99793,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 99804,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 99797,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 99805,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 99806,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6538,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6444,
+      "itmName": "Gluten Protein",
+      "itmCode": "ALLERGY_GLUTEN_PROTEIN",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 100147,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 100155,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 100162,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 100165,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 100138,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 100139,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 100158,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 100166,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 100140,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 100156,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 100159,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 100148,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 100152,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 100167,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 100143,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 100144,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 100163,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 100160,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 100168,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 100149,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 100169,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 100141,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 100170,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 100145,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 100153,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 100154,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 100157,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 100146,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 100150,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 100161,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 100151,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 100164,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 100142,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6565,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6471,
+      "itmName": "No Known Allergies",
+      "itmCode": "ALLERGY_NO_KNOWN_ALLERGIES",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101007,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101010,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101014,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101029,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101008,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101021,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101022,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101030,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101011,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101031,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101032,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101015,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101016,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101017,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101012,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101033,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101037,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101018,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101023,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101009,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101038,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101024,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101034,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101013,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101039,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101019,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101027,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101025,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101035,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101028,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101026,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101020,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101036,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6573,
+    "emrConShtCompntsFkey": 407,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6479,
+      "itmName": "Peanut",
+      "itmCode": "ALLERGY_PEANUT",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101288,
+          "valueName": "Allergy to substance",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101293,
+          "valueName": "Arthralgia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101296,
+          "valueName": "ACTIVE",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101297,
+          "valueName": "MILD",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101275,
+          "valueName": "Drug allergy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101280,
+          "valueName": "Chills",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101282,
+          "valueName": "INACTIVE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101298,
+          "valueName": "MODERATE",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101276,
+          "valueName": "Drug intolerance",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101283,
+          "valueName": "Cough",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101299,
+          "valueName": "RESOLVED",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101289,
+          "valueName": "SEVERE",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101290,
+          "valueName": "Fever",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101300,
+          "valueName": "Food allergy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101271,
+          "valueName": "Headache",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101272,
+          "valueName": "VOID",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101277,
+          "valueName": "Food intolerance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101284,
+          "valueName": "Hives",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101301,
+          "valueName": "Propensity to adverse reactions",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101285,
+          "valueName": "Propensity to adverse reactions to drug",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101286,
+          "valueName": "Swelling",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101273,
+          "valueName": "Propensity to adverse reactions to food",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101278,
+          "valueName": "Sore throat",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101291,
+          "valueName": "Propensity to adverse reactions to substance",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101292,
+          "valueName": "Shortness of breath/difficulty breathing",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101279,
+          "valueName": "Rhinorrhea",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101281,
+          "valueName": "Active",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101294,
+          "valueName": "Rash",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101302,
+          "valueName": "Inactive",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101303,
+          "valueName": "Pain/soreness at injection site",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101287,
+          "valueName": "Nasal congestion",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101274,
+          "valueName": "Myalgia",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101295,
+          "valueName": "Malaise/fatigue",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  }
+]

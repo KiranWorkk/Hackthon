@@ -1,0 +1,15 @@
+[
+  {
+    "emrConShtCompntItmsPkey": 6605,
+    "emrConShtCompntsFkey": 416,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6511,
+      "itmName": "Medication List:",
+      "itmCode": "MEDS_MEDICATION_LIST",
+      "attribute1": "#@GeneratedText#@:",
+      "attribute11": "RICH-TEXT",
+      "emrCompntItmValues": []
+    }
+  }
+]

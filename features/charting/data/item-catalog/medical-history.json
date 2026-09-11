@@ -1,0 +1,2881 @@
+[
+  {
+    "emrConShtCompntItmsPkey": 6593,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6499,
+      "itmName": "Gynecology",
+      "itmCode": "PMH_GYNECOLOGY",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101328,
+          "valueName": "HPV",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101345,
+          "valueName": "Polycystic Ovarian Syndrome",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101315,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101339,
+          "valueName": "Bone Density",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101308,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101346,
+          "valueName": "Gynecological Exam",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101316,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101309,
+          "valueName": "Mammography",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101347,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101340,
+          "valueName": "Atrophic Vaginitis",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101324,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101332,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101333,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101334,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101320,
+          "valueName": "Abnormal PAP Smear",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101348,
+          "valueName": "Diabetes",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101317,
+          "valueName": "Amenorrhea",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101325,
+          "valueName": "High blood presure",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101349,
+          "valueName": "Hospitalization/surgeries",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101335,
+          "valueName": "Bartholin's Cyst",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101350,
+          "valueName": "Thyroid",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101341,
+          "valueName": "Bartholin's Abscess",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101329,
+          "valueName": "Cervical Polyp",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101330,
+          "valueName": "Cervicitis",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101351,
+          "valueName": "Cystocele Rectocele Prolapse",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101326,
+          "valueName": "Dysmenorrhea",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101342,
+          "valueName": "Dysmenorrhea, psychogenic",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101343,
+          "valueName": "Dyspareunia",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101331,
+          "valueName": "Endometriosis",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101336,
+          "valueName": "Gardnerella vaginalis",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101321,
+          "valueName": "Infertility",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101310,
+          "valueName": "Menopausal Disorder",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101352,
+          "valueName": "Menopausal Hormone Replacement Therapy",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101344,
+          "valueName": "Menses frequent or excessive",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101311,
+          "valueName": "Menses infrequent or scanty",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 101337,
+          "valueName": "Menses irregular",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 101318,
+          "valueName": "Metrorrhagia",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 101322,
+          "valueName": "Mittleschmerz",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 101353,
+          "valueName": "Ovarian Cyst",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 101327,
+          "valueName": "Ovulation bleeding",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 101338,
+          "valueName": "Premenstrual Tension Syndrome",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 101354,
+          "valueName": "Pelvic Inflammatory Disease",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 101312,
+          "valueName": "Screening for Cervical Cancer",
+          "itmValueSortOrder": 43
+        },
+        {
+          "emrCompntItmValuesPkey": 101319,
+          "valueName": "Stress incontinence",
+          "itmValueSortOrder": 44
+        },
+        {
+          "emrCompntItmValuesPkey": 101313,
+          "valueName": "Vaginal Moniliasis",
+          "itmValueSortOrder": 45
+        },
+        {
+          "emrCompntItmValuesPkey": 101314,
+          "valueName": "Vaginitis",
+          "itmValueSortOrder": 46
+        },
+        {
+          "emrCompntItmValuesPkey": 101323,
+          "valueName": "Others",
+          "itmValueSortOrder": 47
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6594,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6500,
+      "itmName": "Infectious Disease",
+      "itmCode": "PMH_INFECTIOUS_DISEASE",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101379,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101387,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101365,
+          "valueName": "Chickenpox",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101374,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101375,
+          "valueName": "Giardiasis",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101388,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101380,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101396,
+          "valueName": "Gonorrhea, acute Lower GU Tract",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101376,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101368,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101377,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101389,
+          "valueName": "Herpes Simplex",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101355,
+          "valueName": "Cardiovascular",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101381,
+          "valueName": "Herpes Zoster",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101361,
+          "valueName": "current medications",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101397,
+          "valueName": "Diabetes",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101398,
+          "valueName": "HIV Disease",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101369,
+          "valueName": "High blood presure",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101399,
+          "valueName": "Hospitalization/surgeries",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101362,
+          "valueName": "HIV Positive, asymptomatic",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101400,
+          "valueName": "Thyroid",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101401,
+          "valueName": "Infectious Mononucleosis",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101402,
+          "valueName": "Infectious or Parasitic Disease",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101356,
+          "valueName": "Influenza with Upper Respiratory Symptoms",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101370,
+          "valueName": "Intestinal Protozoa",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101382,
+          "valueName": "Lyme Disease",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101357,
+          "valueName": "Malaria",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101390,
+          "valueName": "Malaria Past",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101391,
+          "valueName": "Measles",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101403,
+          "valueName": "Mumps",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101358,
+          "valueName": "Pediculosis",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101404,
+          "valueName": "Polio Late Effects",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101359,
+          "valueName": "Polio Past",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101392,
+          "valueName": "Rocky Mountain Spotted Fever",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101405,
+          "valueName": "Rubella",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 101383,
+          "valueName": "Salmonella Gastroenteritis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 101360,
+          "valueName": "Sarcoidosis",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 101371,
+          "valueName": "Scabies",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 101406,
+          "valueName": "Septicemia",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 101372,
+          "valueName": "Shigellosis",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 101366,
+          "valueName": "Staphylococcal Food Poisoning",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 101378,
+          "valueName": "Strep Throat",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 101384,
+          "valueName": "Syphilis",
+          "itmValueSortOrder": 43
+        },
+        {
+          "emrCompntItmValuesPkey": 101407,
+          "valueName": "Tinea Versicolor",
+          "itmValueSortOrder": 44
+        },
+        {
+          "emrCompntItmValuesPkey": 101385,
+          "valueName": "Trichomoniasis",
+          "itmValueSortOrder": 45
+        },
+        {
+          "emrCompntItmValuesPkey": 101393,
+          "valueName": "Tuberculosis Exposure",
+          "itmValueSortOrder": 46
+        },
+        {
+          "emrCompntItmValuesPkey": 101373,
+          "valueName": "Tuberculosis Past",
+          "itmValueSortOrder": 47
+        },
+        {
+          "emrCompntItmValuesPkey": 101394,
+          "valueName": "Tuberculosis Pulmonary",
+          "itmValueSortOrder": 48
+        },
+        {
+          "emrCompntItmValuesPkey": 101363,
+          "valueName": "Tuberculosis Skin Test Positive",
+          "itmValueSortOrder": 49
+        },
+        {
+          "emrCompntItmValuesPkey": 101367,
+          "valueName": "Venereal Disease",
+          "itmValueSortOrder": 50
+        },
+        {
+          "emrCompntItmValuesPkey": 101386,
+          "valueName": "Warts",
+          "itmValueSortOrder": 51
+        },
+        {
+          "emrCompntItmValuesPkey": 101395,
+          "valueName": "Warts Condyloma",
+          "itmValueSortOrder": 52
+        },
+        {
+          "emrCompntItmValuesPkey": 101364,
+          "valueName": "Whooping Cough",
+          "itmValueSortOrder": 53
+        },
+        {
+          "emrCompntItmValuesPkey": 101408,
+          "valueName": "Others",
+          "itmValueSortOrder": 54
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6595,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6501,
+      "itmName": "Cardiovascular",
+      "itmCode": "PMH_CARDIOVASCULAR",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101413,
+          "valueName": "Bradycardia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101433,
+          "valueName": "CABG",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101463,
+          "valueName": "Dizziness and giddiness",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101487,
+          "valueName": "Gastro-esophageal reflux disease with esophagitis",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101464,
+          "valueName": "Gastro-esophageal reflux disease without esophagitis",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101446,
+          "valueName": "Heart Murmur",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101453,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101454,
+          "valueName": "Hypertension",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101434,
+          "valueName": "Hypotension",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101424,
+          "valueName": "Left Bundle Branch Block",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101465,
+          "valueName": "Other giant cell arteritis",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101425,
+          "valueName": "Tachycardia, unspecified",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101414,
+          "valueName": "Thoracic Outlet Syndrome",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101415,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101455,
+          "valueName": "ASCVD",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101466,
+          "valueName": "Abnormal EKG",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101416,
+          "valueName": "Acute Pulmonary Edema",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101467,
+          "valueName": "Angina Pectoris",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101476,
+          "valueName": "Angina Pectoris- Unstable",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101477,
+          "valueName": "Aortic Aneurysm",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101426,
+          "valueName": "Aortic Aneurysm- Abdominal",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101456,
+          "valueName": "Aortic Insufficiency",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101468,
+          "valueName": "Aortic Sclerosis without stenosis",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101435,
+          "valueName": "Aortic Stenosis",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101436,
+          "valueName": "Aortic Valve Bicuspid",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101457,
+          "valueName": "Aortic Valve Disease",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101417,
+          "valueName": "Arteritis, Giant Cell Temporal",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101437,
+          "valueName": "Atherosclerosis",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101478,
+          "valueName": "Atrial Fibrillation",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101447,
+          "valueName": "Atrial Flutter",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101458,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101418,
+          "valueName": "Cardiac Conduction Disorder",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101479,
+          "valueName": "Cardiac Dysrhythmia",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101480,
+          "valueName": "Cardiomyopathy",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101427,
+          "valueName": "Cerebrovascular Disease",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 101419,
+          "valueName": "Circulation Problem",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 101469,
+          "valueName": "Congestive Heart Failure",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 101420,
+          "valueName": "Coronary Artery Disease",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 101459,
+          "valueName": "Deep Vein Thrombosis",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 101470,
+          "valueName": "Heart Disease",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 101448,
+          "valueName": "Hereditary Angioedema",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 101409,
+          "valueName": "Jarvelle- Lang- Neilson Syndrome",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 101410,
+          "valueName": "Mitral Anular Calcification",
+          "itmValueSortOrder": 43
+        },
+        {
+          "emrCompntItmValuesPkey": 101471,
+          "valueName": "Mitral Regurgitation",
+          "itmValueSortOrder": 44
+        },
+        {
+          "emrCompntItmValuesPkey": 101438,
+          "valueName": "Mitral Stenosis",
+          "itmValueSortOrder": 45
+        },
+        {
+          "emrCompntItmValuesPkey": 101460,
+          "valueName": "Mitral Valve Disease",
+          "itmValueSortOrder": 46
+        },
+        {
+          "emrCompntItmValuesPkey": 101428,
+          "valueName": "Mitral Valve Prolapse",
+          "itmValueSortOrder": 47
+        },
+        {
+          "emrCompntItmValuesPkey": 101439,
+          "valueName": "Multifocal Atrial Tachycardia",
+          "itmValueSortOrder": 48
+        },
+        {
+          "emrCompntItmValuesPkey": 101481,
+          "valueName": "Myocardial Infarction, acute",
+          "itmValueSortOrder": 49
+        },
+        {
+          "emrCompntItmValuesPkey": 101472,
+          "valueName": "Myocardial Infarction, old",
+          "itmValueSortOrder": 50
+        },
+        {
+          "emrCompntItmValuesPkey": 101473,
+          "valueName": "Myocardial Ischemia",
+          "itmValueSortOrder": 51
+        },
+        {
+          "emrCompntItmValuesPkey": 101440,
+          "valueName": "Orthostatic Hypotension",
+          "itmValueSortOrder": 52
+        },
+        {
+          "emrCompntItmValuesPkey": 101474,
+          "valueName": "Peripheral Vascular Disease",
+          "itmValueSortOrder": 53
+        },
+        {
+          "emrCompntItmValuesPkey": 101449,
+          "valueName": "Phlebitis",
+          "itmValueSortOrder": 54
+        },
+        {
+          "emrCompntItmValuesPkey": 101421,
+          "valueName": "Premature Systoles",
+          "itmValueSortOrder": 55
+        },
+        {
+          "emrCompntItmValuesPkey": 101475,
+          "valueName": "Pulmonary Embolism",
+          "itmValueSortOrder": 56
+        },
+        {
+          "emrCompntItmValuesPkey": 101482,
+          "valueName": "Pulmonary Hypertension",
+          "itmValueSortOrder": 57
+        },
+        {
+          "emrCompntItmValuesPkey": 101411,
+          "valueName": "Pulmonary Valve Disease",
+          "itmValueSortOrder": 58
+        },
+        {
+          "emrCompntItmValuesPkey": 101441,
+          "valueName": "Rheumatic Fever",
+          "itmValueSortOrder": 59
+        },
+        {
+          "emrCompntItmValuesPkey": 101429,
+          "valueName": "Rheumatic Heart Disease",
+          "itmValueSortOrder": 60
+        },
+        {
+          "emrCompntItmValuesPkey": 101483,
+          "valueName": "SVT-Paroxysmal",
+          "itmValueSortOrder": 61
+        },
+        {
+          "emrCompntItmValuesPkey": 101450,
+          "valueName": "Temporal Arteritis",
+          "itmValueSortOrder": 62
+        },
+        {
+          "emrCompntItmValuesPkey": 101442,
+          "valueName": "Tricuspid Valve Disease",
+          "itmValueSortOrder": 63
+        },
+        {
+          "emrCompntItmValuesPkey": 101484,
+          "valueName": "Varicose Veins",
+          "itmValueSortOrder": 64
+        },
+        {
+          "emrCompntItmValuesPkey": 101412,
+          "valueName": "Venous Insufficiency",
+          "itmValueSortOrder": 65
+        },
+        {
+          "emrCompntItmValuesPkey": 101485,
+          "valueName": "Ventricular Tachycardia",
+          "itmValueSortOrder": 66
+        },
+        {
+          "emrCompntItmValuesPkey": 101422,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 67
+        },
+        {
+          "emrCompntItmValuesPkey": 101423,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 68
+        },
+        {
+          "emrCompntItmValuesPkey": 101443,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 69
+        },
+        {
+          "emrCompntItmValuesPkey": 101486,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 70
+        },
+        {
+          "emrCompntItmValuesPkey": 101444,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 71
+        },
+        {
+          "emrCompntItmValuesPkey": 101445,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 72
+        },
+        {
+          "emrCompntItmValuesPkey": 101430,
+          "valueName": "Cardiovascular",
+          "itmValueSortOrder": 73
+        },
+        {
+          "emrCompntItmValuesPkey": 101431,
+          "valueName": "Diabetes",
+          "itmValueSortOrder": 74
+        },
+        {
+          "emrCompntItmValuesPkey": 101432,
+          "valueName": "High blood presure",
+          "itmValueSortOrder": 75
+        },
+        {
+          "emrCompntItmValuesPkey": 101451,
+          "valueName": "Hospitalization/surgeries",
+          "itmValueSortOrder": 76
+        },
+        {
+          "emrCompntItmValuesPkey": 101461,
+          "valueName": "Thyroid",
+          "itmValueSortOrder": 77
+        },
+        {
+          "emrCompntItmValuesPkey": 101462,
+          "valueName": "Wolf- Parkinson- White Syndrome",
+          "itmValueSortOrder": 78
+        },
+        {
+          "emrCompntItmValuesPkey": 101452,
+          "valueName": "Others",
+          "itmValueSortOrder": 79
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6596,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6502,
+      "itmName": "Endocrine",
+      "itmCode": "PMH_ENDOCRINE",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101515,
+          "valueName": "Hashimoto's thyroiditis",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101488,
+          "valueName": "Hyperlipidemia",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101489,
+          "valueName": "Hyperthyroidism",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101511,
+          "valueName": "Hypoglycemia",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101504,
+          "valueName": "Insulin Resistance",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101495,
+          "valueName": "Vitamin D Deficiency",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101505,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101500,
+          "valueName": "Hypothyroidism",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101490,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101491,
+          "valueName": "Hyperglycemia",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101516,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101506,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101492,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101496,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101501,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101502,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101497,
+          "valueName": "Diabetes",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101512,
+          "valueName": "Addison's Disease",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101509,
+          "valueName": "Cushing's Syndrome",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101498,
+          "valueName": "Hospitalization/surgeries",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101517,
+          "valueName": "Thyroid",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101513,
+          "valueName": "Hyperparathyroidism",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101503,
+          "valueName": "Hypoglycemia",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101514,
+          "valueName": "Hypoparathyroidism",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101499,
+          "valueName": "Morbid Obesity",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101493,
+          "valueName": "Obesity",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101508,
+          "valueName": "Osteoporosis",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101494,
+          "valueName": "Osteoporosis from Disuse",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101510,
+          "valueName": "Paget's Bone Disease",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101507,
+          "valueName": "Others",
+          "itmValueSortOrder": 30
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6597,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6503,
+      "itmName": "Eye",
+      "itmCode": "PMH_EYE",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101544,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101529,
+          "valueName": "Astigmatism",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101550,
+          "valueName": "Blepharitis",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101536,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101537,
+          "valueName": "Blindness One Eye",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101532,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101518,
+          "valueName": "Blindness Both Eyes",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101553,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101545,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101530,
+          "valueName": "Cataract",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101551,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101538,
+          "valueName": "Color Blindness",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101546,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101547,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101519,
+          "valueName": "Conjunctivitis",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101554,
+          "valueName": "Conjunctivitis Allergic chronic",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101523,
+          "valueName": "Diabetes",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101520,
+          "valueName": "Conjunctivitis Atopic acute",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101524,
+          "valueName": "High blood presure",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101525,
+          "valueName": "Hospitalization/surgeries",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101555,
+          "valueName": "Thyroid",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101548,
+          "valueName": "Eye Disorder",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101552,
+          "valueName": "Eye Dryness",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101533,
+          "valueName": "Glaucoma",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101539,
+          "valueName": "Glaucoma Borderline",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101526,
+          "valueName": "Glaucoma Closed",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101540,
+          "valueName": "Glaucoma Low Tension",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101527,
+          "valueName": "Glaucoma Open",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101541,
+          "valueName": "Glaucoma Suspect",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101531,
+          "valueName": "Glaucomatous Atrophy of Optic Disc",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101534,
+          "valueName": "Glaucoma with other Ocular Disorder",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101542,
+          "valueName": "Diplopia",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101556,
+          "valueName": "Migraine Optical",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101543,
+          "valueName": "Myopia",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101521,
+          "valueName": "Pterygium",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 101522,
+          "valueName": "Nystagmus",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 101535,
+          "valueName": "Presbyopia",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 101528,
+          "valueName": "Strabismus",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 101549,
+          "valueName": "Visual Field Defect",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 101557,
+          "valueName": "Others",
+          "itmValueSortOrder": 40
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6598,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6504,
+      "itmName": "Neurologic",
+      "itmCode": "PMH_NEUROLOGIC",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101572,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101577,
+          "valueName": "Alcohol Withdrawal Delirium",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101566,
+          "valueName": "Alcohol Withdrawal Psychosis",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101573,
+          "valueName": "Alzheimer's Disease",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101582,
+          "valueName": "Aphasia",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101562,
+          "valueName": "Bell's Palsy",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101561,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101558,
+          "valueName": "Carotid Artery Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101583,
+          "valueName": "Carpal Tunnel Syndrome",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101584,
+          "valueName": "Cerebrovascular Accident",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101578,
+          "valueName": "Cervical Disc Disorder with Myelopathy",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101574,
+          "valueName": "Cervical Disc Displacement without Myelopathy",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101563,
+          "valueName": "Cervicalgia",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101585,
+          "valueName": "Cervicobrachial Syndrome",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101586,
+          "valueName": "Cervicocranial Syndrome",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101575,
+          "valueName": "Dementia",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101579,
+          "valueName": "Epilepsy Focal Motor",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101580,
+          "valueName": "Epilepsy Grand Mal",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101567,
+          "valueName": "Epilepsy Petit Mal",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101576,
+          "valueName": "Hemiparesis",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101581,
+          "valueName": "Hemiplegia",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101568,
+          "valueName": "Intracranial Hemorrhage",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101564,
+          "valueName": "Lumbar Disc Disorder with Myelopathy",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101560,
+          "valueName": "Lumbar Disc Disorder without Myelopathy",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101559,
+          "valueName": "Meningitis",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101569,
+          "valueName": "Migraine",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101570,
+          "valueName": "Migraine Common",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101565,
+          "valueName": "Migraine Intractable",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101571,
+          "valueName": "Migraine Optical",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 106139,
+          "valueName": "Migraine Optical Copy",
+          "itmValueSortOrder": 30
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6599,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6505,
+      "itmName": "Nephrology",
+      "itmCode": "PMH_NEPHROLOGY",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101630,
+          "valueName": "Pernicious Anemia",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101613,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101642,
+          "valueName": "Acute Renal Failure",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101624,
+          "valueName": "Acute Tubular Necrosis",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101614,
+          "valueName": "Amyloidosis",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101601,
+          "valueName": "Amyloidosis, Primary",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101595,
+          "valueName": "Analgesic Abuse Nephropathy",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101615,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101663,
+          "valueName": "Chronic Renal Failure",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101596,
+          "valueName": "Chronic Renal Failure with acute exacerbation",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101631,
+          "valueName": "Cyclosporine Nephrotoxicity",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101632,
+          "valueName": "Dehydration",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101625,
+          "valueName": "Diabetic Nephropathy",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101643,
+          "valueName": "ESRD",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101655,
+          "valueName": "ESRD on Hemodialysis",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101597,
+          "valueName": "Essential Hypertension",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101644,
+          "valueName": "Focal Glomerulosclerosis",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101633,
+          "valueName": "Hematuria, Isolated",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101616,
+          "valueName": "Hemolytic Uremic Syndrome",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101634,
+          "valueName": "Henoch-Schonlein Purpura",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101587,
+          "valueName": "Hepatic Cirrosis",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101598,
+          "valueName": "Hepatorenal Syndrome",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101617,
+          "valueName": "Hereditary Nephritis",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101602,
+          "valueName": "Hyopmagnesemia",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101645,
+          "valueName": "Hypercalcemia",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101656,
+          "valueName": "Hypercalcemic Nephropathy",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101646,
+          "valueName": "Hyperkalemia",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101647,
+          "valueName": "Hypermagnesemia",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101603,
+          "valueName": "Hypernatremia",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101618,
+          "valueName": "Hyperparathyroidism",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101657,
+          "valueName": "Hypersensitivity Vasculitis",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101648,
+          "valueName": "Hypocalcemia",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101635,
+          "valueName": "Hypokalemia",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101619,
+          "valueName": "Hyponatremia",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101649,
+          "valueName": "Hypoparathyroidism",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 101626,
+          "valueName": "IGA Nephropathy",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 101650,
+          "valueName": "Interstitial Nephritis, Drug Induced",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 101636,
+          "valueName": "Ketocaidosis",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 101604,
+          "valueName": "Lactic Acidosis",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 101605,
+          "valueName": "Light-Chain Deposition Disease",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 101588,
+          "valueName": "Lupus Nephritis",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 101658,
+          "valueName": "Medulary Cystic Kidney Disease",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 101659,
+          "valueName": "Medulary Sponge Kidney",
+          "itmValueSortOrder": 43
+        },
+        {
+          "emrCompntItmValuesPkey": 101589,
+          "valueName": "Membranoproliferative Glomerulonephritis",
+          "itmValueSortOrder": 44
+        },
+        {
+          "emrCompntItmValuesPkey": 101651,
+          "valueName": "Memgranous Nephropathy",
+          "itmValueSortOrder": 45
+        },
+        {
+          "emrCompntItmValuesPkey": 101652,
+          "valueName": "Metabolic Acidosis",
+          "itmValueSortOrder": 46
+        },
+        {
+          "emrCompntItmValuesPkey": 101599,
+          "valueName": "Metabolic Alkalosis",
+          "itmValueSortOrder": 47
+        },
+        {
+          "emrCompntItmValuesPkey": 101606,
+          "valueName": "Minimal Change Disease",
+          "itmValueSortOrder": 48
+        },
+        {
+          "emrCompntItmValuesPkey": 101660,
+          "valueName": "Myeloma Kidney",
+          "itmValueSortOrder": 49
+        },
+        {
+          "emrCompntItmValuesPkey": 101661,
+          "valueName": "Nephrolithiasis",
+          "itmValueSortOrder": 50
+        },
+        {
+          "emrCompntItmValuesPkey": 101590,
+          "valueName": "Nephrotic Syndrome",
+          "itmValueSortOrder": 51
+        },
+        {
+          "emrCompntItmValuesPkey": 101620,
+          "valueName": "Nephrotoxicity of NSAIDS",
+          "itmValueSortOrder": 52
+        },
+        {
+          "emrCompntItmValuesPkey": 101627,
+          "valueName": "Polyarteritis Nordosa",
+          "itmValueSortOrder": 53
+        },
+        {
+          "emrCompntItmValuesPkey": 101637,
+          "valueName": "Polyuria",
+          "itmValueSortOrder": 54
+        },
+        {
+          "emrCompntItmValuesPkey": 101607,
+          "valueName": "Postinfectious Glomerulonephritis, early",
+          "itmValueSortOrder": 55
+        },
+        {
+          "emrCompntItmValuesPkey": 101638,
+          "valueName": "Postinfectious Glomerulonephritis, late stage",
+          "itmValueSortOrder": 56
+        },
+        {
+          "emrCompntItmValuesPkey": 101621,
+          "valueName": "Pre-Renal Azotemia",
+          "itmValueSortOrder": 57
+        },
+        {
+          "emrCompntItmValuesPkey": 101622,
+          "valueName": "Progressive Systemic Sclerosis",
+          "itmValueSortOrder": 58
+        },
+        {
+          "emrCompntItmValuesPkey": 101639,
+          "valueName": "Proteinuria, Isolated",
+          "itmValueSortOrder": 59
+        },
+        {
+          "emrCompntItmValuesPkey": 101608,
+          "valueName": "Pyelonephritis, Acute",
+          "itmValueSortOrder": 60
+        },
+        {
+          "emrCompntItmValuesPkey": 101609,
+          "valueName": "Pyelonephritis, Chronic",
+          "itmValueSortOrder": 61
+        },
+        {
+          "emrCompntItmValuesPkey": 101628,
+          "valueName": "Rapidly Progressive Glomerulonephritis",
+          "itmValueSortOrder": 62
+        },
+        {
+          "emrCompntItmValuesPkey": 101591,
+          "valueName": "Reflux Nephropathy",
+          "itmValueSortOrder": 63
+        },
+        {
+          "emrCompntItmValuesPkey": 101610,
+          "valueName": "Renal Artery Stenosis",
+          "itmValueSortOrder": 64
+        },
+        {
+          "emrCompntItmValuesPkey": 101592,
+          "valueName": "Renal Cystic Disease, Aquired",
+          "itmValueSortOrder": 65
+        },
+        {
+          "emrCompntItmValuesPkey": 101662,
+          "valueName": "Renal Cysts, Simple",
+          "itmValueSortOrder": 66
+        },
+        {
+          "emrCompntItmValuesPkey": 101629,
+          "valueName": "Renal Transplant",
+          "itmValueSortOrder": 67
+        },
+        {
+          "emrCompntItmValuesPkey": 101600,
+          "valueName": "Renal Tubular Acidosis",
+          "itmValueSortOrder": 68
+        },
+        {
+          "emrCompntItmValuesPkey": 101593,
+          "valueName": "Sarcoid Nephropathy",
+          "itmValueSortOrder": 69
+        },
+        {
+          "emrCompntItmValuesPkey": 101640,
+          "valueName": "Urinary Tract Obstruction",
+          "itmValueSortOrder": 70
+        },
+        {
+          "emrCompntItmValuesPkey": 101623,
+          "valueName": "Wegeners Granulomatosis",
+          "itmValueSortOrder": 71
+        },
+        {
+          "emrCompntItmValuesPkey": 101611,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 72
+        },
+        {
+          "emrCompntItmValuesPkey": 101653,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 73
+        },
+        {
+          "emrCompntItmValuesPkey": 101594,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 74
+        },
+        {
+          "emrCompntItmValuesPkey": 101612,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 75
+        },
+        {
+          "emrCompntItmValuesPkey": 101654,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 76
+        },
+        {
+          "emrCompntItmValuesPkey": 101641,
+          "valueName": "Others",
+          "itmValueSortOrder": 77
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6600,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6506,
+      "itmName": "Hematology",
+      "itmCode": "PMH_HEMATOLOGY",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101689,
+          "valueName": "Factor V Leiden",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101696,
+          "valueName": "Pernicious Aemia",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101673,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101664,
+          "valueName": "Abnormal Red Blood Cells",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101701,
+          "valueName": "Abnormal White Blood Cells",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101709,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101665,
+          "valueName": "Agranulocytosis",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101710,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101702,
+          "valueName": "Anemia",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101711,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101690,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101691,
+          "valueName": "Anemia, acute Hemorrage",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101666,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101697,
+          "valueName": "Anemia of Chronic Disease",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101680,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101681,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101712,
+          "valueName": "Anemia, Iron Deficiency",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101667,
+          "valueName": "current medications",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101674,
+          "valueName": "Anemia, Iron Deficiency, chronic Blood Loss",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101713,
+          "valueName": "Diabetes",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101675,
+          "valueName": "Anemia, Iron Deficiency, Inadequate Intake",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101676,
+          "valueName": "High blood presure",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101692,
+          "valueName": "Hospitalization/surgeries",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101698,
+          "valueName": "Thyroid",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101677,
+          "valueName": "Anemia Non-autoimmune Hemolytic",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101682,
+          "valueName": "Aplastic Anemia",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101700,
+          "valueName": "Coagulation Defect",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101693,
+          "valueName": "Coagulation Deficiency, acquired",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101703,
+          "valueName": "Coagulation Deficiency, congenital factor XI",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101678,
+          "valueName": "Coagulation Disorder, congenital factor VIII",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101683,
+          "valueName": "Coagulation Disorder, congenital factor IX",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101668,
+          "valueName": "DIC",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101704,
+          "valueName": "Eosinophilia",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101684,
+          "valueName": "Hemochromatosis",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101669,
+          "valueName": "Hemorrhage from Anticoagulants",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 101670,
+          "valueName": "Leukocyte Genetic Anomaly",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 101679,
+          "valueName": "Leukocytosis",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 101685,
+          "valueName": "Leukomoid Reaction",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 101694,
+          "valueName": "Leukopenia",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 101699,
+          "valueName": "Lymphocytosis",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 101695,
+          "valueName": "Lymphopenia",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 101705,
+          "valueName": "Monoclonal Gamopathy",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 101671,
+          "valueName": "Neutropenia",
+          "itmValueSortOrder": 43
+        },
+        {
+          "emrCompntItmValuesPkey": 101686,
+          "valueName": "Platelet Qualitative Defect",
+          "itmValueSortOrder": 44
+        },
+        {
+          "emrCompntItmValuesPkey": 101687,
+          "valueName": "Purpura, Allergic, Henoch_Schonlein",
+          "itmValueSortOrder": 45
+        },
+        {
+          "emrCompntItmValuesPkey": 101714,
+          "valueName": "Thrombocytopenia",
+          "itmValueSortOrder": 46
+        },
+        {
+          "emrCompntItmValuesPkey": 101706,
+          "valueName": "Thrombocytopenia, primary ITP",
+          "itmValueSortOrder": 47
+        },
+        {
+          "emrCompntItmValuesPkey": 101707,
+          "valueName": "Thrombocytopenia, secondary",
+          "itmValueSortOrder": 48
+        },
+        {
+          "emrCompntItmValuesPkey": 101672,
+          "valueName": "Thrombotic Thrombocytopenic Purpura TTP",
+          "itmValueSortOrder": 49
+        },
+        {
+          "emrCompntItmValuesPkey": 101688,
+          "valueName": "Von Willebrand's Disease",
+          "itmValueSortOrder": 50
+        },
+        {
+          "emrCompntItmValuesPkey": 101708,
+          "valueName": "Others",
+          "itmValueSortOrder": 51
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6601,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6507,
+      "itmName": "ENT",
+      "itmCode": "PMH_ENT",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101750,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101756,
+          "valueName": "Allergic Rhinitis",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101722,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101743,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101736,
+          "valueName": "Apthous Ulcers",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101757,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101751,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101752,
+          "valueName": "Bullous Myringitis",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101744,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101737,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101745,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101723,
+          "valueName": "Canker Sores",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101715,
+          "valueName": "Cardiovascular",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101765,
+          "valueName": "Ear Disorder",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101738,
+          "valueName": "Eustachian Salpingitis",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101739,
+          "valueName": "High blood presure",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101724,
+          "valueName": "Hospitalization/surgeries",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101766,
+          "valueName": "Gingivitis acute",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101716,
+          "valueName": "Thyroid",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101746,
+          "valueName": "Gingivitis chronic",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101758,
+          "valueName": "Glossitis",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101717,
+          "valueName": "Hearing Loss Conductive",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101740,
+          "valueName": "Hearing Loss from Noise",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101725,
+          "valueName": "Hearing Loss Sensorineural",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101718,
+          "valueName": "Hoarseness",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101728,
+          "valueName": "Labyrinthitis",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101759,
+          "valueName": "Laryngitis acute",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101747,
+          "valueName": "Laryngitis chronic",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101767,
+          "valueName": "Laryngopharyngitis acute",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101768,
+          "valueName": "Leukoplakia Oral",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101769,
+          "valueName": "Lip Disease",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101760,
+          "valueName": "Meniere's Disease",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101741,
+          "valueName": "Nose Abscess or Ulcer",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101753,
+          "valueName": "Nasal Polyp",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101726,
+          "valueName": "Nasal Septum Deviation",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 101770,
+          "valueName": "Otalgia",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 101761,
+          "valueName": "Otitis Externa",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 101729,
+          "valueName": "Otitis Media acute",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 101719,
+          "valueName": "Otitis Media acute with Ruptured TM",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 101730,
+          "valueName": "Otitis Media chronic serous",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 101720,
+          "valueName": "Peritonsillar Abscess",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 101754,
+          "valueName": "Pharyngitis acute",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 101731,
+          "valueName": "Pharyngitis chronic",
+          "itmValueSortOrder": 43
+        },
+        {
+          "emrCompntItmValuesPkey": 101732,
+          "valueName": "Rhinitis chronic",
+          "itmValueSortOrder": 44
+        },
+        {
+          "emrCompntItmValuesPkey": 101733,
+          "valueName": "Salivary Gland Disorder",
+          "itmValueSortOrder": 45
+        },
+        {
+          "emrCompntItmValuesPkey": 101762,
+          "valueName": "Sinusitis acute",
+          "itmValueSortOrder": 46
+        },
+        {
+          "emrCompntItmValuesPkey": 101748,
+          "valueName": "Sinusitis chronic",
+          "itmValueSortOrder": 47
+        },
+        {
+          "emrCompntItmValuesPkey": 101755,
+          "valueName": "Stomatitis",
+          "itmValueSortOrder": 48
+        },
+        {
+          "emrCompntItmValuesPkey": 101771,
+          "valueName": "Throat Pain",
+          "itmValueSortOrder": 49
+        },
+        {
+          "emrCompntItmValuesPkey": 101749,
+          "valueName": "Tinnitus",
+          "itmValueSortOrder": 50
+        },
+        {
+          "emrCompntItmValuesPkey": 101721,
+          "valueName": "TMJ Disorder",
+          "itmValueSortOrder": 51
+        },
+        {
+          "emrCompntItmValuesPkey": 101734,
+          "valueName": "TMJ Arthralgia",
+          "itmValueSortOrder": 52
+        },
+        {
+          "emrCompntItmValuesPkey": 101763,
+          "valueName": "Tonsillitis acute",
+          "itmValueSortOrder": 53
+        },
+        {
+          "emrCompntItmValuesPkey": 101764,
+          "valueName": "Tonsil Adenoid Ddisease chronic",
+          "itmValueSortOrder": 54
+        },
+        {
+          "emrCompntItmValuesPkey": 101727,
+          "valueName": "Vertigo central",
+          "itmValueSortOrder": 55
+        },
+        {
+          "emrCompntItmValuesPkey": 101742,
+          "valueName": "Vertigo peripheral",
+          "itmValueSortOrder": 56
+        },
+        {
+          "emrCompntItmValuesPkey": 101735,
+          "valueName": "Voice Disturbance",
+          "itmValueSortOrder": 57
+        },
+        {
+          "emrCompntItmValuesPkey": 101772,
+          "valueName": "Others",
+          "itmValueSortOrder": 58
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6602,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6508,
+      "itmName": "Notes:",
+      "itmCode": "PMH_NOTES",
+      "attribute1": "#@GeneratedText#@",
+      "attribute11": "RICH-TEXT",
+      "emrCompntItmValues": []
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6603,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6509,
+      "itmName": "Gastrointestinal",
+      "itmCode": "PMH_GASTROINTESTINAL",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101809,
+          "valueName": "Barrett's Esophagus",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101779,
+          "valueName": "Celiac Disease",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101837,
+          "valueName": "Chrons Disease",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101773,
+          "valueName": "Diverticulitis",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101816,
+          "valueName": "Irritable Bowel Syndrome",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101817,
+          "valueName": "Nausea",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101818,
+          "valueName": "Peritonitis",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101810,
+          "valueName": "Personal history of colonic polyps",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101799,
+          "valueName": "Sigmoid Diverticulosis",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101800,
+          "valueName": "Umbilical Hernia",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101838,
+          "valueName": "Childhood Illness",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101811,
+          "valueName": "Achalasia",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101801,
+          "valueName": "Breast Disease",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101819,
+          "valueName": "Cholecystitis acute",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101774,
+          "valueName": "Cholecystitis nonacute",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101789,
+          "valueName": "Cholelithiasis",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101829,
+          "valueName": "Cirrhosis",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101812,
+          "valueName": "Colitis",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101839,
+          "valueName": "Colon Diverticulitis",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101802,
+          "valueName": "Colon Diverticulosis",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101775,
+          "valueName": "Constipation",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101820,
+          "valueName": "Diarrhea",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101780,
+          "valueName": "Diarrhea Functional",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101830,
+          "valueName": "Diarrhea Presumed Infection",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101790,
+          "valueName": "Duodenal Ulcer",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101821,
+          "valueName": "Duodenal Ulcer with Bleeding",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101822,
+          "valueName": "Duodenitis",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101791,
+          "valueName": "Duodenitis with Bleeding",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101792,
+          "valueName": "Esophageal Disorder",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101823,
+          "valueName": "Esophageal Diverticulum",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101781,
+          "valueName": "Esophageal Dyskinesia",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101824,
+          "valueName": "Esophageal Hemorrhage",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101825,
+          "valueName": "Esophageal Reflux",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101831,
+          "valueName": "Esophageal Stenosis",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101832,
+          "valueName": "Esophageal Ulcer",
+          "itmValueSortOrder": 35
+        },
+        {
+          "emrCompntItmValuesPkey": 101793,
+          "valueName": "Esophagitis",
+          "itmValueSortOrder": 36
+        },
+        {
+          "emrCompntItmValuesPkey": 101782,
+          "valueName": "GERD",
+          "itmValueSortOrder": 37
+        },
+        {
+          "emrCompntItmValuesPkey": 101803,
+          "valueName": "Gallstones",
+          "itmValueSortOrder": 38
+        },
+        {
+          "emrCompntItmValuesPkey": 101776,
+          "valueName": "Gallstones with Cholecystitis",
+          "itmValueSortOrder": 39
+        },
+        {
+          "emrCompntItmValuesPkey": 101826,
+          "valueName": "Gastric Ulcer",
+          "itmValueSortOrder": 40
+        },
+        {
+          "emrCompntItmValuesPkey": 101794,
+          "valueName": "Gastric Ulcer with Bleeding",
+          "itmValueSortOrder": 41
+        },
+        {
+          "emrCompntItmValuesPkey": 101840,
+          "valueName": "Gastritis",
+          "itmValueSortOrder": 42
+        },
+        {
+          "emrCompntItmValuesPkey": 101795,
+          "valueName": "Gastritis with Bleeding",
+          "itmValueSortOrder": 43
+        },
+        {
+          "emrCompntItmValuesPkey": 101783,
+          "valueName": "Gastroenteritis Noninfectious",
+          "itmValueSortOrder": 44
+        },
+        {
+          "emrCompntItmValuesPkey": 101784,
+          "valueName": "Hemorrhoids",
+          "itmValueSortOrder": 45
+        },
+        {
+          "emrCompntItmValuesPkey": 101804,
+          "valueName": "Hepatitis",
+          "itmValueSortOrder": 46
+        },
+        {
+          "emrCompntItmValuesPkey": 101841,
+          "valueName": "Hepatitis A",
+          "itmValueSortOrder": 47
+        },
+        {
+          "emrCompntItmValuesPkey": 101796,
+          "valueName": "Hepatitis B",
+          "itmValueSortOrder": 48
+        },
+        {
+          "emrCompntItmValuesPkey": 101805,
+          "valueName": "Hepatitis C",
+          "itmValueSortOrder": 49
+        },
+        {
+          "emrCompntItmValuesPkey": 101785,
+          "valueName": "Hepatitis Viral",
+          "itmValueSortOrder": 50
+        },
+        {
+          "emrCompntItmValuesPkey": 101842,
+          "valueName": "Hepatitis Virus Carrier",
+          "itmValueSortOrder": 51
+        },
+        {
+          "emrCompntItmValuesPkey": 101806,
+          "valueName": "Hepatitis chronic",
+          "itmValueSortOrder": 52
+        },
+        {
+          "emrCompntItmValuesPkey": 101777,
+          "valueName": "Hiatal Hernia",
+          "itmValueSortOrder": 53
+        },
+        {
+          "emrCompntItmValuesPkey": 101778,
+          "valueName": "Irritable Colon",
+          "itmValueSortOrder": 54
+        },
+        {
+          "emrCompntItmValuesPkey": 101827,
+          "valueName": "Ischemic Colitis",
+          "itmValueSortOrder": 55
+        },
+        {
+          "emrCompntItmValuesPkey": 101807,
+          "valueName": "Liver Disease",
+          "itmValueSortOrder": 56
+        },
+        {
+          "emrCompntItmValuesPkey": 101797,
+          "valueName": "Pancreatic Disease",
+          "itmValueSortOrder": 57
+        },
+        {
+          "emrCompntItmValuesPkey": 101808,
+          "valueName": "Pancreatitis acute",
+          "itmValueSortOrder": 58
+        },
+        {
+          "emrCompntItmValuesPkey": 101786,
+          "valueName": "Pancreatitis chronic",
+          "itmValueSortOrder": 59
+        },
+        {
+          "emrCompntItmValuesPkey": 101828,
+          "valueName": "Peptic Ulcer Disease",
+          "itmValueSortOrder": 60
+        },
+        {
+          "emrCompntItmValuesPkey": 101813,
+          "valueName": "Ulcerative Colitis",
+          "itmValueSortOrder": 61
+        },
+        {
+          "emrCompntItmValuesPkey": 101833,
+          "valueName": "Breast Disorder",
+          "itmValueSortOrder": 62
+        },
+        {
+          "emrCompntItmValuesPkey": 101814,
+          "valueName": "Obstetric Complications",
+          "itmValueSortOrder": 63
+        },
+        {
+          "emrCompntItmValuesPkey": 101843,
+          "valueName": "Psychiatric Disorder",
+          "itmValueSortOrder": 64
+        },
+        {
+          "emrCompntItmValuesPkey": 101787,
+          "valueName": "Sexually Transmitted Disease",
+          "itmValueSortOrder": 65
+        },
+        {
+          "emrCompntItmValuesPkey": 101798,
+          "valueName": "Other problems",
+          "itmValueSortOrder": 66
+        },
+        {
+          "emrCompntItmValuesPkey": 101834,
+          "valueName": "Cancer",
+          "itmValueSortOrder": 67
+        },
+        {
+          "emrCompntItmValuesPkey": 101844,
+          "valueName": "Cardiovascular",
+          "itmValueSortOrder": 68
+        },
+        {
+          "emrCompntItmValuesPkey": 101845,
+          "valueName": "current medications",
+          "itmValueSortOrder": 69
+        },
+        {
+          "emrCompntItmValuesPkey": 101835,
+          "valueName": "Diabetes",
+          "itmValueSortOrder": 70
+        },
+        {
+          "emrCompntItmValuesPkey": 101788,
+          "valueName": "High blood presure",
+          "itmValueSortOrder": 71
+        },
+        {
+          "emrCompntItmValuesPkey": 101846,
+          "valueName": "Hospitalization/surgeries",
+          "itmValueSortOrder": 72
+        },
+        {
+          "emrCompntItmValuesPkey": 101836,
+          "valueName": "Thyroid",
+          "itmValueSortOrder": 73
+        },
+        {
+          "emrCompntItmValuesPkey": 101815,
+          "valueName": "Others",
+          "itmValueSortOrder": 74
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6604,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6510,
+      "itmName": "K50.80-Crohn's disease of both small and large intestine without complications:",
+      "itmCode": "PMH_K50_80_CROHN_S_DISEASE_OF_BOTH_SMALL_AND_LARGE_INT",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "TEXT-AREA",
+      "emrCompntItmValues": []
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 7615,
+    "emrConShtCompntsFkey": 415,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 7524,
+      "itmName": "Past Medical History",
+      "itmCode": "PMH_PAST_MEDICAL_HISTORY",
+      "attribute1": "#@ItemName#@ #@GeneratedText#@",
+      "attribute11": "TEXT-AREA",
+      "emrCompntItmValues": []
+    }
+  }
+]

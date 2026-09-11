@@ -55,6 +55,16 @@ function makeCatalogSlotId(compntCode: string, itmCode: string): string {
   return `${compntCode}::catalog::${itmCode}`;
 }
 
+/**
+ * Safety cap on how many not-yet-charted catalog items one component can
+ * forward to the AI per sync tick. Catalog files are meant to be small
+ * (a dozen or two items); this only kicks in if one grows unexpectedly large
+ * and would otherwise balloon the /api/soap-parser payload sent every 18s.
+ * The full catalog is always available in the manual "Add Options" drawer
+ * regardless of this cap — it only limits what's proactively offered to the AI.
+ */
+const MAX_CATALOG_SLOTS_PER_COMPONENT = 25;
+
 let syntheticPkeyCounter = 9_000_000;
 function nextSyntheticPkey(): number {
   return syntheticPkeyCounter++;
@@ -92,7 +102,10 @@ export function buildSoapSlots(groups: VisitSheetSoapGroup[]): SoapSlot[] {
     }
 
     if (component.compntCode) {
-      const catalogEntries = ITEM_CATALOG[component.compntCode] ?? [];
+      const catalogEntries = (ITEM_CATALOG[component.compntCode] ?? []).slice(
+        0,
+        MAX_CATALOG_SLOTS_PER_COMPONENT
+      );
       for (const entry of catalogEntries) {
         const catalogItem = entry.emrCompntItms;
         if (!catalogItem.itmCode || chartedItmCodes.has(catalogItem.itmCode)) continue;

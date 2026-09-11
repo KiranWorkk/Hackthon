@@ -1,0 +1,959 @@
+[
+  {
+    "emrConShtCompntItmsPkey": 6606,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6512,
+      "itmName": "Urology",
+      "itmCode": "PSH_UROLOGY",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101847,
+          "valueName": "Bladder Sling",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101853,
+          "valueName": "Bladder Suspension",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101848,
+          "valueName": "Pelvic Floor Repair",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101859,
+          "valueName": "Cystoscopy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101860,
+          "valueName": "Cystoscopy with Biopsy",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101857,
+          "valueName": "Nephrectomy",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101852,
+          "valueName": "Prostate Incisional Biopsy",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101861,
+          "valueName": "Prostate Percutaneous Biopsy",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101854,
+          "valueName": "Prostatectomy TURP",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101855,
+          "valueName": "Urethral Dilatation",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101850,
+          "valueName": "Urethral stent placement",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101849,
+          "valueName": "Urethral stone extraction",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101851,
+          "valueName": "Varicocele repair",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101856,
+          "valueName": "Vasectomy",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101858,
+          "valueName": "Others",
+          "itmValueSortOrder": 15
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6607,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6513,
+      "itmName": "Cardiac & Vascular",
+      "itmCode": "PSH_CARDIAC_VASCULAR",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101865,
+          "valueName": "MVR",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101871,
+          "valueName": "Stent",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101868,
+          "valueName": "ASD Repair",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101864,
+          "valueName": "AVR",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101867,
+          "valueName": "CABG",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101869,
+          "valueName": "Mitral Valve Repair",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101866,
+          "valueName": "Tetrology of Fallot Repair",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101870,
+          "valueName": "Tricuspid Annuloplasty",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101862,
+          "valueName": "TVR",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101863,
+          "valueName": "VSD Repair",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101872,
+          "valueName": "Others",
+          "itmValueSortOrder": 11
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6608,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6514,
+      "itmName": "General",
+      "itmCode": "PSH_GENERAL",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101898,
+          "valueName": "Abdominal hernia repair",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101881,
+          "valueName": "Breast Reduction",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101904,
+          "valueName": "Herniorrhaphy",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101882,
+          "valueName": "Incisional hernia repair",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101888,
+          "valueName": "Lap Appendectomy",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101883,
+          "valueName": "Laparoscopic Adjustable Gastric Banding",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101873,
+          "valueName": "Laparoscopic Banded Gastric Bypass",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101889,
+          "valueName": "Laparoscopic gastric bypass",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101874,
+          "valueName": "Laparoscopic gastric sleeve",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101899,
+          "valueName": "Sleeve Gastrectomy",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101903,
+          "valueName": "Umbilical Hernia",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101890,
+          "valueName": "Appendectomy",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101884,
+          "valueName": "Appendectomy, laparascopic",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101877,
+          "valueName": "Breast biopsy, incisional",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101900,
+          "valueName": "Breast biopsy, FNA",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101891,
+          "valueName": "Breast lump excision and biopsy",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101892,
+          "valueName": "Cholecystectomy",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101885,
+          "valueName": "Cholecystectomy with cholangiograms",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101893,
+          "valueName": "Cholecystectomy with common duct exploration",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101905,
+          "valueName": "Cholecystectomy, laparoscopic",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101901,
+          "valueName": "Cholecystectomy, laparoscopic, cholangiograms",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101886,
+          "valueName": "Cholecystectomy, laparoscopic, common duct exploration",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101878,
+          "valueName": "Esophagectomy",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101906,
+          "valueName": "Esophagogastrectomy",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 101887,
+          "valueName": "Excision of cyst",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 101907,
+          "valueName": "Excision of mass",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 101879,
+          "valueName": "Hemorrhoidectomy",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 101894,
+          "valueName": "Herniorrhaphy, initial inguinal",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 101895,
+          "valueName": "Herniorrhaphy, recurrent inguinal",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 101896,
+          "valueName": "Hiatal Herneorrhaphy",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 101880,
+          "valueName": "Laparotomy, exploratory",
+          "itmValueSortOrder": 31
+        },
+        {
+          "emrCompntItmValuesPkey": 101875,
+          "valueName": "Mastectomy",
+          "itmValueSortOrder": 32
+        },
+        {
+          "emrCompntItmValuesPkey": 101902,
+          "valueName": "Pilonidal cyst excision",
+          "itmValueSortOrder": 33
+        },
+        {
+          "emrCompntItmValuesPkey": 101897,
+          "valueName": "Whipple Procedure",
+          "itmValueSortOrder": 34
+        },
+        {
+          "emrCompntItmValuesPkey": 101876,
+          "valueName": "Others",
+          "itmValueSortOrder": 35
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6609,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6515,
+      "itmName": "Obstetrics & Gynecology",
+      "itmCode": "PSH_OBSTETRICS_GYNECOLOGY",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101916,
+          "valueName": "Embolization of Tumor",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101913,
+          "valueName": "Exploratory lap",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101917,
+          "valueName": "Hysterectomy, laparoscopic",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101918,
+          "valueName": "Hysterectomy, partial",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101908,
+          "valueName": "Hysterosalpingogram",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101909,
+          "valueName": "Laparotomy",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101910,
+          "valueName": "Lumpectomy",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101924,
+          "valueName": "MAMMOGRAM",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101925,
+          "valueName": "Oopherectomy",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101919,
+          "valueName": "PAP SMEAR",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101930,
+          "valueName": "TAH/BSO",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101920,
+          "valueName": "hysteroscopy",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101914,
+          "valueName": "laparoscopy",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101915,
+          "valueName": "Caesarian Section",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101931,
+          "valueName": "Colposcopy",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101926,
+          "valueName": "Colposcopy with biopsy",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101921,
+          "valueName": "Conization of cervix",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 101922,
+          "valueName": "Hysterectomy, abdominal",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 101928,
+          "valueName": "Hysterectomy, abdominal, bilateral Salpingo-Oophorectomy",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 101929,
+          "valueName": "Hysterectomy, abdominal, unilateral Salpingo-Oophorectomy",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 101911,
+          "valueName": "Hysterectomy, vaginal",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 101923,
+          "valueName": "Tubal Ligation",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 101927,
+          "valueName": "Uterine Dilatation and Curettage",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 101912,
+          "valueName": "Others",
+          "itmValueSortOrder": 24
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6610,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6516,
+      "itmName": "ENT",
+      "itmCode": "PSH_ENT",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101944,
+          "valueName": "Rhinoplasty",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101932,
+          "valueName": "Septoplasty",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101945,
+          "valueName": "Thyroidectomy",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101935,
+          "valueName": "Adenoidectomy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101936,
+          "valueName": "Dental Surgery",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101943,
+          "valueName": "Ear Tubes",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101941,
+          "valueName": "Functional Endoscopic Sinus Surgery",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101937,
+          "valueName": "Nasal cauterization",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101938,
+          "valueName": "Radical neck dissection",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101933,
+          "valueName": "Sinus Drainage",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101939,
+          "valueName": "TMJ Replacement",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101940,
+          "valueName": "TMJ Surgery",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101942,
+          "valueName": "Tonsilectomy and adenoidectomy",
+          "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 101934,
+          "valueName": "Tonsillectomy",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 101946,
+          "valueName": "Tracheostomy",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 101947,
+          "valueName": "UPPP",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 101948,
+          "valueName": "Others",
+          "itmValueSortOrder": 17
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6611,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6517,
+      "itmName": "Neurologic",
+      "itmCode": "PSH_NEUROLOGIC",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101957,
+          "valueName": "Discectomy",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101953,
+          "valueName": "Other",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101954,
+          "valueName": "AVM Clipping",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101955,
+          "valueName": "Cervical laminectomy",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101949,
+          "valueName": "Craniotomy",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101951,
+          "valueName": "Lumbar laminectomy",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101950,
+          "valueName": "Meningioma excision",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101956,
+          "valueName": "Subdural hematoma release",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101952,
+          "valueName": "Ventriculoperitoneal Shunt",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101958,
+          "valueName": "Others",
+          "itmValueSortOrder": 10
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6612,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6518,
+      "itmName": "Plastic Surgery",
+      "itmCode": "PSH_PLASTIC_SURGERY",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101959,
+          "valueName": "Abdominoplasty",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101960,
+          "valueName": "Septoplasty",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101968,
+          "valueName": "Blepharoplasty",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101961,
+          "valueName": "Breast Augmentation",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101962,
+          "valueName": "Breast Reduction",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101964,
+          "valueName": "Collagen injections",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101969,
+          "valueName": "Facelift",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101967,
+          "valueName": "Hair implantation",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101965,
+          "valueName": "Liposuction",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101966,
+          "valueName": "Rhinoplasty",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101971,
+          "valueName": "Scar revision",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101970,
+          "valueName": "Tatoo removal",
+          "itmValueSortOrder": 12
+        },
+        {
+          "emrCompntItmValuesPkey": 101963,
+          "valueName": "Others",
+          "itmValueSortOrder": 13
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6613,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6519,
+      "itmName": "Eye",
+      "itmCode": "PSH_EYE",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101979,
+          "valueName": "Cataract",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101972,
+          "valueName": "Blepharoplasty",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101977,
+          "valueName": "Cataract Extraction",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101976,
+          "valueName": "Eneucleation",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101978,
+          "valueName": "Eye Trauma",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101980,
+          "valueName": "Glaucoma Surgery",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101974,
+          "valueName": "Intraoccular Lens Implant",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101975,
+          "valueName": "Retinal Laser Surgery",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101973,
+          "valueName": "Others",
+          "itmValueSortOrder": 9
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6614,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6520,
+      "itmName": "Notes:",
+      "itmCode": "PSH_NOTES",
+      "attribute1": "#@GeneratedText#@",
+      "attribute11": "RICH-TEXT",
+      "emrCompntItmValues": []
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6615,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6521,
+      "itmName": "Vascular",
+      "itmCode": "PSH_VASCULAR",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101985,
+          "valueName": "Carotid Endarterectomy",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101981,
+          "valueName": "Aneurysm Repair",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101983,
+          "valueName": "Angioplasty",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101984,
+          "valueName": "Peripheral Bypass Surgery",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101982,
+          "valueName": "Others",
+          "itmValueSortOrder": 5
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6616,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6522,
+      "itmName": "Orthopedics",
+      "itmCode": "PSH_ORTHOPEDICS",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 101986,
+          "valueName": "Leg",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 101993,
+          "valueName": "Open Reduction",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101990,
+          "valueName": "Rotator Cuff Repair",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101994,
+          "valueName": "Arthroplasty",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 101995,
+          "valueName": "Arthroscopy",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 101996,
+          "valueName": "Carpal tunnel release",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 101997,
+          "valueName": "Closed reduction",
+          "itmValueSortOrder": 7
+        },
+        {
+          "emrCompntItmValuesPkey": 101991,
+          "valueName": "Ganglion Cyst Excision",
+          "itmValueSortOrder": 8
+        },
+        {
+          "emrCompntItmValuesPkey": 101987,
+          "valueName": "Total knee replacement",
+          "itmValueSortOrder": 9
+        },
+        {
+          "emrCompntItmValuesPkey": 101988,
+          "valueName": "ORIF",
+          "itmValueSortOrder": 10
+        },
+        {
+          "emrCompntItmValuesPkey": 101989,
+          "valueName": "Total hip replacement",
+          "itmValueSortOrder": 11
+        },
+        {
+          "emrCompntItmValuesPkey": 101992,
+          "valueName": "Others",
+          "itmValueSortOrder": 12
+        }
+      ]
+    }
+  },
+  {
+    "emrConShtCompntItmsPkey": 6617,
+    "emrConShtCompntsFkey": 417,
+    "active": "Y",
+    "emrCompntItms": {
+      "emrCompntItmsPkey": 6523,
+      "itmName": "Thoracic",
+      "itmCode": "PSH_THORACIC",
+      "attribute1": "<b>#@ItemName#@</b> - #@GeneratedText#@",
+      "attribute11": "CHECK-BOX",
+      "emrCompntItmValues": [
+        {
+          "emrCompntItmValuesPkey": 102002,
+          "valueName": "Chest wall excision",
+          "itmValueSortOrder": 1
+        },
+        {
+          "emrCompntItmValuesPkey": 102003,
+          "valueName": "Lobectomy",
+          "itmValueSortOrder": 2
+        },
+        {
+          "emrCompntItmValuesPkey": 101998,
+          "valueName": "Pericardectomy",
+          "itmValueSortOrder": 3
+        },
+        {
+          "emrCompntItmValuesPkey": 101999,
+          "valueName": "Pericardial window",
+          "itmValueSortOrder": 4
+        },
+        {
+          "emrCompntItmValuesPkey": 102001,
+          "valueName": "Pulmonary Nodule excision",
+          "itmValueSortOrder": 5
+        },
+        {
+          "emrCompntItmValuesPkey": 102000,
+          "valueName": "Thoracotomy",
+          "itmValueSortOrder": 6
+        },
+        {
+          "emrCompntItmValuesPkey": 102004,
+          "valueName": "Others",
+          "itmValueSortOrder": 7
+        }
+      ]
+    }
+  }
+]
