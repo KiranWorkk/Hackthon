@@ -65,6 +65,20 @@ function makeCatalogSlotId(compntCode: string, itmCode: string): string {
  */
 const MAX_CATALOG_SLOTS_PER_COMPONENT = 25;
 
+/**
+ * Some real catalog items carry very large value lists (a Family History
+ * member's condition list runs ~42 options, Medical History's Cardiovascular
+ * ~79) — sending every one of those on every 18s sync tick, for every
+ * component across the whole encounter sheet, bloats the AI prompt into the
+ * tens of thousands of tokens. That risks the request failing outright and,
+ * even when it succeeds, drowns out smaller/simpler slots (e.g. a 3-option
+ * Marital Status) in the noise. Past this size, drop the value constraint
+ * for the AI and let it write free text instead — full-fidelity value
+ * checklists still work as before in the manual "Add Options" drawer,
+ * which reads ITEM_CATALOG directly and never goes through this cap.
+ */
+const MAX_ALLOWED_VALUES_FOR_AI = 30;
+
 let syntheticPkeyCounter = 9_000_000;
 function nextSyntheticPkey(): number {
   return syntheticPkeyCounter++;
@@ -117,7 +131,8 @@ export function buildSoapSlots(groups: VisitSheetSoapGroup[]): SoapSlot[] {
           soap: component.soap,
           currentValue: "",
           allowedValues:
-            catalogItem.emrCompntItmValues.length > 0
+            catalogItem.emrCompntItmValues.length > 0 &&
+            catalogItem.emrCompntItmValues.length <= MAX_ALLOWED_VALUES_FOR_AI
               ? catalogItem.emrCompntItmValues.map((v) => v.valueName)
               : null,
           isNew: true,

@@ -5,16 +5,24 @@ import { SparklesIcon, CheckmarkCircle01Icon, Alert02Icon } from "@hugeicons/cor
 import { cn } from "@/lib/utils";
 import type { SyncStatus } from "@/features/charting/lib/ai/use-soap-orchestrator";
 
-export function AiSyncIndicator({ status }: { status: SyncStatus }) {
+export function AiSyncIndicator({
+  status,
+  error,
+}: {
+  status: SyncStatus;
+  /** The last sync failure's detail — shown as a native tooltip on hover so the reason is visible without opening devtools. */
+  error?: string | null;
+}) {
   if (status === "idle") return null;
 
   return (
     <div
+      title={status === "error" ? (error ?? undefined) : undefined}
       className={cn(
         "inline-flex h-9 items-center gap-1.5 rounded-lg px-3 text-xs font-medium transition-colors",
         status === "syncing" && "bg-[#F0FDFA] text-primary",
         status === "synced" && "text-slate-400",
-        status === "error" && "bg-red-50 text-red-600"
+        status === "error" && "cursor-help bg-red-50 text-red-600"
       )}
     >
       {status === "syncing" && (

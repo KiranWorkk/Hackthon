@@ -6,10 +6,23 @@ import {
   ArrowDown01Icon,
   File02Icon,
   PlusSignIcon,
+  Tick02Icon,
+  Cancel01Icon,
 } from "@hugeicons/core-free-icons";
 import { cn } from "@/lib/utils";
 import type { VisitSheetComponent, VisitSheetItem } from "@/features/charting/types";
 import { ItemCard } from "@/features/charting/components/soap/ItemCard";
+
+function countPending(component: VisitSheetComponent, pendingApprovalPkeys?: Set<number>): number {
+  if (!pendingApprovalPkeys || pendingApprovalPkeys.size === 0) return 0;
+  let count = component.items.filter((item) =>
+    pendingApprovalPkeys.has(item.emrPatConCompntItmsPkey)
+  ).length;
+  for (const child of component.children) {
+    count += countPending(child, pendingApprovalPkeys);
+  }
+  return count;
+}
 
 export function SoapSectionCard({
   component,
@@ -17,17 +30,28 @@ export function SoapSectionCard({
   onAddOptions,
   onEditItem,
   highlightedPkeys,
+  pendingApprovalPkeys,
+  onApproveItem,
+  onRemoveItem,
+  onApproveComponent,
+  onRejectComponent,
 }: {
   component: VisitSheetComponent;
   depth?: number;
   onAddOptions: (component: VisitSheetComponent) => void;
   onEditItem: (component: VisitSheetComponent, item: VisitSheetItem) => void;
   highlightedPkeys?: Set<number>;
+  pendingApprovalPkeys?: Set<number>;
+  onApproveItem?: (pkey: number) => void;
+  onRemoveItem?: (component: VisitSheetComponent, item: VisitSheetItem) => void;
+  onApproveComponent?: (component: VisitSheetComponent) => void;
+  onRejectComponent?: (component: VisitSheetComponent) => void;
 }) {
   const [isOpen, setIsOpen] = useState(true);
   const isNested = depth > 0;
   const hasExpandableContent =
     component.items.length > 0 || component.children.length > 0;
+  const pendingCount = countPending(component, pendingApprovalPkeys);
 
   return (
     <div
@@ -61,7 +85,38 @@ export function SoapSectionCard({
             {component.compntName}
           </span>
         </div>
-        <div className="flex shrink-0 items-center gap-3">
+        <div className="flex shrink-0 items-center gap-2">
+          {pendingCount > 0 && (
+            <div className="flex items-center gap-1">
+              <span className="hidden text-[10px] font-medium text-amber-600 sm:inline">
+                {pendingCount} pending
+              </span>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onApproveComponent?.(component);
+                }}
+                aria-label="Approve all pending items in this section"
+                title="Approve all"
+                className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 transition-colors hover:bg-emerald-200"
+              >
+                <HugeiconsIcon icon={Tick02Icon} size={12} strokeWidth={2.5} />
+              </button>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onRejectComponent?.(component);
+                }}
+                aria-label="Reject all pending items in this section"
+                title="Reject all"
+                className="flex h-6 w-6 items-center justify-center rounded-full bg-red-100 text-red-600 transition-colors hover:bg-red-200"
+              >
+                <HugeiconsIcon icon={Cancel01Icon} size={12} strokeWidth={2.5} />
+              </button>
+            </div>
+          )}
           <button
             type="button"
             onClick={() => onAddOptions(component)}
@@ -106,6 +161,9 @@ export function SoapSectionCard({
               item={item}
               onClick={() => onEditItem(component, item)}
               justUpdated={highlightedPkeys?.has(item.emrPatConCompntItmsPkey) ?? false}
+              isPendingApproval={pendingApprovalPkeys?.has(item.emrPatConCompntItmsPkey) ?? false}
+              onApprove={() => onApproveItem?.(item.emrPatConCompntItmsPkey)}
+              onRemove={() => onRemoveItem?.(component, item)}
             />
           ))}
 
@@ -119,6 +177,11 @@ export function SoapSectionCard({
                   onAddOptions={onAddOptions}
                   onEditItem={onEditItem}
                   highlightedPkeys={highlightedPkeys}
+                  pendingApprovalPkeys={pendingApprovalPkeys}
+                  onApproveItem={onApproveItem}
+                  onRemoveItem={onRemoveItem}
+                  onApproveComponent={onApproveComponent}
+                  onRejectComponent={onRejectComponent}
                 />
               ))}
             </div>

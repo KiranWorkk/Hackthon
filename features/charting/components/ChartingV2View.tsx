@@ -15,6 +15,7 @@ import { ChartingV2FaceSheet } from "@/features/charting/components/overview/Cha
 import { StartChartingDialog } from "@/features/charting/components/StartChartingDialog";
 import { ChartingV2SoapSection } from "@/features/charting/components/soap/ChartingV2SoapSection";
 import { AddOptionsDrawer } from "@/features/charting/components/soap/AddOptionsDrawer";
+import { PendingApprovalBanner } from "@/features/charting/components/soap/PendingApprovalBanner";
 import { PreviewNoteDialog } from "@/features/charting/components/preview/PreviewNoteDialog";
 import { AiSyncIndicator } from "@/features/charting/components/AiSyncIndicator";
 import {
@@ -117,6 +118,82 @@ function syncComponentItems(
   }));
 }
 
+/**
+ * Removes items anywhere in the tree whose pkey is in the given set. Item
+ * pkeys are unique across the whole chart (real data uses its own pkey
+ * ranges; AI-added items come from a synthetic counter starting at
+ * 9,000,000), so this one function covers rejecting a single item, an
+ * entire component's pending items, or every pending item in the chart —
+ * no need to separately locate the owning component.
+ */
+function removeItemsByPkeys(
+  groups: VisitSheetSoapGroup[],
+  pkeysToRemove: Set<number>
+): VisitSheetSoapGroup[] {
+  if (pkeysToRemove.size === 0) return groups;
+
+  function updateComponent(component: VisitSheetComponent): VisitSheetComponent {
+    return {
+      ...component,
+      items: component.items.filter((item) => !pkeysToRemove.has(item.emrPatConCompntItmsPkey)),
+      children: component.children.map(updateComponent),
+    };
+  }
+
+  return groups.map((group) => ({
+    ...group,
+    components: group.components.map(updateComponent),
+  }));
+}
+
+/** Every pending-approval pkey found within one component's subtree (itself + children). */
+function collectPendingPkeysInComponent(
+  component: VisitSheetComponent,
+  pendingApprovalPkeys: Set<number>
+): number[] {
+  const found: number[] = [];
+  function visit(c: VisitSheetComponent) {
+    c.items.forEach((item) => {
+      if (pendingApprovalPkeys.has(item.emrPatConCompntItmsPkey)) found.push(item.emrPatConCompntItmsPkey);
+    });
+    c.children.forEach(visit);
+  }
+  visit(component);
+  return found;
+}
+
+/** Every item pkey currently charted anywhere in the tree — used to prune stale pending-approval pkeys after an Add Options sync removes items. */
+function collectAllItemPkeys(groups: VisitSheetSoapGroup[]): Set<number> {
+  const pkeys = new Set<number>();
+  function visit(component: VisitSheetComponent) {
+    component.items.forEach((item) => pkeys.add(item.emrPatConCompntItmsPkey));
+    component.children.forEach(visit);
+  }
+  groups.forEach((group) => group.components.forEach(visit));
+  return pkeys;
+}
+
+function findComponentByPkey(
+  groups: VisitSheetSoapGroup[],
+  targetPkey: number
+): VisitSheetComponent | null {
+  function visit(component: VisitSheetComponent): VisitSheetComponent | null {
+    if (component.emrCompntsPkey === targetPkey) return component;
+    for (const child of component.children) {
+      const found = visit(child);
+      if (found) return found;
+    }
+    return null;
+  }
+  for (const group of groups) {
+    for (const component of group.components) {
+      const found = visit(component);
+      if (found) return found;
+    }
+  }
+  return null;
+}
+
 export function ChartingV2View() {
   const [activeSection, setActiveSection] =
     useState<ChartingV2Section>("overview");
@@ -132,6 +209,8 @@ export function ChartingV2View() {
     useState<VisitSheetComponent | null>(null);
   const [highlightedPkeys, setHighlightedPkeys] = useState<Set<number>>(new Set());
   const [pulsingSoap, setPulsingSoap] = useState<Set<SoapKey>>(new Set());
+  /** AI-written items awaiting explicit user approval — unlike highlightedPkeys, this never auto-clears; only an explicit approve/remove click resolves it. */
+  const [pendingApprovalPkeys, setPendingApprovalPkeys] = useState<Set<number>>(new Set());
   const soapGroupsRef = useRef(soapGroups);
   useEffect(() => {
     soapGroupsRef.current = soapGroups;
@@ -176,6 +255,61 @@ export function ChartingV2View() {
     setIsActionBridgeOpen(false);
   }, []);
 
+  const handleApproveItem = useCallback((pkey: number) => {
+    setPendingApprovalPkeys((prev) => {
+      if (!prev.has(pkey)) return prev;
+      const next = new Set(prev);
+      next.delete(pkey);
+      return next;
+    });
+  }, []);
+
+  const handleRemoveItem = useCallback((_component: VisitSheetComponent, item: VisitSheetItem) => {
+    setSoapGroups((prev) => removeItemsByPkeys(prev, new Set([item.emrPatConCompntItmsPkey])));
+    setPendingApprovalPkeys((prev) => {
+      if (!prev.has(item.emrPatConCompntItmsPkey)) return prev;
+      const next = new Set(prev);
+      next.delete(item.emrPatConCompntItmsPkey);
+      return next;
+    });
+  }, []);
+
+  const handleApproveComponent = useCallback(
+    (component: VisitSheetComponent) => {
+      const toApprove = collectPendingPkeysInComponent(component, pendingApprovalPkeys);
+      if (toApprove.length === 0) return;
+      setPendingApprovalPkeys((prev) => {
+        const next = new Set(prev);
+        toApprove.forEach((pkey) => next.delete(pkey));
+        return next;
+      });
+    },
+    [pendingApprovalPkeys]
+  );
+
+  const handleRejectComponent = useCallback(
+    (component: VisitSheetComponent) => {
+      const toReject = new Set(collectPendingPkeysInComponent(component, pendingApprovalPkeys));
+      if (toReject.size === 0) return;
+      setSoapGroups((prev) => removeItemsByPkeys(prev, toReject));
+      setPendingApprovalPkeys((prev) => {
+        const next = new Set(prev);
+        toReject.forEach((pkey) => next.delete(pkey));
+        return next;
+      });
+    },
+    [pendingApprovalPkeys]
+  );
+
+  const handleApproveAllPending = useCallback(() => {
+    setPendingApprovalPkeys(new Set());
+  }, []);
+
+  const handleRejectAllPending = useCallback(() => {
+    setSoapGroups((prev) => removeItemsByPkeys(prev, pendingApprovalPkeys));
+    setPendingApprovalPkeys(new Set());
+  }, [pendingApprovalPkeys]);
+
   const handleAiUpdates = useCallback((updates: SoapUpdate[], slots: SoapSlot[]) => {
     const { groups, touched } = applySoapUpdates(soapGroupsRef.current, updates, slots);
     if (touched.length === 0) return;
@@ -186,6 +320,7 @@ export function ChartingV2View() {
     const soaps = Array.from(new Set(touched.map((t) => t.soap)));
     setHighlightedPkeys((prev) => new Set([...prev, ...pkeys]));
     setPulsingSoap((prev) => new Set([...prev, ...soaps]));
+    setPendingApprovalPkeys((prev) => new Set([...prev, ...pkeys]));
 
     setTimeout(() => {
       setHighlightedPkeys((prev) => {
@@ -203,7 +338,7 @@ export function ChartingV2View() {
     }, HIGHLIGHT_DURATION_MS);
   }, []);
 
-  const { syncStatus } = useSoapOrchestrator({
+  const { syncStatus, syncError } = useSoapOrchestrator({
     listenStatus,
     segments: transcriptSegments,
     facts: transcriptFacts,
@@ -228,7 +363,7 @@ export function ChartingV2View() {
         listenStatus={listenStatus}
         onStartListening={handleStartListening}
         onReopenListening={handleReopenListening}
-        aiSyncIndicator={<AiSyncIndicator status={syncStatus} />}
+        aiSyncIndicator={<AiSyncIndicator status={syncStatus} error={syncError} />}
       />
       <div className="flex min-h-0 flex-1">
         <ChartingV2Nav
@@ -250,6 +385,13 @@ export function ChartingV2View() {
               </Button>
             </div>
           )}
+          {isSoapTab && (
+            <PendingApprovalBanner
+              count={pendingApprovalPkeys.size}
+              onApproveAll={handleApproveAllPending}
+              onRejectAll={handleRejectAllPending}
+            />
+          )}
           <div className="min-h-0 flex-1 overflow-y-auto bg-white">
             {activeSection === "overview" ? (
               <ChartingV2FaceSheet />
@@ -264,6 +406,11 @@ export function ChartingV2View() {
                 onAddOptions={setAddDrawerTarget}
                 onEditItem={(component) => setAddDrawerTarget(component)}
                 highlightedPkeys={highlightedPkeys}
+                pendingApprovalPkeys={pendingApprovalPkeys}
+                onApproveItem={handleApproveItem}
+                onRemoveItem={handleRemoveItem}
+                onApproveComponent={handleApproveComponent}
+                onRejectComponent={handleRejectComponent}
               />
             )}
           </div>
@@ -314,9 +461,36 @@ export function ChartingV2View() {
         component={addDrawerTarget}
         onAddItems={(items, catalogItemCodes) => {
           if (!addDrawerTarget) return;
-          setSoapGroups((prev) =>
-            syncComponentItems(prev, addDrawerTarget.emrCompntsPkey, items, catalogItemCodes)
+          const nextGroups = syncComponentItems(
+            soapGroups,
+            addDrawerTarget.emrCompntsPkey,
+            items,
+            catalogItemCodes
           );
+          setSoapGroups(nextGroups);
+
+          // Clicking "Add" is itself a review action for this component's
+          // catalog-governed items: anything unchecked is gone (pruned below
+          // via stillCharted), and anything still checked — including a
+          // previously AI-added item the user just looked at and confirmed —
+          // no longer needs a separate approve click. Read the real pkeys
+          // back from nextGroups rather than `items`, whose entries all carry
+          // throwaway synthetic pkeys from the drawer regardless of whether
+          // the item already existed (syncComponentItems preserves the real
+          // pkey for anything retained).
+          const stillCharted = collectAllItemPkeys(nextGroups);
+          const syncedComponent = findComponentByPkey(nextGroups, addDrawerTarget.emrCompntsPkey);
+          const reviewedPkeys = new Set(
+            (syncedComponent?.items ?? [])
+              .filter((item) => item.itmCode && catalogItemCodes.has(item.itmCode))
+              .map((item) => item.emrPatConCompntItmsPkey)
+          );
+          setPendingApprovalPkeys((prev) => {
+            const filtered = new Set(
+              [...prev].filter((pkey) => stillCharted.has(pkey) && !reviewedPkeys.has(pkey))
+            );
+            return filtered.size === prev.size ? prev : filtered;
+          });
         }}
       />
       <PreviewNoteDialog

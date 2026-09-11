@@ -321,6 +321,96 @@
           "emrCompntItmValuesPkey": 105127,
           "valueName": "Additional Information",
           "itmValueSortOrder": 13
+        },
+        {
+          "emrCompntItmValuesPkey": 900001,
+          "valueName": "Teacher",
+          "itmValueSortOrder": 14
+        },
+        {
+          "emrCompntItmValuesPkey": 900002,
+          "valueName": "Nurse",
+          "itmValueSortOrder": 15
+        },
+        {
+          "emrCompntItmValuesPkey": 900003,
+          "valueName": "Physician",
+          "itmValueSortOrder": 16
+        },
+        {
+          "emrCompntItmValuesPkey": 900004,
+          "valueName": "Software Engineer",
+          "itmValueSortOrder": 17
+        },
+        {
+          "emrCompntItmValuesPkey": 900005,
+          "valueName": "Accountant",
+          "itmValueSortOrder": 18
+        },
+        {
+          "emrCompntItmValuesPkey": 900006,
+          "valueName": "Sales Representative",
+          "itmValueSortOrder": 19
+        },
+        {
+          "emrCompntItmValuesPkey": 900007,
+          "valueName": "Construction Worker",
+          "itmValueSortOrder": 20
+        },
+        {
+          "emrCompntItmValuesPkey": 900008,
+          "valueName": "Truck Driver",
+          "itmValueSortOrder": 21
+        },
+        {
+          "emrCompntItmValuesPkey": 900009,
+          "valueName": "Chef / Cook",
+          "itmValueSortOrder": 22
+        },
+        {
+          "emrCompntItmValuesPkey": 900010,
+          "valueName": "Administrative Assistant",
+          "itmValueSortOrder": 23
+        },
+        {
+          "emrCompntItmValuesPkey": 900011,
+          "valueName": "Manager",
+          "itmValueSortOrder": 24
+        },
+        {
+          "emrCompntItmValuesPkey": 900012,
+          "valueName": "Attorney",
+          "itmValueSortOrder": 25
+        },
+        {
+          "emrCompntItmValuesPkey": 900013,
+          "valueName": "Electrician",
+          "itmValueSortOrder": 26
+        },
+        {
+          "emrCompntItmValuesPkey": 900014,
+          "valueName": "Police Officer",
+          "itmValueSortOrder": 27
+        },
+        {
+          "emrCompntItmValuesPkey": 900015,
+          "valueName": "Retail Associate",
+          "itmValueSortOrder": 28
+        },
+        {
+          "emrCompntItmValuesPkey": 900016,
+          "valueName": "Customer Service Representative",
+          "itmValueSortOrder": 29
+        },
+        {
+          "emrCompntItmValuesPkey": 900017,
+          "valueName": "Engineer",
+          "itmValueSortOrder": 30
+        },
+        {
+          "emrCompntItmValuesPkey": 900018,
+          "valueName": "Student",
+          "itmValueSortOrder": 31
         }
       ]
     }

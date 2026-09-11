@@ -560,6 +560,18 @@ export const ITEM_CATALOG: Record<string, ComponentItemWrapper[]> = {
   SURGERY_PROC: surgeryProcCatalog as ComponentItemWrapper[],
   SOCIAL_HISTORY: socialHistoryCatalog as ComponentItemWrapper[],
   FAMILY_HISTORY: familyHistoryCatalog as ComponentItemWrapper[],
-  ALLERGY: allergyCatalog as ComponentItemWrapper[],
+  // The 18-item curated allergy list has no free-text catch-all (unlike
+  // every other generated catalog) — anything mentioned that isn't one of
+  // those specific allergens (e.g. a food intolerance, an uncommon allergen)
+  // had nowhere to go and was silently dropped. Add one so nothing is lost.
+  ALLERGY: [
+    ...(allergyCatalog as ComponentItemWrapper[]),
+    wrap(407, {
+      itmName: "Other Allergies / Intolerances",
+      itmCode: "ALLERGY_OTHER",
+      attribute1: PLAIN_TEMPLATE,
+      attribute11: "TEXT-AREA",
+    }),
+  ],
   CURRENT_MEDI: currentMedicationCatalog as ComponentItemWrapper[],
 };

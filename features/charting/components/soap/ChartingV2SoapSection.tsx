@@ -7,12 +7,24 @@ export function ChartingV2SoapSection({
   onAddOptions,
   onEditItem,
   highlightedPkeys,
+  pendingApprovalPkeys,
+  onApproveItem,
+  onRemoveItem,
+  onApproveComponent,
+  onRejectComponent,
 }: {
   title: string;
   components: VisitSheetComponent[];
   onAddOptions: (component: VisitSheetComponent) => void;
   onEditItem: (component: VisitSheetComponent, item: VisitSheetItem) => void;
   highlightedPkeys?: Set<number>;
+  /** Item pkeys written by the AI and still awaiting explicit user approval. */
+  pendingApprovalPkeys?: Set<number>;
+  onApproveItem?: (pkey: number) => void;
+  onRemoveItem?: (component: VisitSheetComponent, item: VisitSheetItem) => void;
+  /** Approve/reject every pending item within one component (and its children) at once. */
+  onApproveComponent?: (component: VisitSheetComponent) => void;
+  onRejectComponent?: (component: VisitSheetComponent) => void;
 }) {
   return (
     <div className="p-4">
@@ -32,6 +44,11 @@ export function ChartingV2SoapSection({
               onAddOptions={onAddOptions}
               onEditItem={onEditItem}
               highlightedPkeys={highlightedPkeys}
+              pendingApprovalPkeys={pendingApprovalPkeys}
+              onApproveItem={onApproveItem}
+              onRemoveItem={onRemoveItem}
+              onApproveComponent={onApproveComponent}
+              onRejectComponent={onRejectComponent}
             />
           ))}
         </div>
