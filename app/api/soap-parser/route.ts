@@ -51,7 +51,8 @@ Rules:
 
 export async function POST(request: Request) {
   const apiKey = process.env.OPENROUTER_API_KEY;
-  const model = process.env.OPENROUTER_MODEL || "z-ai/glm-5.3";
+  const model = process.env.OPENROUTER_MODEL || "meta/muse-spark-1.3";
+  // const model = process.env.OPENROUTER_MODEL || "z-ai/glm-5.3";
 
   if (!apiKey) {
     return NextResponse.json(

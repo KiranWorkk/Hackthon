@@ -12,6 +12,7 @@ const CHARTING_ITEMS: { key: ChartingV2Section; label: string }[] = [
   { key: "objective", label: "Objective" },
   { key: "assessment", label: "Assessment" },
   { key: "plan", label: "Plan" },
+  { key: "evidence", label: "Evidences" },
 ];
 
 function NavGroup({

@@ -52,7 +52,8 @@ export type ChartingV2Section =
   | "subjective"
   | "objective"
   | "assessment"
-  | "plan";
+  | "plan"
+  | "evidence";
 
 export interface ChartSession {
   providerId: string;

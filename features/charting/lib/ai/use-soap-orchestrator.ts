@@ -29,12 +29,15 @@ export function useSoapOrchestrator({
   facts,
   soapGroups,
   onUpdates,
+  onEvidenceUsed,
 }: {
   listenStatus: ListenStatus;
   segments: TranscriptSegment[];
   facts: ClinicalFact[];
   soapGroups: VisitSheetSoapGroup[];
   onUpdates: (updates: SoapUpdate[], slots: SoapSlot[]) => void;
+  /** Called with the ids of every final transcript segment that was part of a sync request which produced at least one chart update — used to mark that speech as "reflected in the chart" in the Evidence tab. Not per-field attribution (the model isn't asked which exact sentence grounded which exact slot), just "this batch of speech led to a change." */
+  onEvidenceUsed?: (segmentIds: string[]) => void;
 }) {
   const [syncStatus, setSyncStatus] = useState<SyncStatus>("idle");
   const [lastSyncedAt, setLastSyncedAt] = useState<number | null>(null);
@@ -44,6 +47,7 @@ export function useSoapOrchestrator({
   const factsRef = useRef(facts);
   const soapGroupsRef = useRef(soapGroups);
   const onUpdatesRef = useRef(onUpdates);
+  const onEvidenceUsedRef = useRef(onEvidenceUsed);
   const inFlightRef = useRef(false);
   const pendingRerunRef = useRef(false);
   const prevListenStatusRef = useRef<ListenStatus>(listenStatus);
@@ -54,7 +58,8 @@ export function useSoapOrchestrator({
     factsRef.current = facts;
     soapGroupsRef.current = soapGroups;
     onUpdatesRef.current = onUpdates;
-  }, [segments, facts, soapGroups, onUpdates]);
+    onEvidenceUsedRef.current = onEvidenceUsed;
+  }, [segments, facts, soapGroups, onUpdates, onEvidenceUsed]);
 
   const runSync = useCallback(async () => {
     if (inFlightRef.current) {
@@ -66,10 +71,8 @@ export function useSoapOrchestrator({
       return;
     }
 
-    const transcript = segmentsRef.current
-      .filter((segment) => segment.isFinal)
-      .map((segment) => segment.text)
-      .join(" ");
+    const finalSegments = segmentsRef.current.filter((segment) => segment.isFinal);
+    const transcript = finalSegments.map((segment) => segment.text).join(" ");
     const currentFacts = factsRef.current.filter((fact) => !fact.isDiscarded);
     if (!transcript.trim() && currentFacts.length === 0) return;
 
@@ -106,7 +109,10 @@ export function useSoapOrchestrator({
       if (!res.ok) throw new Error(body.error ?? "AI chart sync failed.");
 
       const updates = body.updates ?? [];
-      if (updates.length > 0) onUpdatesRef.current(updates, slots);
+      if (updates.length > 0) {
+        onUpdatesRef.current(updates, slots);
+        onEvidenceUsedRef.current?.(finalSegments.map((segment) => segment.id));
+      }
 
       setSyncStatus("synced");
       setLastSyncedAt(Date.now());

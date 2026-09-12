@@ -3,7 +3,12 @@
 import { motion, AnimatePresence } from "motion/react";
 import { X } from "lucide-react";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { SparklesIcon, PauseIcon, PlayIcon, StopIcon } from "@hugeicons/core-free-icons";
+import {
+  SparklesIcon,
+  PauseIcon,
+  PlayIcon,
+  StopIcon,
+} from "@hugeicons/core-free-icons";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -89,11 +94,16 @@ function ActionBridgePanelContent({
       <div className="flex shrink-0 items-start justify-between gap-2 border-b border-slate-200 px-4 py-3.5">
         <div className="flex min-w-0 items-start gap-2.5">
           <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#F0FDFA]">
-            <HugeiconsIcon icon={SparklesIcon} size={16} strokeWidth={2} className="text-primary" />
+            <HugeiconsIcon
+              icon={SparklesIcon}
+              size={16}
+              strokeWidth={2}
+              className="text-primary"
+            />
           </div>
           <div className="min-w-0">
             <div className="flex items-center gap-1.5">
-              <h2 className="text-sm font-semibold text-slate-900">ActionBridge</h2>
+              <h2 className="text-sm font-semibold text-slate-900">Echo</h2>
               <Badge
                 variant="outline"
                 className="border-primary/30 bg-[#F0FDFA] text-[10px] font-semibold tracking-wide text-primary uppercase"
@@ -126,7 +136,11 @@ function ActionBridgePanelContent({
               <span
                 className={cn(
                   "relative inline-flex h-2 w-2 rounded-full",
-                  isListening ? "bg-red-500" : isPaused ? "bg-amber-500" : "bg-slate-300"
+                  isListening
+                    ? "bg-red-500"
+                    : isPaused
+                      ? "bg-amber-500"
+                      : "bg-slate-300",
                 )}
               />
             </span>
@@ -144,7 +158,12 @@ function ActionBridgePanelContent({
             disabled={!canToggle}
             className="inline-flex h-8 min-w-0 flex-1 items-center justify-center gap-1 rounded-lg border border-slate-300 bg-white px-2 text-xs font-semibold text-slate-700 transition-colors hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            <HugeiconsIcon icon={isPaused ? PlayIcon : PauseIcon} size={13} strokeWidth={2} className="shrink-0" />
+            <HugeiconsIcon
+              icon={isPaused ? PlayIcon : PauseIcon}
+              size={13}
+              strokeWidth={2}
+              className="shrink-0"
+            />
             <span className="truncate">{isPaused ? "Resume" : "Pause"}</span>
           </button>
           <button
@@ -153,7 +172,12 @@ function ActionBridgePanelContent({
             disabled={!canStop}
             className="inline-flex h-8 min-w-0 flex-1 items-center justify-center gap-1 rounded-lg border border-red-200 bg-red-50 px-2 text-xs font-semibold text-red-600 transition-colors hover:bg-red-100 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            <HugeiconsIcon icon={StopIcon} size={13} strokeWidth={2} className="shrink-0" />
+            <HugeiconsIcon
+              icon={StopIcon}
+              size={13}
+              strokeWidth={2}
+              className="shrink-0"
+            />
             <span className="truncate">Stop</span>
           </button>
         </div>
@@ -166,21 +190,25 @@ function ActionBridgePanelContent({
         >
           <TabsTrigger value="codes" className="gap-1.5">
             Medical Codes
-            {codingProps.status === "success" && codingProps.codes.length > 0 && (
-              <Badge
-                variant="outline"
-                className="h-4 min-w-4 rounded-full border-0 bg-[#F0FDFA] px-1 text-[10px] font-bold text-primary"
-              >
-                {codingProps.codes.length}
-              </Badge>
-            )}
+            {codingProps.status === "success" &&
+              codingProps.codes.length > 0 && (
+                <Badge
+                  variant="outline"
+                  className="h-4 min-w-4 rounded-full border-0 bg-[#F0FDFA] px-1 text-[10px] font-bold text-primary"
+                >
+                  {codingProps.codes.length}
+                </Badge>
+              )}
           </TabsTrigger>
           <TabsTrigger value="transcript">Transcript</TabsTrigger>
         </TabsList>
         <TabsContent value="codes" className="min-h-0 flex-1 overflow-y-auto">
           <MedicalCodesPanel {...codingProps} />
         </TabsContent>
-        <TabsContent value="transcript" className="min-h-0 flex-1 overflow-y-auto">
+        <TabsContent
+          value="transcript"
+          className="min-h-0 flex-1 overflow-y-auto"
+        >
           <TranscriptPanel {...transcriptProps} compact />
         </TabsContent>
       </Tabs>
@@ -227,7 +255,7 @@ export function ActionBridgeSheet({
         className="w-[380px] p-0 sm:max-w-[380px]"
         showCloseButton={false}
       >
-        <SheetTitle className="sr-only">ActionBridge</SheetTitle>
+        <SheetTitle className="sr-only">ECHO</SheetTitle>
         <ActionBridgePanelContent {...contentProps} />
       </SheetContent>
     </Sheet>

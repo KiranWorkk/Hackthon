@@ -14,9 +14,11 @@ import { ChartingV2Nav } from "@/features/charting/components/ChartingV2Nav";
 import { ChartingV2FaceSheet } from "@/features/charting/components/overview/ChartingV2FaceSheet";
 import { StartChartingDialog } from "@/features/charting/components/StartChartingDialog";
 import { ChartingV2SoapSection } from "@/features/charting/components/soap/ChartingV2SoapSection";
+import { EvidenceSection } from "@/features/charting/components/soap/EvidenceSection";
 import { AddOptionsDrawer } from "@/features/charting/components/soap/AddOptionsDrawer";
 import { PendingApprovalBanner } from "@/features/charting/components/soap/PendingApprovalBanner";
 import { PreviewNoteDialog } from "@/features/charting/components/preview/PreviewNoteDialog";
+import { ConsentDialog } from "@/features/charting/components/consent/ConsentDialog";
 import { AiSyncIndicator } from "@/features/charting/components/AiSyncIndicator";
 import {
   ChartDetailsSidebar,
@@ -34,6 +36,7 @@ import { useSoapOrchestrator } from "@/features/charting/lib/ai/use-soap-orchest
 import { applySoapUpdates, type SoapKey, type SoapSlot, type SoapUpdate } from "@/features/charting/lib/ai/soap-slots";
 import { buildChartNoteText } from "@/features/charting/lib/note-utils";
 import { useMockPatientFacts } from "@/features/charting/data/mock-patient-facts";
+import { useSelectedPatient } from "@/features/charting/lib/selected-patient";
 
 const HIGHLIGHT_DURATION_MS = 4000;
 
@@ -53,7 +56,7 @@ function blankSoapGroups(groups: VisitSheetSoapGroup[]): VisitSheetSoapGroup[] {
   }));
 }
 
-type SoapSection = Exclude<ChartingV2Section, "overview">;
+type SoapSection = Exclude<ChartingV2Section, "overview" | "evidence">;
 
 const SECTION_TO_SOAP: Record<
   SoapSection,
@@ -214,6 +217,8 @@ export function ChartingV2View() {
   const [pulsingSoap, setPulsingSoap] = useState<Set<SoapKey>>(new Set());
   /** AI-written items awaiting explicit user approval — unlike highlightedPkeys, this never auto-clears; only an explicit approve/remove click resolves it. */
   const [pendingApprovalPkeys, setPendingApprovalPkeys] = useState<Set<number>>(new Set());
+  /** Ids of final transcript segments that were part of a sync tick which produced ≥1 chart update — drives the "Reflected in chart" highlight in the Evidence tab. */
+  const [evidenceSegmentIds, setEvidenceSegmentIds] = useState<Set<string>>(new Set());
   const soapGroupsRef = useRef(soapGroups);
   useEffect(() => {
     soapGroupsRef.current = soapGroups;
@@ -266,11 +271,26 @@ export function ChartingV2View() {
     }
   }, [listenStatus, runMedicalCoding]);
 
+  const patient = useSelectedPatient();
+  const [isConsentDialogOpen, setIsConsentDialogOpen] = useState(false);
+
   const handleStartListening = useCallback(() => {
+    // Recording never starts before the patient has been read the consent
+    // disclosure and the clinician confirms consent was given — see
+    // ConsentDialog. The actual start happens in handleConsentConfirmed.
+    setIsConsentDialogOpen(true);
+  }, []);
+
+  const handleConsentConfirmed = useCallback(() => {
+    setIsConsentDialogOpen(false);
     resetMedicalCoding();
     startListening();
     setIsActionBridgeOpen(true);
   }, [resetMedicalCoding, startListening]);
+
+  const handleConsentCancelled = useCallback(() => {
+    setIsConsentDialogOpen(false);
+  }, []);
 
   const handleReopenListening = useCallback(() => {
     setIsActionBridgeOpen(true);
@@ -367,12 +387,17 @@ export function ChartingV2View() {
     }, HIGHLIGHT_DURATION_MS);
   }, []);
 
+  const handleEvidenceUsed = useCallback((segmentIds: string[]) => {
+    setEvidenceSegmentIds((prev) => new Set([...prev, ...segmentIds]));
+  }, []);
+
   const { syncStatus, syncError } = useSoapOrchestrator({
     listenStatus,
     segments: transcriptSegments,
     facts: transcriptFacts,
     soapGroups,
     onUpdates: handleAiUpdates,
+    onEvidenceUsed: handleEvidenceUsed,
   });
 
   const isSoapTab = isSoapSection(activeSection);
@@ -424,6 +449,13 @@ export function ChartingV2View() {
           <div className="min-h-0 flex-1 overflow-y-auto bg-white">
             {activeSection === "overview" ? (
               <ChartingV2FaceSheet />
+            ) : activeSection === "evidence" ? (
+              <EvidenceSection
+                status={listenStatus}
+                segments={transcriptSegments}
+                speakers={transcriptSpeakers}
+                evidenceSegmentIds={evidenceSegmentIds}
+              />
             ) : (
               <ChartingV2SoapSection
                 title={SECTION_LABEL[activeSection]}
@@ -534,6 +566,13 @@ export function ChartingV2View() {
         open={isPreviewDialogOpen}
         onOpenChange={setIsPreviewDialogOpen}
         soapGroups={soapGroups}
+      />
+      <ConsentDialog
+        open={isConsentDialogOpen}
+        patientId={patient.patientId}
+        patientName={`${patient.firstName} ${patient.lastName}`}
+        onConfirm={handleConsentConfirmed}
+        onCancel={handleConsentCancelled}
       />
       <ChartDetailsSheet
         open={isChartDetailsSheetOpen}
